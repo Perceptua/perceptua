@@ -55,7 +55,7 @@ a:hover {
 	color: var(--light);
 }
 
-.btn {
+button {
 	background-color: var(--greyscale);
 	color: var(--dark);
 	border: 1px solid var(--dark);
@@ -65,7 +65,7 @@ a:hover {
 	transition: transform .2s;
 }
 
-.btn:hover {
+button:hover {
 	color: var(--light);
 	border: 1px solid var(--light);
 	transform: scale(1.25);
