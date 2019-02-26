@@ -1,0 +1,158 @@
+/* Color Scheme */
+
+:root {
+	--brand: #448D76;
+	--accent: #AE0D7A;
+	--highlight: #FCBA12;
+	--light: #F7EDD4;
+	--dark: #595959;
+	--greyscale: #F2F2F2;
+}
+
+
+
+/* Animations */
+
+@-moz-keyframes spin {
+    from {
+		-moz-transform: rotate(0deg);
+	}
+    to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+    from {
+		-webkit-transform: rotate(0deg);
+	}
+    to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
+
+
+/* Content */
+
+html, body {
+	width: 100%;
+	background-image: url('images/iceberg.png');
+	background-color: black;
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 1em;
+}
+
+body {
+	font-family: Calibri, serif;
+	color: var(--greyscale);
+}
+
+a {
+	color: var(--greyscale);
+	cursor: pointer;
+}
+
+a:hover {
+	color: var(--brand);
+}
+
+.text {
+	width: max-content;
+}
+
+.container {
+	margin-bottom: 80px;
+}
+
+.card {
+	display: inline-block;
+	color: var(--brand);
+	background: var(--greyscale);
+	overflow: hidden;
+	box-shadow: 4px 4px 20px black;
+	width: 95%;
+	margin: 1em auto;
+	text-align: center;
+}
+
+.btn {
+	background-color: var(--greyscale);
+	color: var(--accent);
+	border: 1px solid var(--accent);
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	margin: 0.5em;
+}
+
+.btn:hover {
+	color: var(--brand);
+}
+
+.hidden {
+	visibility: hidden;
+	margin: 0.5em;
+}
+
+.show {
+	display: block;
+	margin: 0.5em;
+}
+
+.showInfo {
+	background: var(--accent);
+	margin: 25% 25% 0.5em 0.5em;
+	opacity: 0.75;
+}
+
+.showInfo p {
+	color: var(--brand);
+}
+
+.loader {
+	border: 0.5em dotted var(--greyscale);
+	border-top: 0.5em dotted var(--brand);
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: auto;
+	animation: spin 2s linear infinite;
+}
+
+#background-image {
+	font-size: 0.5em;
+	position: absolute;
+	bottom: 0.5em;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 1em;
+	width: 100%;
+	color: var(--greyscale);
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 700px) {
+	.card {
+		position: relative;
+		width: 25%;
+		margin: 1em;
+		display: inline-block;
+	}
+}

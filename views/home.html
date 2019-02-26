@@ -1,0 +1,19 @@
+<div class="title">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="card" ng-repeat="p in philosophers">
+  <info philosopher="p"></info>
+  <reveal-student philosopher="p"></reveal-student>
+</div> 
+
+<div class="footer">
+  <p>{{ message }}</p>
+        
+  <a class="twitter-follow-button"
+    data-show-count="true"
+    href="https://twitter.com/AveryPHerkel">
+    @AveryPHerkel
+  </a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
