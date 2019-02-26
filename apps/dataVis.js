@@ -4,7 +4,7 @@ app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
     controller: 'MainController',
-    templateUrl: "views/landing.html"
+    templateUrl: "views/home.html"
   })
   .when("/info/:id", {
     controller: 'InfoController',
