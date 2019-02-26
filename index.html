@@ -10,8 +10,25 @@
   </head>
 
   <body ng-app="dataVis">
+    
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
 
     <div ng-view></div>
+    
+    <footer>
+      <p class="minds-channel-button">
+        Created by <a href="https://www.minds.com/averypherkel">AveryPHerkel</a>
+      </p>
+
+      <p> 
+        <i class="far fa-lightbulb"></i>
+        <a class="minds-referral-button" href="https://www.minds.com/register?referrer=averypherkel">Register for Minds</a>
+      </p>
+
+      <a id="background-image" href="https://wpblink.com/wallpaper-458440">Background Image</a>
+    </footer>
 
     <script src="apps/dataVis.js"></script>
     <script src="controllers/MainController.js"></script>
