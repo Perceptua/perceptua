@@ -1,4 +1,4 @@
-var app = angular.module('dataVis', ['ngRoute']);
+var app = angular.module('perceptua', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
