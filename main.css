@@ -1,12 +1,11 @@
 /* Color Scheme */
 
 :root {
-	--brand: #448D76;
-	--accent: #AE0D7A;
-	--highlight: #FCBA12;
-	--light: #F7EDD4;
-	--dark: #595959;
-	--greyscale: #F2F2F2;
+	--brand: #4bee8f;
+	--accent: #74b6b5;
+	--light: #b5fdaf;
+	--dark: #676087
+	--greyscale: #f2f2f2;
 }
 
 
