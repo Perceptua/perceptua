@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-	color: var(--highlight);
+	color: var(--light);
 }
 
 .btn {
@@ -65,8 +65,8 @@ a:hover {
 }
 
 .btn:hover {
-	color: var(--highlight);
-	border: 1px solid var(--highlight);
+	color: var(--light);
+	border: 1px solid var(--light);
 	transform: scale(1.25);
 }
 
