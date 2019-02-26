@@ -59,7 +59,7 @@ button {
 	background-color: var(--greyscale);
 	color: var(--dark);
 	border: 0.5em solid var(--dark);
-	border-radius: 0.5em;
+	border-radius: 1em;
 	padding: 0.5em 1em;
 	margin: 0.5em;
 	transition: transform .2s;
