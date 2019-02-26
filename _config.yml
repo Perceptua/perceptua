@@ -1,1 +1,1 @@
-theme: jekyll-theme-merlot
+permalink: /:categories/:title:output_ext
