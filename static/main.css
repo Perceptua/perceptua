@@ -48,6 +48,7 @@ header {
 a {
 	color: var(--brand);
 	cursor: pointer;
+	text-decoration: none;
 }
 
 a:hover {
