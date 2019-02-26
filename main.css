@@ -8,34 +8,20 @@
 	--greyscale: #f2f2f2;
 }
 
+.brand { color: var(--brand); }
+.accent { color: var(--accent); }
+.light { color: var(--light); }
+.dark { color: var(--dark); }
+.greyscale { color: var(--greyscale); }
+
+
 
 
 /* Animations */
 
-@-moz-keyframes spin {
-    from {
-		-moz-transform: rotate(0deg);
-	}
-    to {
-		-moz-transform: rotate(360deg);
-	}
-}
-@-webkit-keyframes spin {
-    from {
-		-webkit-transform: rotate(0deg);
-	}
-    to {
-		-webkit-transform: rotate(360deg);
-	}
-}
-@keyframes spin {
-	from {
-		transform:rotate(0deg);
-	}
-	to {
-		transform:rotate(360deg);
-	}
-}
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); } }
+@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
 
 
 
@@ -59,64 +45,28 @@ header {
 }
 
 a {
-	color: var(--greyscale);
+	color: var(--brand);
 	cursor: pointer;
 }
 
 a:hover {
-	color: var(--brand);
-}
-
-.text {
-	width: max-content;
-}
-
-.container {
-	margin-bottom: 80px;
-}
-
-.card {
-	display: inline-block;
-	color: var(--brand);
-	background: var(--greyscale);
-	overflow: hidden;
-	box-shadow: 4px 4px 20px black;
-	width: 95%;
-	margin: 1em auto;
-	text-align: center;
+	color: var(--highlight);
 }
 
 .btn {
 	background-color: var(--greyscale);
-	color: var(--accent);
-	border: 1px solid var(--accent);
-	padding: 0.5em 1em;
+	color: var(--dark);
+	border: 1px solid var(--dark);
 	border-radius: 0.5em;
+	padding: 0.5em 1em;
 	margin: 0.5em;
+	transition: transform .2s;
 }
 
 .btn:hover {
-	color: var(--brand);
-}
-
-.hidden {
-	visibility: hidden;
-	margin: 0.5em;
-}
-
-.show {
-	display: block;
-	margin: 0.5em;
-}
-
-.showInfo {
-	background: var(--accent);
-	margin: 25% 25% 0.5em 0.5em;
-	opacity: 0.75;
-}
-
-.showInfo p {
-	color: var(--brand);
+	color: var(--highlight);
+	border: 1px solid var(--highlight);
+	transform: scale(1.25);
 }
 
 .loader {
@@ -149,10 +99,4 @@ footer {
 /* Media Queries */
 
 @media only screen and (min-width: 700px) {
-	.card {
-		position: relative;
-		width: 25%;
-		margin: 1em;
-		display: inline-block;
-	}
 }
