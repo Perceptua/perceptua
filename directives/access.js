@@ -12,6 +12,7 @@ app.directive('access', function() {
         if (!scope.access) {
           scope.accessText = "Welcome";
           scope.access = true;
+          element.text(scope.accessText);
         }
       }
       
