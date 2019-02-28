@@ -8,7 +8,7 @@ app.directive('access', function() {
       scope.accessText = "Check Access Code";
       scope.access = false;
         
-      scope.access = function() {
+      scope.checkAccess = function() {
         if (!scope.access) {
           scope.accessText = "Welcome";
           scope.access = true;
