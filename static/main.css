@@ -56,10 +56,16 @@ a:hover {
 	color: var(--light);
 }
 
+input {
+	padding: 0.25em;
+    	text-align: center;
+    	border: 0.25em solid var(--dark);
+}
+
 button {
 	background-color: var(--greyscale);
 	color: var(--dark);
-	border: 0.5em solid var(--dark);
+	border: 0.25em solid var(--dark);
 	border-radius: 1em;
 	padding: 0.5em 1em;
 	margin: 0.5em;
@@ -69,7 +75,7 @@ button {
 
 button:hover {
 	color: var(--accent);
-	border: 0.5em solid var(--accent);
+	border: 0.25em solid var(--accent);
 	transform: scale(1.1);
 }
 
