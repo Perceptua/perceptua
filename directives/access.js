@@ -6,12 +6,12 @@ app.directive('access', function() {
     link: function(scope, element, attrs) {
       
       scope.accessText = "Check Access Code";
-      scope.access = false;
+      scope.hasAccess = false;
         
       scope.checkAccess = function() {
-        if (!scope.access) {
+        if (!scope.hasAccess) {
           scope.accessText = "Welcome";
-          scope.access = true;
+          scope.hasAccess = true;
         }
       }
       
