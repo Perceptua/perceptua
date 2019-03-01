@@ -4,7 +4,7 @@ app.directive('access', function() {
     scope: {}, 
     templateUrl: 'directives/access.html',
     link: function(scope, element, attrs) {
-      
+      scope.accessCode = 'premier1X';
       scope.accessText = "Check Access Code";
       scope.hasAccess = false;
       
