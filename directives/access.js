@@ -17,6 +17,7 @@ app.directive('access', function() {
           $('#access-input').css('border', '0.25em solid #var(--dark)');
         } else {
           $('#access-input').css('border', '0.25em solid #990033');
+          $('#error').append('<p style="color:#990033;font-size:0.75em;">Incorrect Access Code. Please Try Again.</p>');
         }
       }
     } 
