@@ -79,6 +79,10 @@ button:hover {
 	transform: scale(1.1);
 }
 
+.content {
+	padding: 1em 0.5em;
+}
+
 .loader {
 	border: 0.5em dotted var(--greyscale);
 	border-top: 0.5em dotted var(--brand);
