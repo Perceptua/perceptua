@@ -7,9 +7,11 @@ app.directive('access', function() {
       
       scope.accessText = "Check Access Code";
       scope.hasAccess = false;
+      
+      var code = $('#access-input').val();
         
       scope.checkAccess = function() {
-        if (!scope.hasAccess) {
+        if (!scope.hasAccess && code == scope.accessCode) {
           scope.accessText = "Welcome";
           scope.hasAccess = true;
         }
