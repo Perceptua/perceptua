@@ -6,20 +6,25 @@ app.directive('access', function() {
     link: function(scope, element, attrs) {
       
       scope.accessCode = 'premier1X';
-      scope.accessText = "Check Access Code";
       scope.hasAccess = false;
               
       scope.checkAccess = function() {
         var code = $('#access-input').val();
         if (!scope.hasAccess && code == scope.accessCode) {
-          scope.accessText = "Welcome";
           scope.hasAccess = true;
           $('#access-input').css('border', '0.25em solid #var(--dark)');
+          $('#error').empty();
+          grantAccess();
         } else {
           $('#access-input').css('border', '0.25em solid #990033');
-          $('#error').append('<p style="color:#990033;font-size:0.75em;">Incorrect Access Code. Please Try Again.</p>');
+          $('#error').append('<p style="font-size:0.75em;">Incorrect Access Code. Please Try Again.</p>');
         }
       }
     } 
   }; 
 });
+
+function grantAccess() {
+  $('access').first().hide();
+  $('#welcome').fadeIn();
+}
