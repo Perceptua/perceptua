@@ -1,6 +1,10 @@
-app.directive('access', function() { 
+app.directive('featured', function() { 
   return { 
     restrict: 'E', 
-    scope: {}, 
-    templateUrl: 'directives/access.html',
-    link: function(scope, element, attrs) {
+    scope: {
+      creator: '=',
+    }, 
+    templateUrl: 'directives/featured.html',
+  };
+});
+      
