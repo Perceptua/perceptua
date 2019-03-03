@@ -30,7 +30,7 @@
 html {
 	background-image: url('images/iceberg.png');
 	background-color: black;
-	background-position: top;
+	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -41,7 +41,6 @@ html {
 
 header {
 	border-bottom: 1px solid var(--greyscale);
-	padding: 1em;
 }
 
 a {
