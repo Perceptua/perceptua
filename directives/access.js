@@ -34,4 +34,5 @@ function grantAccess() {
 
 function showContent() {
   $('#welcome').fadeOut('slow');
+  $('.content.').first().append('<featured creator="featured"></featured>');
 }
