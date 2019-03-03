@@ -26,13 +26,8 @@ app.directive('access', function() {
 
 function grantAccess() {
   $('access').first().hide();
-  $('#welcome').fadeIn('slow', callback=showContent);
+  $('#welcome').fadeIn('slow');
   setTimeout(function() {
-    $('#welcome').fadeOut('slow', callback=showContent);
+    $('#welcome').fadeOut('slow');
   }, 2000);
-}
-
-function showContent() {
-  $('#welcome').fadeOut('slow');
-  $('.content').first().append('<featured creator="featured"></featured>');
 }
