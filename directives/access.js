@@ -25,10 +25,13 @@ app.directive('access', function() {
 });
 
 function grantAccess() {
-  $('access').first().hide();
-  $('#welcome').fadeIn(callback=showContent);
+  $('access').first().fadeOut();
+  $('#welcome').fadeIn('slow', callback=showContent);
+  setTimeout(function() {
+    $('#welcome').fadeOut('slow', callback=showContent);
+  }, 1000);
 }
 
 function showContent() {
-  $('#welcome').fadeOut();
+  $('#welcome').fadeOut('slow');
 }
