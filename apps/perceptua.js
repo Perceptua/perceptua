@@ -6,10 +6,6 @@ app.config(function($routeProvider) {
     controller: 'MainController',
     templateUrl: "views/home.html"
   })
-  .when("/info/:id", {
-    controller: 'InfoController',
-    templateUrl: "views/info.html"
-  })
   .otherwise({
     redirectTo: "/"
   });
