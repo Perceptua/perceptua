@@ -29,7 +29,7 @@ function grantAccess() {
   $('#welcome').fadeIn('slow', callback=showContent);
   setTimeout(function() {
     $('#welcome').fadeOut('slow', callback=showContent);
-  }, 1000);
+  }, 2000);
 }
 
 function showContent() {
