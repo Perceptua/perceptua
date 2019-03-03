@@ -26,5 +26,9 @@ app.directive('access', function() {
 
 function grantAccess() {
   $('access').first().hide();
-  $('#welcome').fadeIn();
+  $('#welcome').fadeIn().setTimeout(showContent, 1000);
+}
+
+function showContent() {
+  $('#welcome').fadeOut();
 }
