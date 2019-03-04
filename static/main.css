@@ -114,6 +114,14 @@ button:hover {
 	text-align:right;
 }
 
+.creator-card {
+	width: 25%;
+    	border: 0.25em solid var(--accent);
+    	border-radius: 0.5em;
+    	display: inline-block;
+    	margin: 0.5em;
+}
+
 
 
 /* Footer */
