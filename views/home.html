@@ -1,18 +1,23 @@
 <div class="content" ng-controller="MainController">
   <h3 id="welcome" class="hidden">welcome to {{ title }}</h3>
+  
   <access></access>
   
-  <p class="hidden click-hide" id="hide-older" ng-click="hideUpcoming()">Hide</p>
-  <div ng-repeat="u in upcoming">
-    <div class="creator-card">
-      <upcoming creator="u"></upcoming>
+  <div id="upcoming-container">
+    <p class="hidden click-hide" id="hide-older" ng-click="hideUpcoming()">Hide</p>
+    <div ng-repeat="u in upcoming">
+      <div class="creator-card">
+        <upcoming creator="u"></upcoming>
+      </div>
     </div>
   </div>
   
-  <p class="hidden click-hide" id="hide-older" ng-click="hideOlder()">Hide</p>
-  <div ng-repeat="o in older">
-    <div class="creator-card">
-      <older creator="o"></older>
+  <div id="older-container">
+    <p class="hidden click-hide" id="hide-older" ng-click="hideOlder()">Hide</p>
+    <div ng-repeat="o in older">
+      <div class="creator-card">
+        <older creator="o"></older>
+      </div>
     </div>
   </div>
   
