@@ -16,6 +16,10 @@ app.controller('MainController', ['$scope', function($scope) {
   ];
 }]);
 
+function hideContent(ev) {
+  $(ev.target).closest('.content-container').fadeOut('slow');
+}
+
 function showContent(content) {
   $(content + '-container').show();
 }
