@@ -116,6 +116,7 @@ button:hover {
 
 .creator-card {
 	width: 25%;
+	background-color: rgba(103, 96, 135, 0.5);
     	border: 0.25em solid var(--accent);
     	border-radius: 0.5em;
     	display: inline-block;
