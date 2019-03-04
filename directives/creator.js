@@ -1,4 +1,4 @@
-app.directive('content', function() { 
+app.directive('creator', function() { 
   return { 
     restrict: 'E', 
     scope: {
