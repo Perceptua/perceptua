@@ -4,7 +4,7 @@ app.directive('featured', function() {
     scope: {
       creator: '=',
     }, 
-    templateUrl: 'directives/featured.html',
+    templateUrl: 'directives/creator.html',
   };
 });
       
