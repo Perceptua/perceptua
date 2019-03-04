@@ -7,10 +7,10 @@ app.directive('older', function() {
     templateUrl: 'directives/older.html',
     link: function(scope, element, attrs) {
       $('#older').click(function() {
-        $('older').first().fadeIn('slow');
+        $('#older-container').fadeIn('slow');
       });
       scope.hideOlder = function() {
-        $('older').first().fadeOut('slow');
+        $('#older-container').fadeOut('slow');
       }
     }
   };
