@@ -6,7 +6,7 @@ app.directive('about', function() {
     link: function(scope, element, attrs) {
       $('#about').click(function() {
         $('about').first().fadeIn();
-      }
+      });
       scope.hideAbout = function() {
         $('about').first().fadeOut();
       }
