@@ -108,6 +108,11 @@ featured, upcoming, older, suggest, about {
 	display: none;
 }
 
+.click-hide {
+	font-size:0.75em;
+	text-align:right;
+}
+
 
 
 /* Footer */
