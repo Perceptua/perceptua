@@ -2,7 +2,14 @@
   <h3 id="welcome" style="display:none;">welcome to {{ title }}</h3>
   <access></access>
   <upcoming></upcoming>
-  <older></older>
+  
+  <p class="click-hide" ng-click="hideOlder()">Hide</p>
+  <div ng-repeat="o in older">
+    <div class="creator-card" creator="o">
+      <older></older>
+    </div>
+  </div>
+  
   <suggest></suggest>
   <about></about>
 </div>
