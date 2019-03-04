@@ -5,10 +5,6 @@ app.directive('suggest', function() {
     templateUrl: 'directives/suggest.html',
     link: function(scope, element, attrs) {
       
-      scope.hideSuggest = function() {
-        $('suggest').first().fadeOut('slow');
-      }
-      
       scope.suggestCreator = function() {
         $('#received-suggestion').fadeIn('slow');
         setTimeout(function() {
