@@ -1,9 +1,11 @@
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'perceptua';
-  $scope.upcoming = {
-    name: 'Johannes Brahms',
-    medium: 'Music',
-  };
+  $scope.upcoming = [
+    {
+      name: 'Johannes Brahms',
+      medium: 'Music',
+    }
+  ];
   $scope.older = [
     {
       name: 'Maxfield Parrish',
