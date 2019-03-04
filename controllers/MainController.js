@@ -17,12 +17,16 @@ app.controller('MainController', ['$scope', function($scope) {
 }]);
 
 function hideContent(ev) {
-  $(ev.target).closest('.content-container').fadeOut('slow');
+  $(ev.target).closest('.content-container')
+    .fadeOut('slow')
+    .removeClass('viewing');
 }
 
 function showContent(content) {
-  $('.content-container').each(function() {
-    $(this).fadeOut('slow');
-  });
-  $(content + '-container').fadeIn('slow');
+  $('.viewing').first()
+    .fadeOut('slow')
+    .removeClass('viewing');
+  $(content + '-container')
+    .fadeIn('slow')
+    .addClass('viewing');
 }
