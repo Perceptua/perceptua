@@ -1,7 +1,17 @@
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'perceptua';
   $scope.featured = {
-    name: 'Avery',
-    type: 'Musician',
-  }
+    name: 'Johannes Brahms',
+    medium: 'Music',
+  };
+  $scope.older = [
+    {
+      name: 'Maxfield Parrish',
+      medium: 'Art',
+    },
+    {
+      name: 'Stanley Kubrick',
+      medium: 'Film',
+    }
+  ];
 }]);
