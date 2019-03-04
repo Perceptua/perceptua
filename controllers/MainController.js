@@ -23,8 +23,13 @@ function hideContent(ev) {
 }
 
 function showContent(content) {
-  $('.viewing').first().fadeOut('slow', function() {
-    $('.viewing').first().removeClass('viewing');
+  var viewing = $('.viewing').first();
+  if (viewing) {
+    viewing.fadeOut('slow', function() {
+      viewing.removeClass('viewing');
+      $(content + '-container').fadeIn('slow').addClass('viewing');
+    });
+  } else {
     $(content + '-container').fadeIn('slow').addClass('viewing');
-  });   
+  }
 }
