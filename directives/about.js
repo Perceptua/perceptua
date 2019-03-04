@@ -5,10 +5,10 @@ app.directive('about', function() {
     templateUrl: 'directives/about.html',
     link: function(scope, element, attrs) {
       $('#about').click(function() {
-        $('about').first().fadeIn();
+        $('about').first().fadeIn('slow');
       });
       scope.hideAbout = function() {
-        $('about').first().fadeOut();
+        $('about').first().fadeOut('slow');
       }
     }
   };
