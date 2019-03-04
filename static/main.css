@@ -104,7 +104,7 @@ button:hover {
 	animation: spin 2s linear infinite;
 }
 
-.hidden, featured, upcoming, older, suggest, about {
+.hidden {
 	display: none;
 }
 
