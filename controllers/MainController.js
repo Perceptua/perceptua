@@ -21,5 +21,5 @@ function hideContent(ev) {
 }
 
 function showContent(content) {
-  $(content + '-container').show();
+  $(content + '-container').fadeIn('slow');
 }
