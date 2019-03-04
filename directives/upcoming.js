@@ -4,7 +4,7 @@ app.directive('upcoming', function() {
     scope: {
       creator: '=',
     }, 
-    templateUrl: 'directives/upcoming.html',
+    templateUrl: 'directives/creator.html',
     link: function(scope, element, attrs) {
       $('#upcoming').click(function() {
         $('#upcoming-container').fadeIn('slow');
