@@ -26,10 +26,10 @@
     <header>
       <h1>perceptua</h1>
       <a class="nav-item" id="featured">Featured</a>
-      <a class="nav-item" id="upcoming">Upcoming</a>
-      <a class="nav-item" id="older">Older</a>
-      <a class="nav-item" id="suggest">Suggest</a>
-      <a class="nav-item" id="about">About</a>
+      <a class="nav-item" id="upcoming" onclick="showHide('#upcoming')>Upcoming</a>
+      <a class="nav-item" id="older" onclick="showHide('#older')>Older</a>
+      <a class="nav-item" id="suggest" onclick="showHide('#suggest')>Suggest</a>
+      <a class="nav-item" id="about" onclick="showHide('#about')>About</a>
     </header>
 
     <div ng-view></div>
@@ -49,8 +49,7 @@
     <script src="apps/perceptua.js"></script>
     <script src="controllers/MainController.js"></script>
     <script src="directives/access.js"></script>
-    <script src="directives/featured.js"></script>
-    <script src="directives/older.js"></script>
+    <script src="directives/creator.js"></script>
     <script src="directives/suggest.js"></script>
     <script src="directives/about.js"></script>
 
