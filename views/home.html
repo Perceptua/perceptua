@@ -3,8 +3,8 @@
   
   <access></access>
   
-  <div class="content-container" id="upcoming-container">
-    <p class="hidden click-hide" id="hide-older" ng-click="hideContent(event)">Hide</p>
+  <div class="hidden content-container" id="upcoming-container">
+    <p class="click-hide" id="hide-older" ng-click="hideContent(event)">Hide</p>
     <div ng-repeat="u in upcoming">
       <div class="creator-card">
         <creator creator="u"></creator>
@@ -12,8 +12,8 @@
     </div>
   </div>
   
-  <div class="content-container" id="older-container">
-    <p class="hidden click-hide" id="hide-older" ng-click="hideContent(event)">Hide</p>
+  <div class="hidden content-container" id="older-container">
+    <p class="click-hide" id="hide-older" ng-click="hideContent(event)">Hide</p>
     <div ng-repeat="o in older">
       <div class="creator-card">
         <creator creator="o"></creator>
@@ -21,7 +21,11 @@
     </div>
   </div>
   
-  <suggest></suggest>
+  <div class="hidden content-container" id="suggest-container">
+    <suggest></suggest>
+  </div>
   
-  <about></about>
+  <div class="hidden content-container" id="about-container">
+    <about></about>
+  </div>
 </div>
