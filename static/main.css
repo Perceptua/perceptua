@@ -109,6 +109,7 @@ button:hover {
 }
 
 .click-hide {
+	cursor: pointer;
 	font-size:0.75em;
 	text-align:right;
 }
