@@ -1,7 +1,8 @@
 <p style="font-size:0.75em;text-align:right;" ng-click="hideSuggest()">Hide</p>
 
-<form id="suggest form">
-  <input type="text" form="suggest-form" id="medium" placeholder="Medium (e.g. music, art, photography)...">
-  <input type="text" form="suggest-form" id="creator" placeholder="Name...">
+<form id="suggest form" action="mailto:aherkel09@gmail.com" method="post" enctype="text/plain">
+  <input type="text" form="suggest-form" name="mail" placeholder="Your Email..."><br>
+  <input type="text" form="suggest-form" name="medium" placeholder="Medium (e.g. Music, Art, Photography)..."><br>
+  <input type="text" form="suggest-form" name="creator" placeholder="Creator Name..."><br>
   <button type="submit">Suggest Creator</button>
 </form>
