@@ -104,8 +104,8 @@ button:hover {
 	animation: spin 2s linear infinite;
 }
 
-#background-image {
-	font-size: 0.5em;
+featured, upcoming, older, suggest, about {
+	display: none;
 }
 
 
@@ -124,6 +124,10 @@ footer {
 .footer-item {
 	display: inline-block;
 	margin: 0 0.5em;
+}
+
+#background-image {
+	font-size: 0.5em;
 }
 
 
