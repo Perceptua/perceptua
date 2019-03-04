@@ -4,7 +4,7 @@ app.directive('older', function() {
     scope: {
       creator: '=',
     }, 
-    templateUrl: 'directives/older.html',
+    templateUrl: 'directives/creator.html',
     link: function(scope, element, attrs) {
       $('#older').click(function() {
         $('#older-container').fadeIn('slow');
