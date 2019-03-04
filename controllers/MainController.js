@@ -15,3 +15,7 @@ app.controller('MainController', ['$scope', function($scope) {
     }
   ];
 }]);
+
+function showContent(content) {
+  $(content + '-container').show();
+}
