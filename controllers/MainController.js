@@ -24,7 +24,7 @@ function hideContent(ev) {
 
 function showContent(content) {
   var viewing = $('.viewing').first();
-  if (viewing) {
+  if (viewing.length > 0) {
     viewing.fadeOut('slow', function() {
       viewing.removeClass('viewing');
       $(content + '-container').fadeIn('slow').addClass('viewing');
