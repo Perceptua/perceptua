@@ -1,9 +1,15 @@
 <div class="content" ng-controller="MainController">
-  <h3 id="welcome" style="display:none;">welcome to {{ title }}</h3>
+  <h3 id="welcome" class="hidden">welcome to {{ title }}</h3>
   <access></access>
-  <upcoming></upcoming>
   
-  <p class="click-hide" ng-click="hideOlder()">Hide</p>
+  <p class="hidden click-hide" id="hide-older" ng-click="hideUpcoming()">Hide</p>
+  <div ng-repeat="u in upcoming">
+    <div class="creator-card">
+      <upcoming creator="u"></upcoming>
+    </div>
+  </div>
+  
+  <p class="hidden click-hide" id="hide-older" ng-click="hideOlder()">Hide</p>
   <div ng-repeat="o in older">
     <div class="creator-card">
       <older creator="o"></older>
@@ -11,5 +17,6 @@
   </div>
   
   <suggest></suggest>
+  
   <about></about>
 </div>
