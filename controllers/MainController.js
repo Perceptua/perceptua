@@ -23,10 +23,8 @@ function hideContent(ev) {
 }
 
 function showContent(content) {
-  $('.viewing').first()
-    .fadeOut('slow')
-    .removeClass('viewing');
-  $(content + '-container')
-    .fadeIn('slow')
-    .addClass('viewing');
+  $('.viewing').first().fadeOut('slow', function() {
+    $('.viewing').first().removeClass('viewing');
+    $(content + '-container').fadeIn('slow').addClass('viewing');
+  });   
 }
