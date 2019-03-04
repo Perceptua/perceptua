@@ -4,8 +4,11 @@ app.directive('about', function() {
     scope: {}, 
     templateUrl: 'directives/about.html',
     link: function(scope, element, attrs) {
+      $('#about').click(function() {
+        $('about').first().fadeIn();
+      }
       scope.hideAbout = function() {
-        $('about').first().hide();
+        $('about').first().fadeOut();
       }
     }
   };
