@@ -1,7 +1,13 @@
 <div class="content" ng-controller="MainController">
   <h3 id="welcome" class="hidden">welcome to {{ title }}</h3>
   
-  <access></access>
+  <div class="viewing content-container" id="featured-container">
+    <p class="click-hide" id="hide-older" onclick="hideContent(event)">Hide</p>
+    <div class="creator-card screen-card">
+      <h3>Access Featured Content</h3>
+      <access></access>
+    </div>
+  </div>
   
   <div class="hidden content-container" id="upcoming-container">
     <p class="click-hide" id="hide-older" onclick="hideContent(event)">Hide</p>
@@ -24,7 +30,7 @@
   
   <div class="hidden content-container" id="about-container">
     <p class="click-hide" id="hide-about" onclick="hideContent(event)">Hide</p>
-    <div class="creator-card" id="about-card">
+    <div class="creator-card screen-card">
       <p>
         A digital symphony. A global reading room. A gallery for all.<br>
         Perceptua is founded on a passion for deep, immersive experience and an appreciation of fine art.
