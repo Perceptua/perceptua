@@ -35,6 +35,7 @@ html {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
 	text-align: center;
 	color: var(--greyscale);
 }
@@ -153,16 +154,10 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-	html {
-		font-size: large;
-	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
-	html {
-		font-size: large;
-	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -172,7 +167,4 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-	html {
-		font-size: initial;
-	}
 }
