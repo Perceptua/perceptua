@@ -7,9 +7,6 @@ app.directive('suggest', function() {
       
       scope.suggestCreator = function() {
         $('#received-suggestion').fadeIn('slow');
-        setTimeout(function() {
-          $('#suggest-container').fadeOut('slow');
-        }, 2000);
       }
       
     }
