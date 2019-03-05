@@ -158,6 +158,9 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
+	.screen-card {
+		width: 50%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
