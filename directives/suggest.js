@@ -9,6 +9,10 @@ app.directive('suggest', function() {
         $('#received-suggestion').fadeIn('slow');
       }
       
+      scope.showEmail = function() {
+        $('#email').fadeIn('slow');
+      }
+      
     }
   };
 });
