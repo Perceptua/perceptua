@@ -30,11 +30,10 @@
 html {
 	background-image: url('images/iceberg.png');
 	background-color: black;
-	background-position: center;
+	background-position: 50% 10em;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	position: absolute;
 	overflow-x: hidden;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
