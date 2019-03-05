@@ -25,9 +25,13 @@ app.directive('access', function() {
 });
 
 function grantAccess() {
-  $('access').first().hide();
-  $('#welcome').fadeIn('slow');
-  setTimeout(function() {
-    $('#welcome').fadeOut('slow');
-  }, 2000);
+  $('footer').first().fadeOut('slow');
+  $('#featured-container').fadeOut('slow', function() {
+    $('#welcome').fadeIn('slow');
+    setTimeout(function() {
+      $('#welcome').fadeOut('slow', function() {
+        $('footer').first().fadeIn('slow');
+      });
+    }, 2000);
+  });
 }
