@@ -32,6 +32,6 @@ function grantAccess() {
       $('#welcome').fadeOut('slow', function() {
         $('footer').first().fadeIn('slow');
       });
-    }, 2000);
+    }, 1500);
   });
 }
