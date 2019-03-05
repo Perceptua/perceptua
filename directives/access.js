@@ -9,11 +9,11 @@ app.directive('access', function() {
       scope.hasAccess = false;
               
       scope.checkAccess = function() {
+        $('#error').empty();
         var code = $('#access-input').val();
         if (!scope.hasAccess && code == scope.accessCode) {
           scope.hasAccess = true;
           $('#access-input').css('border', '0.25em solid #var(--dark)');
-          $('#error').empty();
           grantAccess();
         } else {
           $('#access-input').css('border', '0.25em solid #990033');
