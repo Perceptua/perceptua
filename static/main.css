@@ -34,6 +34,8 @@ html {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	position: absolute;
+	overflow-x: hidden;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	text-align: center;
