@@ -18,6 +18,11 @@ app.controller('MainController', ['$scope', function($scope) {
   ];
 }]);
 
+$(document).ready(function() {
+  $('#featured-container').fadeIn('slow');
+  $('footer').first().fadeIn('slow');
+});
+
 function hideContent(ev) {
   $('footer').first().fadeOut('slow');
   var content = $(ev.target).closest('.content-container');
