@@ -115,14 +115,17 @@ header {
 	cursor: pointer;
 }
 
-.creator-card {
-	width: 37.5%;
+.creator-card, .screen-card {
 	background-color: rgba(103, 96, 135, 0.5);
     	border: 0.25em solid var(--accent);
     	border-radius: 0.5em;
     	display: inline-block;
 	padding: 0.25em;
     	margin: 0.5em;
+}
+
+.creator-card {
+	width: 37.5%;
 }
 
 .screen-card {
