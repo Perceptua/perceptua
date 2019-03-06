@@ -2,6 +2,7 @@
 
 <html>
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,14 +12,31 @@
     <meta name="description" content="dive deep">
     <meta name="keywords" content="art, music, literature, poetry, film, photography">
     
+    <!-- Stylesheet & Icons -->
     <link rel="stylesheet" href="static/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyBRljRdh4qzZtsr-Fs_0p18HtbryFKNtSU",
+        authDomain: "perceptua-b6ea3.firebaseapp.com",
+        databaseURL: "https://perceptua-b6ea3.firebaseio.com",
+        projectId: "perceptua-b6ea3",
+        storageBucket: "perceptua-b6ea3.appspot.com",
+        messagingSenderId: "1009093225368"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    <!-- jQuery & Angular -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="libraries/angular.min.js"></script>
     <script src="libraries/angular-route.min.js"></script>
+    
   </head>
 
   <body ng-app="perceptua">
