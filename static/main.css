@@ -52,9 +52,27 @@ a:hover {
 }
 
 input {
+	display: block;
 	padding: 0.25em;
     	text-align: center;
     	border: 0.25em solid var(--dark);
+}
+
+button {
+	background-color: var(--greyscale);
+	color: var(--dark);
+	border: 0.25em solid var(--dark);
+	border-radius: 1em;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	outline: none;
+	transition: transform .2s;
+}
+
+button:hover {
+	color: var(--accent);
+	border: 0.25em solid var(--accent);
+	transform: scale(1.1);
 }
 
 
@@ -74,23 +92,6 @@ header {
 
 
 /* Page Content */
-
-button {
-	background-color: var(--greyscale);
-	color: var(--dark);
-	border: 0.25em solid var(--dark);
-	border-radius: 1em;
-	padding: 0.5em 1em;
-	margin: 0.5em;
-	outline: none;
-	transition: transform .2s;
-}
-
-button:hover {
-	color: var(--accent);
-	border: 0.25em solid var(--accent);
-	transform: scale(1.1);
-}
 
 .content {
 	padding: 1em 0.5em;
