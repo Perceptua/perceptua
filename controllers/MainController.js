@@ -46,7 +46,3 @@ function showContent(content) {
     }).addClass('viewing');
   }
 }
-
-function showAccessHelp() {
-  $('#access-help').fadeIn('slow');
-}
