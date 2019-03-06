@@ -52,7 +52,6 @@ a:hover {
 }
 
 input {
-	display: block;
 	padding: 0.25em;
     	text-align: center;
     	border: 0.25em solid var(--dark);
