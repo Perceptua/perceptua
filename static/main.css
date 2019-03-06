@@ -110,10 +110,9 @@ header {
 	display: none;
 }
 
-.click-hide {
+.info {
+	font-size: 0.75em;
 	cursor: pointer;
-	font-size:0.75em;
-	text-align:right;
 }
 
 .creator-card {
