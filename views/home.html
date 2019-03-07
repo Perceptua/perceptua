@@ -54,5 +54,11 @@
       $('#leviathan').attr('src', url + '?crossorigin');
     });
     */
+    
+    firebase.database().ref('featured').once('value').then(function(snapshot) {
+      console.log(snapshot.val());
+    });
+
+    
   });
 </script>
