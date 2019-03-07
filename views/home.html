@@ -55,7 +55,7 @@
     });
     */
     
-    firebase.database().ref('featured').once('value').then(function(snapshot) {
+    firebase.database().ref('/featured').once('value').then(function(snapshot) {
       console.log(snapshot.val());
     });
 
