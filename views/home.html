@@ -55,10 +55,11 @@
     });
     */
     
-    firebase.database().ref('/featured').once('value').then(function(snapshot) {
-      console.log(snapshot.val());
+    firebase.firestore().collection('featured').get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+      });
     });
 
-    
   });
 </script>
