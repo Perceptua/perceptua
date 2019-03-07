@@ -50,7 +50,7 @@
     $('footer').first().fadeIn('slow');
     
     var storage = firebase.storage().ref();
-    storage.child('images/Death_of_Leviathan.png').getDownloadURL().then(function(url) {
+    storage.child('images/Destruction_of_Leviathan.png').getDownloadURL().then(function(url) {
       $('#leviathan').attr('src', url);
     });
   });
