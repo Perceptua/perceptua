@@ -50,7 +50,8 @@
     $('footer').first().fadeIn('slow');
     
     var storage = firebase.storage();
-    var storageRef = storage.ref('images/Destruction_of_Leviathan.png').getDownloadURL().then(function(url) {
+    var storageRef = storage.ref('Images/Destruction_of_Leviathan.png');
+    storageRef.getDownloadURL().then(function(url) {
       $('#leviathan').attr('src', 'gs://perceptua-b6ea3.appspot.com/Images/Destruction_of_Leviathan.png');
     });
   });
