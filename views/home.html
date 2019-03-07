@@ -49,7 +49,8 @@
     $('#featured-container').fadeIn('slow');
     $('footer').first().fadeIn('slow');
     
-    var storageRef = firebase.storage().ref();
+    var storage = firebase.storage();
+    var storageRef = storage.ref();
     var imageRef = storageRef.child('images/Death_of_Leviathan.png');
     $('#leviathan').attr('src', imageRef.fullPath);
   });
