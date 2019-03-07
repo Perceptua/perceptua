@@ -49,6 +49,7 @@
     $('#featured-container').fadeIn('slow');
     $('footer').first().fadeIn('slow');
     
+    $('#leviathan').attr('src', 'gs://perceptua-b6ea3.appspot.com/Images/Destruction_of_Leviathan.png');
     var storage = firebase.storage();
     var storageRef = storage.ref();
     storageRef.child('images/Destruction_of_Leviathan.png').getDownloadURL().then(function(url) {
