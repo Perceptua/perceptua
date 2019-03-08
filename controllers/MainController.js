@@ -22,10 +22,6 @@ app.controller('MainController', ['$scope', function($scope) {
   ];
 }]);
 
-$(document).ready(function() {
-  showContent('#featured');
-});
-
 function hideContent(ev) {
   $('footer').first().fadeOut('slow');
   var content = $(ev.target).closest('.content-container');
