@@ -22,6 +22,29 @@ app.controller('MainController', ['$scope', function($scope) {
   ];
 }]);
 
+$(document).ready(function() {
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      welcome();
+    } else {
+      showContent('#featured');
+    }
+  });
+});
+
+function welcome() {
+  $('footer').first().fadeOut('slow');
+  $('#login-container').fadeOut('slow', function() {
+    $('#welcome').fadeIn('slow');
+    setTimeout(function() {
+      $('#welcome').fadeOut('slow', function() {
+        $('#featured-container').fadeIn('slow');
+        $('footer').first().fadeIn('slow');
+      });
+    }, 1500);
+  });
+}
+
 function hideContent(ev) {
   $('footer').first().fadeOut('slow');
   var content = $(ev.target).closest('.content-container');
