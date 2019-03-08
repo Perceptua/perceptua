@@ -13,7 +13,6 @@ app.directive('access', function() {
       scope.grantAccess = function() {
         $('footer').first().fadeOut('slow');
         $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
-          $('#access-input').css('border', '0.25em solid #var(--dark)');
           $('#welcome').fadeIn('slow');
           setTimeout(function() {
             $('#welcome').fadeOut('slow', function() {
@@ -31,6 +30,7 @@ app.directive('access', function() {
               
       scope.checkAccess = function() {
         $('#error').empty();
+        $('#access-input').css('border', '0.25em solid #var(--dark)');
         var code = $('#access-input').val();
         if (code == 'premier1X') {
           scope.grantAccess();
