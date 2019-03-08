@@ -35,11 +35,11 @@ $(document).ready(function() {
 
 function welcome() {
   $('footer').first().fadeOut('slow');
-  $('#login-container').fadeOut('slow', function() {
+  $('#login-container').removeClass('viewing').fadeOut('slow', function() {
     $('#welcome').fadeIn('slow');
     setTimeout(function() {
       $('#welcome').fadeOut('slow', function() {
-        $('#featured-container').fadeIn('slow');
+        $('#featured-container').addClass('viewing').fadeIn('slow');
         $('footer').first().fadeIn('slow');
       });
     }, 1500);
