@@ -29,6 +29,7 @@ app.directive('access', function() {
             $('#error').append('<p style="font-size:0.75em;">Incorrect Access Code. Please Try Again.</p>');
           } else {
             console.log('success!');
+          }
         });
       }
       
