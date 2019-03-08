@@ -129,8 +129,7 @@ header {
 }
 
 .creator-card:hover {
-	transform: scale(1.1);
-	transition: transform 1s;
+	background-color: rgb(116, 182, 181, 0.5);
 }
 
 .screen-card {
