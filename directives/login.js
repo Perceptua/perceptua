@@ -14,7 +14,8 @@ app.directive('login', function() {
             $('.login-form').each(function() {
               $(this).css('border', '0.25em solid #990033');
             });
-          }
+          } else {
+            scope.grantAccess();
         });
       }
       
@@ -27,7 +28,8 @@ app.directive('login', function() {
             $('.login-form').each(function() {
               $(this).css('border', '0.25em solid #990033');
             });
-          }
+          } else {
+            scope.grantAccess();
         });
       }
       
