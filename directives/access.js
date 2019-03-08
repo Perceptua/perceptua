@@ -30,7 +30,7 @@ app.directive('access', function() {
               
       scope.checkAccess = function() {
         $('#error').empty();
-        $('#access-input').css('border', '0.25em solid #var(--dark)');
+        $('#access-input').css('border', '0.25em solid var(--dark)');
         var code = $('#access-input').val();
         if (code == 'premier1X') {
           scope.grantAccess();
