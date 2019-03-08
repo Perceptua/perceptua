@@ -28,25 +28,3 @@ app.directive('login', function() {
     },
   };
 });
-
-
-$(document).ready(function() {
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      welcome();
-    }
-  });
-});
-
-function welcome() {
-  $('footer').first().fadeOut('slow');
-  $('#login-container').fadeOut('slow', function() {
-    $('#welcome').fadeIn('slow');
-    setTimeout(function() {
-      $('#welcome').fadeOut('slow', function() {
-        $('#featured-container').fadeIn('slow');
-        $('footer').first().fadeIn('slow');
-      });
-    }, 1500);
-  });
-}
