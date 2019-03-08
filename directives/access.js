@@ -12,7 +12,7 @@ app.directive('access', function() {
      
       scope.grantAccess = function() {
         $('footer').first().fadeOut('slow');
-        $('#access-container').removeClass('viewing').fadeOut('slow', function() {
+        $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
           $('#access-input').css('border', '0.25em solid #var(--dark)');
           $('#welcome').fadeIn('slow');
           setTimeout(function() {
