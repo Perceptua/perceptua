@@ -12,7 +12,3 @@ app.directive('featured', function() {
     }
   };
 });
-      
-$(document).ready(function() {
-  showContent('#featured');
-});
