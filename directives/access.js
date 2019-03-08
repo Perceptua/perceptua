@@ -10,7 +10,6 @@ app.directive('access', function() {
       firebase.firestore().collection('featured').doc('access').get().then(function(doc) {
         if (doc.exists) {
           scope.accessCode = doc.data().code;
-          console.log(scope.accessCode);
         }
       });
       
