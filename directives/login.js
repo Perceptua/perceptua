@@ -38,6 +38,7 @@ app.directive('login', function() {
             });
           }, 1500);
         });
+      }
       
     },
   };
