@@ -1,8 +1,8 @@
-app.directive('access', function() { 
+app.directive('login', function() { 
   return { 
     restrict: 'E', 
     scope: {}, 
-    templateUrl: 'directives/access.html',
+    templateUrl: 'directives/login.html',
     link: function(scope, element, attrs) {
     
       var email = $('#email-input').val();
