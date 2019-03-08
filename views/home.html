@@ -1,8 +1,6 @@
 <div class="content" ng-controller="MainController">
   <h3 id="welcome" class="hidden">welcome to perceptua.</h3>
-  
-  <img src="" crossorigin id="leviathan">
-  
+    
   <div class="hidden content-container viewing" id="featured-container">
     <div class="creator-card">
       <creator creator="featured"></creator>
@@ -49,19 +47,15 @@
     $('#featured-container').fadeIn('slow');
     $('footer').first().fadeIn('slow');
     
-    /* later use
-    firebase.storage().ref('Images/Destruction_of_Leviathan.png').getDownloadURL().then(function(url) {
-      $('#leviathan').attr('src', url + '?crossorigin');
-    });
-    */
-    
-    firebase.firestore().collection('featured').get().then(function(doc) {
+    /*
+    firebase.firestore().collection('featured').doc('creators').get().then(function(doc) {
       if (doc.exists) {
         for (var d in doc.data()) {
           console.log(d);
         }
       }
     });
+    */
 
   });
 </script>
