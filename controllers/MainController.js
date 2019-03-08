@@ -26,6 +26,7 @@ $(document).ready(function() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       welcome();
+      requireAccess();
     } else {
       showContent('#featured');
     }
@@ -43,6 +44,10 @@ function welcome() {
       });
     }, 1500);
   });
+}
+
+function requireAccess() {
+  $('featured').first().html('<access></access>');
 }
 
 function hideContent(ev) {
