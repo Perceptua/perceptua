@@ -4,36 +4,40 @@ app.directive('login', function() {
     scope: {}, 
     templateUrl: 'directives/login.html',
     link: function(scope, element, attrs) {
-          
-      scope.signup = function() {
+      
+      scope.login = function(action) {
         var email = $('#email-input').val();
         var password = $('#password-input').val();
-        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        
+        if (action == 'login') {
+          var func = firebase.auth().signInWithEmailAndPassword(email, password);
+        } else if (action == 'signup') {
+          var func = firebase.auth().createUserWithEmailAndPassword(email, password);
+        }
+        
+        func.catch(function(error) {
           if (error) {
             $('#login-error').text(error.message);
             $('.login-form').each(function() {
               $(this).css('border', '0.25em solid #990033');
             });
           } else {
-            scope.grantAccess();
+            scope.welcome();
           }
         });
       }
       
-      scope.login = function() {
-        var email = $('#email-input').val();
-        var password = $('#password-input').val();
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-          if (error) {
-            $('#login-error').text(error.message);
-            $('.login-form').each(function() {
-              $(this).css('border', '0.25em solid #990033');
+      scope.welcome = function() {
+        $('footer').first().fadeOut('slow');
+        $('#login-container').fadeOut('slow', function() {
+          $('#welcome').fadeIn('slow');
+          setTimeout(function() {
+            $('#welcome').fadeOut('slow', function() {
+              $('#featured-container').fadeIn('slow');
+              $('footer').first().fadeIn('slow');
             });
-          } else {
-            scope.grantAccess();
-          }
+          }, 1500);
         });
-      }
       
     },
   };
