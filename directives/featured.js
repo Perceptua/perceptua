@@ -1,9 +1,7 @@
 app.directive('featured', function() { 
   return { 
     restrict: 'E', 
-    scope: {
-      creator: '=',
-    }, 
+    scope: {}, 
     templateUrl: 'directives/creator.html',
     link: function(scope, element, attrs) {
       /*
