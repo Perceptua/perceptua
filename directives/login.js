@@ -4,11 +4,10 @@ app.directive('login', function() {
     scope: {}, 
     templateUrl: 'directives/login.html',
     link: function(scope, element, attrs) {
-    
-      var email = $('#email-input').val();
-      var password = $('#password-input').val();
-      
+          
       scope.signup = function() {
+        var email = $('#email-input').val();
+        var password = $('#password-input').val();
         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
           if (error) {
             $('#login-error').text(error.message);
@@ -20,6 +19,8 @@ app.directive('login', function() {
       }
       
       scope.login = function() {
+        var email = $('#email-input').val();
+        var password = $('#password-input').val();
         firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
           if (error) {
             $('#login-error').text(error.message);
