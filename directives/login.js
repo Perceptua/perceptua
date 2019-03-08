@@ -16,6 +16,7 @@ app.directive('login', function() {
             });
           } else {
             scope.grantAccess();
+          }
         });
       }
       
@@ -30,6 +31,7 @@ app.directive('login', function() {
             });
           } else {
             scope.grantAccess();
+          }
         });
       }
       
