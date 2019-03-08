@@ -5,14 +5,9 @@
     <div class="creator-card">
       <creator creator="featured"></creator>
     </div>
+    <access></access>
   </div>
-  
-  <div class="hidden content-container" id="access-container">
-    <div class="screen-card">
-      <access></access>
-    </div>
-  </div>
-  
+    
   <div class="hidden content-container" id="upcoming-container">
     <div class="creator-card" ng-repeat="u in upcoming">
       <creator creator="u"></creator>
@@ -42,6 +37,12 @@
         Support us on <a href="https://www.minds.com/register?referrer=averypherkel">Minds</a> to get your 
         access code today.
       </p>
+    </div>
+  </div>
+  
+  <div class="hidden content-container" id="login-container">
+    <div class="screen-card">
+      <login></login>
     </div>
   </div>
 </div>
