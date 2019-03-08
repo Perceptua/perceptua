@@ -7,6 +7,7 @@ app.directive('access', function() {
       
       scope.createUser = function(email, code) {
         firebase.auth().createUserWithEmailAndPassword(email, code);
+        firebase.auth().signOut();
       }
      
       scope.grantAccess = function() {
@@ -30,18 +31,12 @@ app.directive('access', function() {
               
       scope.checkAccess = function() {
         $('#error').empty();
-        var email = $('#email-input').val();
         var code = $('#access-input').val();
-        
-        firebase.auth().signInWithEmailAndPassword(email, code).catch(function(error) {
-          if (error.code == 'auth/user-not-found') {
-            scope.createUser(email, code);
-          } else if (error) {
-            scope.failAccess();
-          } else {
-            scope.grantAccess();
-          }
-        });
+        if (code == 'premier1X') {
+          scope.grantAccess();
+        } else {
+          scope.failAccess();
+        }
       }
       
       scope.showAccessHelp = function() {
