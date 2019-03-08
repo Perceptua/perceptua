@@ -23,32 +23,8 @@ app.controller('MainController', ['$scope', function($scope) {
 }]);
 
 $(document).ready(function() {
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      welcome();
-      requireAccess();
-    } else {
-      showContent('#featured');
-    }
-  });
+  showContent('#featured');
 });
-
-function welcome() {
-  $('footer').first().fadeOut('slow');
-  $('#login-container').removeClass('viewing').fadeOut('slow', function() {
-    $('#welcome').fadeIn('slow');
-    setTimeout(function() {
-      $('#welcome').fadeOut('slow', function() {
-        $('#featured-container').addClass('viewing').fadeIn('slow');
-        $('footer').first().fadeIn('slow');
-      });
-    }, 1500);
-  });
-}
-
-function requireAccess() {
-  $('featured').first().html('<access></access>');
-}
 
 function hideContent(ev) {
   $('footer').first().fadeOut('slow');
