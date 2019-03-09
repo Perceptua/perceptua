@@ -5,13 +5,8 @@ app.directive('access', function() {
     templateUrl: 'directives/access.html',
     link: function(scope, element, attrs) {
       
-      scope.accessCode = null;
-      firebase.firestore().collection('featured').doc('access').get().then(function(doc) {
-        if (doc.exists) {
-          scope.accessCode = doc.data().code;
-        }
-      });
-     
+      scope.accessCode = 'premier1X';
+      
       scope.grantAccess = function() {
         $('footer').first().fadeOut('slow');
         $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
@@ -34,7 +29,7 @@ app.directive('access', function() {
         $('#error').empty();
         $('#access-input').css('border', '0.25em solid var(--dark)');
         var code = $('#access-input').val();
-        if (scope.accessCode && code == scope.accessCode) {
+        if (code == scope.accessCode) {
           scope.grantAccess();
         } else {
           scope.failAccess();
