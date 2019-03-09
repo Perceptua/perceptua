@@ -4,9 +4,7 @@ app.directive('access', function() {
     scope: {}, 
     templateUrl: 'directives/access.html',
     link: function(scope, element, attrs) {
-      
-      scope.accessCode = 'premier1X';
-      
+            
       scope.grantAccess = function() {
         $('access').first().fadeOut('slow');
         $('footer').first().fadeOut('slow');
@@ -30,11 +28,23 @@ app.directive('access', function() {
         $('#error').empty();
         $('#access-input').css('border', '0.25em solid var(--dark)');
         var code = $('#access-input').val();
-        if (code == scope.accessCode) {
-          scope.grantAccess();
-        } else {
-          scope.failAccess();
-        }
+        $.ajax({
+          url: 'https://us-central1-perceptua-b6ea3.cloudfunctions.net/checkAccess',
+          dataType: 'json',
+          data: {
+            'text': code,
+          },
+          success: function(data) {
+            if (data.access) {
+              scope.grantAccess();
+            } else {
+              scope.failAccess();
+            }
+          },
+          error: function(err) {
+            console.log(err);
+          },
+        });
       }
       
       scope.showAccessHelp = function() {
