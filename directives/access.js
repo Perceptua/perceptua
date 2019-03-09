@@ -5,10 +5,12 @@ app.directive('access', function() {
     templateUrl: 'directives/access.html',
     link: function(scope, element, attrs) {
       
-      scope.createUser = function(email, code) {
-        firebase.auth().createUserWithEmailAndPassword(email, code);
-        firebase.auth().signOut();
-      }
+      scope.accessCode = null;
+      firebase.database().collection('featured').doc('access').get().then(function(doc) {
+        if (doc.exists) {
+          scope.accessCode = doc.data().code;
+        }
+      });
      
       scope.grantAccess = function() {
         $('footer').first().fadeOut('slow');
@@ -32,7 +34,7 @@ app.directive('access', function() {
         $('#error').empty();
         $('#access-input').css('border', '0.25em solid var(--dark)');
         var code = $('#access-input').val();
-        if (code == 'premier1X') {
+        if (scope.accessCode && code == scope.accessCode) {
           scope.grantAccess();
         } else {
           scope.failAccess();
