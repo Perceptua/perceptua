@@ -5,17 +5,21 @@ app.directive('access', function() {
     templateUrl: 'directives/access.html',
     link: function(scope, element, attrs) {
             
-      scope.grantAccess = function() {
+      scope.grantAccess = function(url) {
         $('access').first().fadeOut('slow');
         $('footer').first().fadeOut('slow');
         $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
           $('#welcome').fadeIn('slow');
+          
           setTimeout(function() {
             $('#welcome').fadeOut('slow', function() {
-              $('#featured-container').addClass('viewing').fadeIn('slow');
+              $('#featured-container').load(url, function() {
+                $('#featured-container').addClass('viewing').fadeIn('slow');
+              });
               $('footer').first().fadeIn('slow');
             });
           }, 1500);
+          
         });
       }
       
@@ -32,12 +36,12 @@ app.directive('access', function() {
           url: 'https://us-central1-perceptua-b6ea3.cloudfunctions.net/checkAccess',
           dataType: 'json',
           data: {
-            'text': code,
+            'code': code,
           },
           success: function(data) {
             console.log(data);
-            if (data.access) {
-              scope.grantAccess();
+            if (data.access && data.url) {
+              scope.grantAccess(data.url);
             } else {
               scope.failAccess();
             }
