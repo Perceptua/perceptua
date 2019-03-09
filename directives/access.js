@@ -8,6 +8,7 @@ app.directive('access', function() {
       scope.accessCode = 'premier1X';
       
       scope.grantAccess = function() {
+        $('access').first().fadeOut('slow');
         $('footer').first().fadeOut('slow');
         $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
           $('#welcome').fadeIn('slow');
