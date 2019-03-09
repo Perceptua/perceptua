@@ -35,6 +35,7 @@ app.directive('access', function() {
             'text': code,
           },
           success: function(data) {
+            console.log(data);
             if (data.access) {
               scope.grantAccess();
             } else {
