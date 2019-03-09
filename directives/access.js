@@ -6,7 +6,7 @@ app.directive('access', function() {
     link: function(scope, element, attrs) {
       
       scope.accessCode = null;
-      firebase.database().collection('featured').doc('access').get().then(function(doc) {
+      firebase.firestore().collection('featured').doc('access').get().then(function(doc) {
         if (doc.exists) {
           scope.accessCode = doc.data().code;
         }
