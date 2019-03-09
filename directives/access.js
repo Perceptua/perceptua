@@ -23,9 +23,15 @@ app.directive('access', function() {
         });
       }
       
-      scope.failAccess = function() {
+      scope.failAccess = function(error=false) {
+        if (!error) {
+          var text = 'Incorrect Access Code. ';
+        } else {
+          var text = 'Something Went Wrong. ';
+        }
+        
         $('#access-input').css('border', '0.25em solid #990033');
-        $('#error').append('<p style="font-size:0.75em;">Incorrect Access Code. Please Try Again.</p>');
+        $('#error').append('<p style="font-size:0.75em;">' + text + 'Please Try Again.' + '</p>');
       }
               
       scope.checkAccess = function() {
@@ -39,7 +45,6 @@ app.directive('access', function() {
             'code': code,
           },
           success: function(data) {
-            console.log(data);
             if (data.access && data.url) {
               scope.grantAccess(data.url);
             } else {
@@ -47,7 +52,7 @@ app.directive('access', function() {
             }
           },
           error: function(err) {
-            console.log(err);
+            scope.failAccess(error=true);
           },
         });
       }
