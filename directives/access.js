@@ -30,7 +30,7 @@ app.directive('access', function() {
         var code = $('#access-input').val();
         $.ajax({
           url: 'https://us-central1-perceptua-b6ea3.cloudfunctions.net/checkAccess',
-          dataType: 'jsonp',
+          dataType: 'json',
           data: {
             'text': code,
           },
