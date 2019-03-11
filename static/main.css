@@ -79,12 +79,16 @@ button:hover {
 /* Header */
 
 header {
-	background-image: url('images/perceptua.svg');
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	border-bottom: 1px solid var(--greyscale);
+}
+
+.logo, .site-title {
+	display: inline-block;
+}
+
+.logo {
+	height: 2em;
+	margin: auto 0.5em;
 }
 
 .nav-item {
