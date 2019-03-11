@@ -79,6 +79,7 @@ button:hover {
 /* Header */
 
 header {
+	background-image: url('images/iceberg.png');
 	border-bottom: 1px solid var(--greyscale);
 }
 
