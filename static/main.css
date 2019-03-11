@@ -79,7 +79,11 @@ button:hover {
 /* Header */
 
 header {
-	background-image: url('images/iceberg.png');
+	background-image: url('images/perceptua.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	border-bottom: 1px solid var(--greyscale);
 }
 
