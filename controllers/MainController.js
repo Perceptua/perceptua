@@ -1,8 +1,8 @@
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'perceptua';
   $scope.featured = {
-    name: 'St. Patrick',
-    medium: 'Drinking',
+    name: 'Ludwig van Beethoven',
+    medium: 'Music',
   };
   $scope.upcoming = [
     {
