@@ -174,6 +174,9 @@ footer {
 	.screen-card {
 		width: 50%;
 	}
+	.logo {
+		display: inline-block;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
