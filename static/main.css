@@ -82,13 +82,10 @@ header {
 	border-bottom: 1px solid var(--greyscale);
 }
 
-.logo, .site-title {
-	display: inline-block;
-}
-
 .logo {
-	height: 2em;
-	margin: auto 0.5em;
+	display: block;
+	width: 6em;
+	margin: auto;
 }
 
 .nav-item {
