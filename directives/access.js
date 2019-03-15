@@ -46,12 +46,15 @@ app.directive('access', function() {
           },
           success: function(data) {
             if (data.access && data.url) {
+              console.log('success!');
               scope.grantAccess(data.url);
             } else {
+              console.log('failure!');
               scope.failAccess();
             }
           },
           error: function(err) {
+            console.log('error!');
             scope.failAccess(error=true);
           },
         });
