@@ -43,7 +43,6 @@
     <script src="libraries/angular-route.min.js"></script>
     
   </head>
-
   <body ng-app="perceptua">
     
     <header>
@@ -57,22 +56,8 @@
       </div>
     </header>
     
-    <div id="content" class="hidden">
-      <div ng-view></div>
+    <div ng-view></div>
     
-      <footer>
-        <p class="footer-item">
-          Created by <a href="https://www.minds.com/averypherkel">Avery Herkel</a>
-        </p>
-        <p class="footer-item"> 
-          <i class="far fa-lightbulb"></i>
-          <a class="minds-referral-button" href="https://www.minds.com/register?referrer=averypherkel">Register for Minds</a>
-        </p>
-        <br>
-        <a id="background-image" href="https://wpblink.com/wallpaper-458440">Background Image</a>
-      </footer>
-    </div>
-
     <script src="apps/perceptua.js"></script>
     <script src="controllers/MainController.js"></script>
     <script src="controllers/ContentController.js"></script>
