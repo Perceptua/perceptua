@@ -34,6 +34,7 @@ html {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
