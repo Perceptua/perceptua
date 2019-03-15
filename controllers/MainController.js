@@ -50,3 +50,10 @@ function showContent(content) {
     }).addClass('viewing');
   }
 }
+
+function redirectTo(content) {
+  $('footer').first().fadeOut('slow', function() {
+    window.location.replace('https://perceptua.blue/#/' + content);
+  });
+}
+  
