@@ -37,7 +37,6 @@ function hideContent(ev) {
 }
 
 function showContent(content) {
-  $('footer').first().fadeOut('slow');
   var viewing = $('.viewing').first();
   if (viewing.length > 0) {
     viewing.fadeOut('slow', function() {
