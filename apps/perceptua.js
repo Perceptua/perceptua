@@ -30,9 +30,3 @@ app.config(function($routeProvider) {
     redirectTo: "/featured"
   });
 });
-
-function redirectTo(content) {
-  $('#content').first().fadeOut('slow', function() {
-    window.location.replace('https://perceptua.blue/#/' + content);
-  });
-}
