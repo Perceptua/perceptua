@@ -22,7 +22,7 @@ app.controller('MainController', ['$scope', 'content', function($scope, content)
   ];
   
   content.success(function(data) {
-    $scope.content = data
+    $scope.content = data;
   });
   
 }]);
