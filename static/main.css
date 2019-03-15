@@ -34,7 +34,6 @@ html {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -146,8 +145,6 @@ footer {
 	width: 100%;
 	margin: 0;
 	padding: 1em 0;
-	position: absolute;
-	bottom: 0;
 }
 
 .footer-item {
