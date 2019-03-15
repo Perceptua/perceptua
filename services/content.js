@@ -7,7 +7,7 @@ app.factory('content', ['$http', function($http) {
   });
   
   if (contentData) {
-    return $http.get(url)
+    return $http.get(contentData)
       .success(function(data) {
         return data;
       })
