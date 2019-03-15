@@ -6,6 +6,8 @@ app.factory('content', ['$http', function($http) {
     contentData = url;
   });
   
+  console.log(contentData);
+  
   if (contentData) {
     return $http.get(contentData)
       .success(function(data) {
