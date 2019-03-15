@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) { 
+app.controller('MainController', ['$scope', 'content', function($scope, content) { 
   $scope.title = 'perceptua';
   $scope.featured = {
     name: 'Ludwig van Beethoven',
@@ -20,6 +20,11 @@ app.controller('MainController', ['$scope', function($scope) {
       medium: 'Film',
     }
   ];
+  
+  content.success(function(data) {
+    $scope.content = data
+  });
+  
 }]);
 
 function hideContent(ev) {
