@@ -107,7 +107,7 @@ header {
 	animation: spin 2s linear infinite;
 }
 
-.hidden {
+.hidden, .content-container {
 	display: none;
 }
 
@@ -137,9 +137,13 @@ header {
 	width: 90%;
 }
 
+#background-image {
+	font-size: 0.5em;
+}
 
 
-/* Footer */
+
+/* Footer (Not Used)
 
 footer {
 	width: 100%;
@@ -157,10 +161,7 @@ footer {
 	width: 2em;
 	margin: auto;
 }
-
-#background-image {
-	font-size: 0.5em;
-}
+*/
 
 
 
