@@ -23,7 +23,7 @@ app.config(function($routeProvider) {
     templateUrl: "views/about.html"
   })
   .when('/content/:id', {
-    controller: 'ContentController',
+    controller: 'MainController',
     templateUrl: 'views/content.html',
   })
   .otherwise({
