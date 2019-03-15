@@ -52,7 +52,7 @@ function showContent(content) {
 }
 
 function redirectTo(content) {
-  $('footer').first().fadeOut('slow', function() {
+  $('#content').first().fadeOut('slow', function() {
     window.location.replace('https://perceptua.blue/#/' + content);
   });
 }
