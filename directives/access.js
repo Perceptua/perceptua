@@ -7,16 +7,14 @@ app.directive('access', function() {
             
       scope.grantAccess = function(url) {
         $('access').first().fadeOut('slow');
-        $('footer').first().fadeOut('slow');
-        $('#featured-container').removeClass('viewing').fadeOut('slow', function() {
+        $('#featured').fadeOut('slow', function() {
           $('#welcome').fadeIn('slow');
           
           setTimeout(function() {
             $('#welcome').fadeOut('slow', function() {
-              $('#featured-container').load(url, function() {
-                $('#featured-container').addClass('viewing').fadeIn('slow');
+              $('#featured').load(url, function() {
+                $('#featured').fadeIn('slow');
               });
-              $('footer').first().fadeIn('slow');
             });
           }, 1500);
           
