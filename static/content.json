@@ -1,1 +1,18 @@
-
+{
+  1: {
+    name: 'Ludwig van Beethoven',
+    medium: 'Music',
+  },
+  2: {
+    name: 'Johannes Brahms',
+    medium: 'Music',
+  },
+  3: {
+    name: 'Maxfield Parrish',
+    medium: 'Art',
+  },
+  4: {
+    name: 'Stanley Kubrick',
+    medium: 'Film',
+  },
+};
