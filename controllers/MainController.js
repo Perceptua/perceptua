@@ -27,9 +27,5 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
       medium: 'Film',
     }
   ];
-  
-  if ($routeParams.id) {
-    $scope.creator = $scope.all[$routeParams.id];
-  }
 }]);
   
