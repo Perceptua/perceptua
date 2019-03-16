@@ -1,6 +1,6 @@
 <input type="hidden" id="url" data-content-url="{{ creator.content }}">
 
-<a class="info greyscale" style="float: left;" href="#/all"><i class="fas fa-angle-left"></i> Back</a><br>
+<a class="hidden info greyscale" id="back" style="float: left;" href="#/all"><i class="fas fa-angle-left"></i> Back</a><br>
 
 <div class="content-container" id="creator">
   <div class="screen-card">
@@ -12,6 +12,7 @@
 
 <script>
   $(document).ready(function() {
+    $('#back').fadeIn('slow');
     $('#creator').fadeIn('slow', function() {
       var url = $('#url').attr('data-content-url');
       if (url.length > 0) {
