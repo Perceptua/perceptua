@@ -187,6 +187,9 @@ footer {
 	.creator-card {
 		width: 25%;
 	}
+	.text {
+		width: 50%;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
