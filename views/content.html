@@ -10,13 +10,13 @@
 
 <script>
   $(document).ready(function() {
-    $('#creator').fadeIn('slow', function() {
-      var url = $('#url').attr('data-content-url');
-      if (url.length > 0) {
-        $('#content').load(url, function() {
-          $('#content').fadeIn('slow');
-        });
-      }
+    var url = $('#url').attr('data-content-url');
+    if (url.length > 0) {
+      $('#content').load(url, function() {
+        $('#creator').fadeIn('slow');
+      });
+    } else {
+      $('#creator').fadeIn('slow');
     });
   });
 </script>
