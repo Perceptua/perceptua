@@ -1,5 +1,5 @@
 app.controller('ContentController', ['$scope', '$routeParams', function($scope, $routeParams) {
-  firebase.firestore().collection('creators').doc($routeParams.id).get().then(function(doc) {
+  firebase.firestore().collection('creators').doc(String($routeParams.id)).get().then(function(doc) {
     if (doc.exists) {
       $scope.creator = doc.data();
       console.log($scope.creator);
