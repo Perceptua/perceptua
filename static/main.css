@@ -48,10 +48,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: var(--light);
-}
-
 input {
 	padding: 0.25em;
     	text-align: center;
