@@ -2,21 +2,23 @@
 
 <a class="info greyscale" style="float: left;" href="#/all"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<div class="hidden screen-card" id="creator">
-  <h3>{{ creator.name }}</h3>
-  <p>{{ creator.medium }}</p>
-  <div class="hidden" id="content"></div>
+<div class="content-container" id="creator">
+  <div class="screen-card">
+    <h3>{{ creator.name }}</h3>
+    <p>{{ creator.medium }}</p>
+    <div class="hidden" id="content"></div>
+  </div>
 </div>
 
 <script>
   $(document).ready(function() {
-    var url = $('#url').attr('data-content-url');
-    if (url.length > 0) {
-      $('#content').load(url, function() {
-        $('#creator').fadeIn('slow');
-      });
-    } else {
-      $('#creator').fadeIn('slow');
-    }
+    $('#creator').fadeIn('slow', function() {
+      var url = $('#url').attr('data-content-url');
+      if (url.length > 0) {
+        $('#content').load(url, function() {
+          $('#content').fadeIn('slow');
+        });
+      }
+    });
   });
 </script>
