@@ -3,26 +3,26 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   
   $scope.all = [
     {
-      id: 1,
+      id: 0,
       name: 'Maxfield Parrish',
       medium: 'Art',
     },
     {
-      id: 2,
+      id: 1,
       name: 'Stanley Kubrick',
       medium: 'Film',
     }
   ];
   
   $scope.featured = {
-    id: 3,
+    id: 2,
     name: 'Aldous Huxley',
     medium: 'Literature',
   };  
   
   $scope.upcoming = [
     {
-      id: 4,
+      id: 3,
       name: 'Johannes Brahms',
       medium: 'Music',
     }
