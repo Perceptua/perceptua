@@ -1,10 +1,17 @@
-<div class="hidden screen-card" id="content">
+<div class="hidden screen-card" id="creator">
   <h3>{{ creator.name }}</h3>
   <p>{{ creator.medium }}</p>
+  <div class="hidden" id="content"></div>
 </div>
 
 <script>
   $(document).ready(function() {
-    $('#content').fadeIn('slow');
+    $('#creator').fadeIn('slow', function() {
+      if ({{ creator.content }}) {
+        $('#content').load({{ creator.content }}, function() {
+          $('#content').fadeIn('slow');
+        });
+      }
+    });
   });
 </script>
