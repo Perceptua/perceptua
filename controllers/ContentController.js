@@ -6,4 +6,4 @@ app.controller('ContentController', ['$scope', '$routeParams', function($scope, 
   }).catch(function(error) {
     console.log(error);
   });
-});
+}]);
