@@ -136,6 +136,7 @@ header {
 .text {
 	text-align: left;
 	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto;
 }
 
 #background-image {
@@ -189,7 +190,6 @@ footer {
 	}
 	.text {
 		width: 50%;
-		margin: auto;
 	}
 }
 
