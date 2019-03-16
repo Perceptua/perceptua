@@ -10,9 +10,11 @@
   $(document).ready(function() {
     $('#creator').fadeIn('slow', function() {
       var url = $('#url').attr('data-content-url');
-      $('#content').load(url, function() {
-        $('#content').fadeIn('slow');
-      });
+      if (url.length > 0) {
+        $('#content').load(url, function() {
+          $('#content').fadeIn('slow');
+        });
+      }
     });
   });
 </script>
