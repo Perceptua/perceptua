@@ -1,1 +1,194 @@
+/* Color Scheme */
 
+:root {
+	--brand: #4bee8f;
+	--accent: #74b6b5;
+	--light: #b5fdaf;
+	--dark: #676087;
+	--greyscale: #f2f2f2;
+}
+
+.brand { color: var(--brand); }
+.accent { color: var(--accent); }
+.light { color: var(--light); }
+.dark { color: var(--dark); }
+.greyscale { color: var(--greyscale); }
+
+
+
+
+/* Animations */
+
+@-moz-keyframes spin { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); } }
+@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+
+
+
+/* Tags */
+
+html {
+	background-image: url('images/iceberg.png');
+	background-color: black;
+	background-position: center top;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
+	text-align: center;
+	color: var(--greyscale);
+}
+
+a {
+	color: var(--brand);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+input {
+	padding: 0.25em;
+    text-align: center;
+    border: 0.25em solid var(--dark);
+}
+
+button {
+	background-color: var(--greyscale);
+	color: var(--dark);
+	border: 0.25em solid var(--dark);
+	border-radius: 1em;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	outline: none;
+	transition: transform .2s;
+}
+
+button:hover {
+	color: var(--accent);
+	border: 0.25em solid var(--accent);
+	transform: scale(1.1);
+}
+
+
+
+/* Header */
+
+header {
+	border-bottom: 1px solid var(--greyscale);
+}
+
+.nav-item {
+	margin: auto 0.5em;
+    color: var(--greyscale);
+	font-size: 0.75em;
+}
+
+
+
+/* Page Content */
+
+.content {
+	padding: 1em 0.5em;
+}
+
+.loader {
+	border: 0.5em dotted var(--greyscale);
+	border-top: 0.5em dotted var(--brand);
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: auto;
+	animation: spin 2s linear infinite;
+}
+
+.hidden, .content-container {
+	display: none;
+}
+
+.info {
+	font-size: 0.75em;
+	cursor: pointer;
+}
+
+.creator-card, .screen-card {
+	background-color: rgba(103, 96, 135, 0.75);
+    border: 0.25em solid var(--accent);
+    border-radius: 0.5em;
+    display: inline-block;
+	padding: 0.25em;
+    margin: 0.5em;
+}
+
+.creator-card {
+	width: 37.5%;
+}
+
+.creator-card:hover {
+	background-color: rgb(116, 182, 181, 0.5);
+}
+
+.screen-card {
+	width: 90%;
+}
+
+.text {
+	text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#background-image {
+	font-size: 0.5em;
+}
+
+
+
+/* Footer (Not Used)
+
+footer {
+	width: 100%;
+	margin: 0;
+	padding: 1em 0;
+}
+
+.footer-item {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.logo {
+	display: block;
+	width: 2em;
+	margin: auto;
+}
+*/
+
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+	.screen-card {
+		width: 50%;
+	}
+	.logo {
+		display: inline-block;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+	.creator-card {
+		width: 25%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
