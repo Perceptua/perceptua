@@ -7,7 +7,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
       firebase.firestore().collection('creators').get().then(function(docs) {
         console.log(docs);
         docs.forEach(function(doc) {
-          creators[doc.id] = doc.data();
+          creators[doc.id] = doc.data()[doc.id];
         });
       }).then(function() {
         resolve(creators);
