@@ -1,6 +1,6 @@
 <div class="content-container" id="all">
   <div class="creator-card" ng-repeat="a in all">
-    <a class="greyscale" href="#/content/{{ a.id }}">
+    <a class="greyscale" href="#/content/{{ a.name | slugify }}">
       <creator creator="a"></creator>
     </a>
   </div>
