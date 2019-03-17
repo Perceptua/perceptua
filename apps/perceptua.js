@@ -22,7 +22,7 @@ app.config(function($routeProvider) {
     controller: 'MainController',
     templateUrl: "views/about.html"
   })
-  .when('/content/:slug', {
+  .when('/content/:medium/:name', {
     controller: 'MainController',
     templateUrl: 'views/content.html',
   })
