@@ -18,6 +18,8 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
     console.log($scope.all);
   }
   
+  main();
+  
   $scope.featured = {
     name: 'Aldous Huxley',
     medium: 'Literature',
