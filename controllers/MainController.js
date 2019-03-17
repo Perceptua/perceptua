@@ -2,11 +2,11 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   $scope.title = 'perceptua';
   
   $scope.all = {
-    'Maxfield_Parrish': {
+    'maxfield_parrish': {
       name: 'Maxfield Parrish',
       medium: 'Art',
     },
-    'Stanley_Kubrick': {
+    'stanley_kubrick': {
       name: 'Stanley Kubrick',
       medium: 'Film',
     },
@@ -18,7 +18,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   };  
   
   $scope.upcoming = {
-    'Johannes_Brahms': {
+    'johannes_brahms': {
       name: 'Johannes Brahms',
       medium: 'Music',
     }
