@@ -1,16 +1,22 @@
 app.controller('MainController', ['$scope', '$routeParams', function($scope, $routeParams) { 
   $scope.title = 'perceptua';
   
-  $scope.all = {};
-  
-  var creators = new Promise(function(resolve, reject) {
-    firebase.firestore().collection('creators').get().then(function(docs) {
-      docs.forEach(function(doc) {
-        $scope.all[doc.id] = doc.data();
+  function getCreators() {
+    return new Promise(function(resolve, reject) {
+      var creators = {};
+      firebase.firestore().collection('creators').get().then(function(docs) {
+        docs.forEach(function(doc) {
+          creators[doc.id] = doc.data();
+        });
       });
+      resolve(creators);
     });
-    resolve('complete');
-  });
+  }
+  
+  async function main() {
+    $scope.all = await getCreators();
+    console.log($scope.all);
+  }
   
   $scope.featured = {
     name: 'Aldous Huxley',
