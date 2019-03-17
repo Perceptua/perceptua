@@ -3,7 +3,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   
   $scope.all = {}; 
   
-  function(() => {
+  function getCreators(() => {
     return firebase.firestore().collection('creators').get().then(function(docs) {
       docs.forEach(function(doc) {
         $scope.all[doc.id] = doc.data();
