@@ -8,8 +8,9 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
         docs.forEach(function(doc) {
           creators[doc.id] = doc.data();
         });
+      }).then(function() {
+        resolve(creators);
       });
-      resolve(creators);
     });
   }
   
