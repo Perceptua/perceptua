@@ -1,34 +1,30 @@
 app.controller('MainController', ['$scope', '$routeParams', function($scope, $routeParams) { 
   $scope.title = 'perceptua';
   
-  $scope.all = [
-    {
-      id: 0,
+  $scope.all = {
+    'Maxfield_Parrish': {
       name: 'Maxfield Parrish',
       medium: 'Art',
     },
-    {
-      id: 1,
+    'Stanley_Kubrick': {
       name: 'Stanley Kubrick',
       medium: 'Film',
-    }
-  ];
+    },
+  };
   
   $scope.featured = {
-    id: 2,
     name: 'Aldous Huxley',
     medium: 'Literature',
   };  
   
-  $scope.upcoming = [
-    {
-      id: 3,
+  $scope.upcoming = {
+    'Johannes_Brahms': {
       name: 'Johannes Brahms',
       medium: 'Music',
     }
-  ];
+  };
   
-  if ($routeParams.id) {
-    $scope.creator = $scope.all[$routeParams.id];
+  if ($routeParams.slug) {
+    $scope.creator = $scope.all[$routeParams.slug];
   }
 }]);
