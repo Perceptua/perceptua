@@ -3,14 +3,13 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   
   function getCreators() {
     return new Promise(function(resolve, reject) {
-      var creators = {};
+      var all = [];
       firebase.firestore().collection('creators').get().then(function(docs) {
-        console.log(docs);
         docs.forEach(function(doc) {
-          creators[doc.id] = doc.data()[doc.id];
+          all += doc.data();
+        }).then(function() {
+          resolve(all);
         });
-      }).then(function() {
-        resolve(creators);
       });
     });
   }
