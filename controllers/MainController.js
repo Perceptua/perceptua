@@ -12,14 +12,12 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   $scope.featured = {
     name: 'Aldous Huxley',
     medium: 'Literature',
-    'added': new Date(2019, 03, 17, 17, 39, 00, 00);
   };  
   
   $scope.upcoming = {
     'johannes_brahms': {
       name: 'Johannes Brahms',
       medium: 'Music',
-      'added': new Date(2019, 03, 17, 17, 39, 00, 00);
     }
   };
   
