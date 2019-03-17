@@ -24,7 +24,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
     }
   };
   
-  if ($routeParams.slug) {
-    $scope.creator = $scope.all[$routeParams.slug];
+  if ($routeParams.name) {
+    $scope.creator = $scope.all[$routeParams.name];
   }
 }]);
