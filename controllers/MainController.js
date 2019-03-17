@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', 'creators', '$routeParams', function($scope, creators, $routeParams) { 
+app.controller('MainController', ['$scope', 'creators', function($scope, creators) { 
   $scope.title = 'perceptua';
   
   creators.success(function(data) {
