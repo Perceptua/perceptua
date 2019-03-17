@@ -1,14 +1,14 @@
 app.controller('MainController', ['$scope', '$routeParams', function($scope, $routeParams) { 
   $scope.title = 'perceptua';
   
-  $scope.all = {}; 
-  
-  function getCreators(() => {
-    return firebase.firestore().collection('creators').get().then(function(docs) {
+  $scope.all = new Promise(function(resolve, reject) {
+    var creators = {};
+    firebase.firestore().collection('creators').get().then(function(docs) {
       docs.forEach(function(doc) {
-        $scope.all[doc.id] = doc.data();
+        creators[doc.id] = doc.data();
       });
     });
+    resolve(creators);
   });
   
   $scope.featured = {
