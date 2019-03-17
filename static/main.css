@@ -135,7 +135,7 @@ header {
 
 .text {
 	text-align: left;
-	margin: auto;
+	margin: 1em auto;
 }
 
 #background-image {
