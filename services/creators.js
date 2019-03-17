@@ -4,7 +4,7 @@ app.factory('creators', [function() {
     docs.forEach(function(doc) {
       creators[doc.id] = doc.data();
     });
-  }).then(function() {
+    console.log(creators);
     return creators;
   });
 }]);
