@@ -5,6 +5,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
     return new Promise(function(resolve, reject) {
       var creators = {};
       firebase.firestore().collection('creators').get().then(function(docs) {
+        console.log(docs);
         docs.forEach(function(doc) {
           creators[doc.id] = doc.data();
         });
