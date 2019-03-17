@@ -1,11 +1,13 @@
 app.controller('MainController', ['$scope', '$routeParams', function($scope, $routeParams) { 
   $scope.title = 'perceptua';
   
-  $scope.all = {};
+  $scope.all = {}; 
   
-  firebase.firestore().collection('creators').get().then(function(docs) {
-    docs.forEach(function(doc) {
-      $scope.all[doc.id] = doc.data();
+  function(() => {
+    return firebase.firestore().collection('creators').get().then(function(docs) {
+      docs.forEach(function(doc) {
+        $scope.all[doc.id] = doc.data();
+      });
     });
   });
   
