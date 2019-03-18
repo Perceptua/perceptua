@@ -7,8 +7,7 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
         name: 'Maxfield Parrish',
         medium: 'Art',
       },
-      ];
-    };
+    ];
   });
   
   $scope.featured = {
