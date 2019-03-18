@@ -7,4 +7,5 @@ app.controller('ContentController', ['$scope', 'creators', '$routeParams', funct
         data[d].medium + '">' + data[d].medium + '</a><p id="' + data[d].name + '_clicks"></p></a></div>'
       );
     }
+  });
 }]);
