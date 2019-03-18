@@ -3,7 +3,7 @@ var app = angular.module('perceptua', ['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
   .when("/featured", {
-    controller: 'MainController',
+    controller: 'ContentController',
     templateUrl: "views/featured.html"
   })
   .when("/upcoming", {
@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
     templateUrl: "views/upcoming.html"
   })
   .when("/all", {
-    controller: 'MainController',
+    controller: 'ContentController',
     templateUrl: "views/all.html"
   })
   .when("/suggest", {
