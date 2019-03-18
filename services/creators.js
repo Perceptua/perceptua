@@ -17,6 +17,8 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       }).catch((error) => {
         deferred.reject(error);
       });
+      
+      return deferred.promise;
     }
   };
 }]);
