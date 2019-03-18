@@ -9,8 +9,10 @@ app.factory('creators', [function() {
     });
   }
   
-  return getCreators().then(function(result) {
-    console.log(result);
+  var all =  getCreators().then(function(result) {
     return result;
   });
+  
+  console.log(all);
+  return all;
 }]);
