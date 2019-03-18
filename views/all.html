@@ -2,8 +2,10 @@
   <p class="info" id="filter" style="float: right; clear: both;">Filter <i class="fas fa-caret-down"></i></p>
   
   <div class="hidden info" id="filter-menu">
-    <p class="filter-option">Medium <i class="fas fa-caret-down"></i></p>
-    <p class="hidden " ng-repeat="m in media">{{ m }}</p>
+    <div class="filter-option">
+      Medium <i class="fas fa-caret-down"></i>
+      <p class="hidden " ng-repeat="m in media">{{ m }}</p>
+    </div>
   </div>
   
   <div class="creator-card" ng-repeat="a in all">
