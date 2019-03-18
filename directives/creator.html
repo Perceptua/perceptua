@@ -1,3 +1,5 @@
 <h3>{{ creator.name }}</h3>
 <p>{{ creator.medium }}</p>
-<p id="{{ creator.name | slugify }}_views"></p>
+<p>
+  <i class="fas fa-eye"></i> <span id="{{ creator.name | slugify }}_clicks"></span>
+</p>
