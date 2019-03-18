@@ -25,7 +25,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   };
   */
   
-  creators.then((data) => {
+  creators.getCreators('public').then((data) => {
     console.log(data);
     $scope.all = data;
   });
