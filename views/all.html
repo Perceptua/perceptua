@@ -1,7 +1,7 @@
 <div class="content-container" id="all">
   <p class="info" id="filter" style="float: right; clear: both;">Filter <i class="fas fa-caret-down"></i></p>
   
-  <div class="hidden info" id="filter-menu">
+  <div class="hidden screen-card" id="filter-menu">
     <div class="filter-option">
       Medium <i class="fas fa-caret-down"></i><br>
       <a class="hidden greyscale" href="#/content/{{ m | slugify }}" ng-repeat="m in media">{{ m }}</a>
