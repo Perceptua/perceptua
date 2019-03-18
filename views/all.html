@@ -3,8 +3,8 @@
   
   <div class="hidden info" id="filter-menu">
     <div class="filter-option">
-      Medium <i class="fas fa-caret-down"></i>
-      <p class="hidden " ng-repeat="m in media">{{ m }}</p>
+      Medium <i class="fas fa-caret-down"></i><br>
+      <a class="hidden greyscale" href="#/content/{{ m | slugify }}" ng-repeat="m in media">{{ m }}</a>
     </div>
   </div>
   
@@ -20,11 +20,11 @@
     $('#all').fadeIn('slow');
     
     $('#filter').click(function() {
-      $('#filter-menu').fadeIn('slow');
+      $('#filter-menu').fadeToggle('slow');
     });
    
     $('.filter-option').click(function(ev) {
-      $(ev.target).children().fadeIn('slow');
+      $(ev.target).children().fadeToggle('slow');
     });
   });
 </script>
