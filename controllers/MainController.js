@@ -12,13 +12,13 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
     },
   ];
   
-  creators.then(function(data) {
-    $scope.all = [
-      {
-        name: 'Maxfield Parrish',
-        medium: 'Art',
-      },
-    ];
+  creators.then(function(docs) {
+    $scope.all = {}
+    docs.forEach(function(doc) {
+      $scope.all[doc.id] = doc.data();
+    });
+    console.log($scope.all);
+    return $scope.all;
   });
   
   $scope.featured = {
