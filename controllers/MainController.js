@@ -24,6 +24,8 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
     },
   };
   
+  $scope.media = ['Art', 'Film', 'Literature', 'Music'];
+  
   if ($routeParams.medium && !$routeParams.name) {
     var creators = {};
     for (var a in $scope.all) {
