@@ -1,15 +1,16 @@
 app.factory('creators', [function() {
-  var fire =  firebase.firestore().collection('creators').get().then(function(docs) {
-    var creators = {};
-    docs.forEach(function(doc) {
-      creators[doc.id] = doc.data();
+  var getCreators = function() { 
+    return firebase.firestore().collection('creators').get().then(function(docs) {
+      var creators = {};
+      docs.forEach(function(doc) {
+        creators[doc.id] = doc.data();
+      });
+      return creators;
     });
-    console.log(creators);
-    return creators;
-  }).then(function(data) {
-    console.log(data);
-    return data;
+  }
+  
+  return getCreators().then(function(result) {
+    console.log(result);
+    return result;
   });
-  console.log(fire);
-  return fire.resolve();
 }]);
