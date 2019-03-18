@@ -1,5 +1,5 @@
-app.factory('creators', [function() {
-  return new Promise((resolve, reject) => {
+app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
+  return $q((resolve, reject) => {
     firebase.firestore().collection('creators').where('status', '==', 'public').get().then((docs) => {
       var creators = {};
       docs.forEach((doc) => {
