@@ -1,6 +1,6 @@
-app.controller('MainController', ['$scope', '$routeParams', function($scope, $routeParams) { 
+app.controller('MainController', ['$scope', '$routeParams', 'creators', function($scope, $routeParams, creators) { 
   $scope.title = 'perceptua';
-  
+  /*
   $scope.all = {
     'aldous_huxley': {
       status: 'featured',
@@ -23,6 +23,11 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
       medium: 'Film',
     },
   };
+  */
+  
+  creators.then((data) => {
+    $scope.all = data;
+  });
   
   /* declare $scope variables */
   $scope.media = [];
