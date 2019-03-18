@@ -59,7 +59,8 @@ app.controller(
     creators.getCreators('public').then((data) => {
       $scope.all = data;
       deferred.resolve($scope.all);
+      return deferred.promise;
     });
-    return deferred.promise;
+    console.log($scope.all);
   },
 ]);
