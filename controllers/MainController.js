@@ -2,7 +2,8 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   $scope.title = 'perceptua';
   
   creators.then(function(data) {
-    $scope.all = data;
+    $scope.all = [];
+    $scope.all += data;
     console.log($scope.all);
   });
   
