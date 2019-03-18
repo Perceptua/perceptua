@@ -27,7 +27,7 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
   if ($routeParams.medium && !$routeParams.name) {
     var creators = {};
     for (var a in $scope.all) {
-      if $scope.all[a].medium.toLowerCase() == $routeParams.medium) {
+      if ($scope.all[a].medium.toLowerCase() == $routeParams.medium) {
         creators[a] = $scope.all[a];
       }
     }
