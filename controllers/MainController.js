@@ -6,14 +6,10 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
       name: 'Maxfield Parrish',
       medium: 'Art',
     },
-    'stanley_kubrick': {
-      name: 'Stanley Kubrick',
-      medium: 'Film',
-    },
   };
   
   creators.then(function(docs) {
-    $scope.all = {}
+    $scope.all = {};
     docs.forEach(function(doc) {
       $scope.all[doc.id] = doc.data();
     });
