@@ -1,4 +1,4 @@
-app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
+app.factory('creators', function($q) {
   var deferred = $q.defer();
   firebase.firestore().collection('creators').get().then(function(docs) {
     var creators = {};
@@ -8,4 +8,4 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
     deferred.resolve(creators);
     return deferred.promise;
   });
-}]);
+});
