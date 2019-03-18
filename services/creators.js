@@ -1,18 +1,21 @@
 app.factory('creators', [function() {
+  var creators = {};
+  
   var getCreators = function() { 
     return firebase.firestore().collection('creators').get().then(function(docs) {
-      var creators = {};
+      var data = {};
       docs.forEach(function(doc) {
-        creators[doc.id] = doc.data();
+        data[doc.id] = doc.data();
       });
-      return creators;
+      return data;
     });
   }
   
-  var all =  getCreators().then(function(result) {
-    return result;
+  getCreators().then(function(result) {
+    creators = result;
+    return creators;
   });
   
-  console.log(all);
-  return all;
+  console.log(creators);
+  return creators;
 }]);
