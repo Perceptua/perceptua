@@ -36,14 +36,19 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
       $scope.featured[a] = $scope.all[a];
     } else if (status == 'upcoming') {
       $scope.upcoming[a] = $scope.all[a];
-    /* if url matches /:medium, filter creators by medium param */
-    } else if ($routeParams.medium && !$routeParams.name && $scope.all[a].medium.toLowerCase() == $routeParams.medium) {
-      $scope.published[a] = $scope.all[a];
-    } else if ($routeParams.name && a == $routeParams.name) {
-      $scope.creator = $scope.all[a];
     } else {
       $scope.media.push($scope.all[a].medium);
       $scope.published[a] = $scope.all[a];
     }
-  }
+    
+    /* if url matches /:medium, filter published creators by medium param */
+    if ($routeParams.medium && !$routeParams.name) {
+      for (var p in $scope.published) {
+        if ($scope.published[p].medium.toLowerCase() != $routeParams.medium) {
+          delete $scope.published[p];
+        }
+      }
+    } else if ($routeParams.name) {
+      $scope.creator = $scope.all[$routeParams.name];
+    }
 }]);
