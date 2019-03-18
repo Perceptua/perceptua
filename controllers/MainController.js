@@ -40,15 +40,16 @@ app.controller('MainController', ['$scope', '$routeParams', function($scope, $ro
       $scope.media.push($scope.all[a].medium);
       $scope.published[a] = $scope.all[a];
     }
+  }
     
-    /* if url matches /:medium, filter published creators by medium param */
-    if ($routeParams.medium && !$routeParams.name) {
-      for (var p in $scope.published) {
-        if ($scope.published[p].medium.toLowerCase() != $routeParams.medium) {
-          delete $scope.published[p];
-        }
+  /* if url matches /:medium, filter published creators by medium param */
+  if ($routeParams.medium && !$routeParams.name) {
+    for (var p in $scope.published) {
+      if ($scope.published[p].medium.toLowerCase() != $routeParams.medium) {
+        delete $scope.published[p];
       }
-    } else if ($routeParams.name) {
-      $scope.creator = $scope.all[$routeParams.name];
     }
+  } else if ($routeParams.name) {
+    $scope.creator = $scope.all[$routeParams.name];
+  }
 }]);
