@@ -4,6 +4,6 @@ app.factory('creators', [function() {
     docs.forEach(function(doc) {
       creators[doc.id] = doc.data();
     });
-    return creators;
-  }).then((value) => value);
+    resolve(creators);
+  });
 }]);
