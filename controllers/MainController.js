@@ -12,6 +12,8 @@ app.controller('MainController', ['$scope', '$q', 'creators', function($scope, $
     
     return deferred.promise;
   }
+  
+  getAll();
 
   $scope.featured = {
     name: 'Aldous Huxley',
