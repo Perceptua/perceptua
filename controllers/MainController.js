@@ -1,9 +1,8 @@
 app.controller('MainController', ['$scope', 'creators', function($scope, creators) { 
   $scope.title = 'perceptua';
   
-  $scope.all = creators.then(function(data) {
-    console.log(data);
-    return data;
+  creators.then(function(data) {
+    $scope.all = data;
   });
   
   $scope.featured = {
