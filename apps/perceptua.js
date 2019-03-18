@@ -11,7 +11,7 @@ app.config(function($routeProvider) {
     templateUrl: "views/upcoming.html"
   })
   .when("/all", {
-    controller: 'ContentController',
+    controller: 'MainController',
     templateUrl: "views/all.html"
   })
   .when("/suggest", {
@@ -23,11 +23,11 @@ app.config(function($routeProvider) {
     templateUrl: "views/about.html"
   })
   .when("/content/:medium", {
-    controller: 'MediumController',
+    controller: 'MainController',
     templateUrl: 'views/all.html',
   })
   .when("/content/:medium/:name", {
-    controller: 'CreatorController',
+    controller: 'MainController',
     templateUrl: 'views/content.html',
   })
   .otherwise({
