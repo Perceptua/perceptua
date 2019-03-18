@@ -16,12 +16,13 @@ app.controller('ContentController', ['$scope', 'creators', '$routeParams', funct
   };  
     
   if ($routeParams.medium && !$routeParams.name) {
-    $scope.creators = {};
+    var media = {};
     for (var a in $scope.all) {
       if ($scope.all[a].medium == $routeParams.medium) {
-        $scope.creators[a] = $scope.all[a];
+        media[a] = $scope.all[a];
       }
     }
+    $scope.all = media;
   } else if ($routeParams.name) {
     $scope.creator = $scope.all[$routeParams.name];
   } else {
