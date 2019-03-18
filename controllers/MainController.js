@@ -2,11 +2,12 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   $scope.title = 'perceptua';
   
   creators.then(function(data) {
-    $scope.all = {};
-    for (var d in data) {
-      $scope.all[d] = data[d];
-    }
-    console.log($scope.all);
+    $scope.all = {
+      'maxfield_parrish': {
+        name: 'Maxfield Parrish',
+        medium: 'Art',
+      },
+    };
   });
   
   $scope.featured = {
