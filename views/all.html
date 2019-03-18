@@ -8,11 +8,11 @@
     </div>
   </div>
   
-  <a class="greyscale" href="#/content/{{ a.medium | slugify }}/{{ a.name | slugify }}">
-    <div class="creator-card" ng-repeat="a in all">
+  <div class="creator-card" ng-repeat="a in all">
+    <a class="greyscale" href="#/content/{{ a.medium | slugify }}/{{ a.name | slugify }}">
       <creator creator="a"></creator>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 
 <script>
