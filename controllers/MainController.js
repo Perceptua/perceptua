@@ -1,13 +1,16 @@
-app.controller('MainController', ['$scope', '$q', 'creators', function($scope, $q, creators) { 
+app.controller('MainController', ['$scope', 'creators', function($scope, creators) { 
   $scope.title = 'perceptua';
   
-  var deferred = $q.defer();
-    
-  creators.then(function(data) {
-    $scope.all = data;
-    console.log($scope.all);
-    deferred.resolve(data);
-  });
+  $scope.all = {
+    'maxfield_parrish': {
+      name: 'Maxfield Parrish',
+      medium: 'Art',
+    },
+    'stanley_kubrick': {
+      name: 'Stanley Kubrick',
+      medium: 'Film',
+    },
+  };
   
   $scope.featured = {
     name: 'Aldous Huxley',
