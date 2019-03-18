@@ -1,5 +1,5 @@
 app.controller(
-  'MainController',
+  'MainController', 
   ['$scope', '$routeParams', '$rootScope', '$q', 'creators', function($scope, $routeParams, $rootScope, $q, creators) { 
     $scope.title = 'perceptua';
 
@@ -55,10 +55,13 @@ app.controller(
     }
     */
 
-    $q((resolve, reject) => {
-      creators.getCreators('public').then((data) => {
-        console.log(data);
-        $scope.all = data;
-      });
+    var deferred = $q.defer();
+    creators.getCreators('public').then((data) => {
+      $scope.all = data;
+      deferred.resolve($scope.all)
+    }).error((error) => {
+      console.log(error);
     });
-  }]);
+    return deferred.promise;
+  },
+]);
