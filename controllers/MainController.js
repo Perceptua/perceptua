@@ -1,10 +1,17 @@
-app.controller('MainController', ['$scope', 'creators', function($scope, creators) { 
+app.controller('MainController', ['$scope', '$q', 'creators', function($scope, $q, creators) { 
   $scope.title = 'perceptua';
   
-  creators.then(function(data) {
-    $scope.all = data;
-    console.log($scope.all);
-  });
+  function getAll() {
+    var deferred = $q.defer();
+    
+    creators.then(function(data) {
+      $scope.all = data;
+      console.log($scope.all);
+      deferred.resolve(data);
+    });
+    
+    return deferred.promise;
+  }
 
   $scope.featured = {
     name: 'Aldous Huxley',
