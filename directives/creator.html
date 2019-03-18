@@ -1,3 +1,3 @@
 <h3>{{ creator.name }}</h3>
-<a href="#/{{ creator.medium }}">{{ creator.medium }}</a>
+<a href="#/content/{{ creator.medium | slugify }}">{{ creator.medium }}</a>
 <p id="{{ creator.name | slugify }}_clicks"></p>
