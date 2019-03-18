@@ -2,11 +2,9 @@
   <p class="info" id="filter" style="text-align: right;">Filter <i class="fas fa-caret-down"></i></p>
   
   <div class="screen-card hidden" id="filter-menu">
-    <div class="filter-option" id="medium">
-      <p>Medium <i class="fas fa-caret-down"></i></p>
-      <div class="hidden option-menu" id="medium-menu">
-        <a class="nav-item" href="#/content/{{ m | slugify }}" ng-repeat="m in media">{{ m }}</a>
-      </div>
+    <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
+    <div class="hidden option-menu" id="medium-menu">
+      <a class="nav-item" href="#/content/{{ m | slugify }}" ng-repeat="m in media">{{ m }}</a>
     </div>
   </div>
   
