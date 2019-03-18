@@ -55,11 +55,11 @@ app.controller(
     }
     */
 
-    var deferred = $q.defer();
-    creators.getCreators('public').then((data) => {
-      $scope.all = data;
-      deferred.resolve($scope.all);
-      return deferred.promise;
+    $q((resolve, reject) => {
+      return creators.getCreators('public').then((data) => {
+        $scope.all = data;
+        resolve($scope.all);
+      });
     });
     console.log($scope.all);
   },
