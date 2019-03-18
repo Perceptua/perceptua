@@ -1,9 +1,18 @@
-app.controller('ContentController', ['$scope', 'creators', '$routeParams', function($scope, creators, $routeParams) {
-  firebase.firestore().collection('creators').where('status', '==', 'public').get().then(function(docs) {
-    $scope.all = {};
-    docs.forEach(function(doc) {
-      $scope.all[doc.id] = doc.data();
-    });
-    return $scope.all;
+app.controller('ContentController', ['$scope', 'creators', function($scope, creators) {
+  $scope.all = {
+    'maxfield_parrish': {
+      name: 'Maxfield Parrish',
+      medium: 'Art',
+    },
+    'stanley_kubrick': {
+      name: 'Stanley Kubrick',
+      medium: 'Film',
+    },
+  };
+  
+  creators.then(function(data) {
+    for (var a in $scope.all) {
+      $('#' + a + '_clicks').append('<i class="fas fa-eye"></i> ' + data[a].clicks);
+    }
   });
 }]);
