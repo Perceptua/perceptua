@@ -1,6 +1,8 @@
 <div class="content-container" id="upcoming">
   <div class="creator-card" ng-repeat="u in upcoming">
-    <creator creator="u"></creator>
+    <a class="greyscale" href="#/content/{{ u.medium | slugify }}/{{ u.name | slugify }}">
+      <creator creator="u"></creator>
+    </a>
   </div>
 </div>
 
