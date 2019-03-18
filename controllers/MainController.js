@@ -4,7 +4,7 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   creators.then(function(data) {
     $scope.all = {};
     for (var d in data) {
-      $scope.all[d] data[d];
+      $scope.all[d] = data[d];
     }
     console.log($scope.all);
   });
