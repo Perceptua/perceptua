@@ -1,4 +1,4 @@
-app.factory('creators', [function($q) {
+app.factory('creators', ['$q', function($q) {
   var deferred = $q.defer();
   firebase.firestore().collection('creators').get().then(function(docs) {
     var creators = {};
