@@ -2,11 +2,15 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   $scope.title = 'perceptua';
   
   $scope.all = [
-      {
-        name: 'Maxfield Parrish',
-        medium: 'Art',
-      },
-    ];
+    {
+      name: 'Maxfield Parrish',
+      medium: 'Art',
+    },
+    {
+      name: 'Stanley Kubrick',
+      medium: 'Film',
+    },
+  ];
   
   creators.then(function(data) {
     $scope.all = [
