@@ -2,6 +2,7 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   $scope.title = 'perceptua';
   
   $scope.all = creators.then(function(data) {
+    console.log(data);
     return data;
   });
   
