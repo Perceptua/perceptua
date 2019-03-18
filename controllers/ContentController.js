@@ -1,9 +1,9 @@
 app.controller('ContentController', ['$scope', 'creators', '$routeParams', function($scope, creators, $routeParams) {
   var content;
   if ($routeParams.medium && !$routeParams.name) {
-    content = creators('public', {field: 'medium', value: $routeParams.medium});
+    content = creators.getDocs('public', {field: 'medium', value: $routeParams.medium});
   } else {
-    content = creators('public');
+    content = creators.getDocs('public');
   }
   
   content.then(function(data) {
