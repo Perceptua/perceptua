@@ -11,5 +11,5 @@ app.factory('creators', [function() {
     return data;
   });
   console.log(fire);
-  return fire;
+  return fire.resolve();
 }]);
