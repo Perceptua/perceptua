@@ -10,7 +10,7 @@ app.factory('creators', [function(subset=null, query=null) {
     docs = firebase.firestore().collection('creators');
   }
   
-  docs.get().then(function(docs) {
+  return docs.get().then(function(docs) {
     var creators = {};
     docs.forEach(function(doc) {
       creators[doc.id] = doc.data();
