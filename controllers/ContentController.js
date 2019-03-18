@@ -1,5 +1,12 @@
 app.controller('ContentController', ['$scope', 'creators', '$routeParams', function($scope, creators, $routeParams) {
-  creators.then(function(data) {
+  var content;
+  if ($routeParams.medium && !$routeParams.name) {
+    content = creators('public', {field: 'medium', value: $routeParams.medium});
+  } else {
+    content = creators('public');
+  }
+  
+  content.then(function(data) {
     for (var d in data) {
       $('body').append(
         '<div class="creator-card"><a class="greyscale" href="#/content/' + data[d].medium + 
