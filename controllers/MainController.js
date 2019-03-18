@@ -3,6 +3,7 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   
   creators.then(function(data) {
     $scope.all = data;
+    console.log($scope.all);
   });
   
   $scope.featured = {
