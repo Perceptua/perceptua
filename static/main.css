@@ -116,12 +116,12 @@ header {
 	background-color: rgba(103, 96, 135, 0.75);
 	border: 0.25em solid var(--accent);
 	border-radius: 0.5em;
-	display: inline-block;
 	padding: 0.25em;
 	margin: 0.5em;
 }
 
 .creator-card {
+	display: inline-block;
 	width: 37.5%;
 }
 
