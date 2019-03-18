@@ -21,8 +21,12 @@
       $('#filter-menu').fadeIn('slow');
     });
    
-    $('.filter-option').click(function(ev) {
-      $(ev.target).children().fadeIn('slow');
+    $('.filter-option').each(function() {
+      $(this).click(function(ev) {
+        $(ev.target).children().each(function() {
+          $(this).fadeIn('slow');
+        });
+      });
     });
   });
 </script>
