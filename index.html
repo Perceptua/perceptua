@@ -56,7 +56,7 @@
       </div>
     </header>
     
-    <div ng-view></div>
+    <div *ngIf="isLoaded" ng-view></div>
     
     <script src="apps/perceptua.js"></script>
     
