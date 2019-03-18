@@ -2,7 +2,7 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
   $scope.title = 'perceptua';
   
   function getCreators() {
-    creators.then(function(docs) {
+    return creators.then(function(docs) {
       $scope.all = {};
       docs.forEach(function(doc) {
         $scope.all[doc.id] = doc.data();
@@ -10,19 +10,19 @@ app.controller('MainController', ['$scope', 'creators', function($scope, creator
       console.log($scope.all);
       return $scope.all;
     });
-
-    $scope.featured = {
-      name: 'Aldous Huxley',
-      medium: 'Literature',
-    };  
-
-    $scope.upcoming = {
-      'johannes_brahms': {
-        name: 'Johannes Brahms',
-        medium: 'Music',
-      }
-    };
   }
+
+  $scope.featured = {
+    name: 'Aldous Huxley',
+    medium: 'Literature',
+  };  
+
+  $scope.upcoming = {
+    'johannes_brahms': {
+      name: 'Johannes Brahms',
+      medium: 'Music',
+    }
+  };
   
   async function main() {
     var creators = await getCreators();
