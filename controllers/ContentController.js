@@ -27,7 +27,7 @@ app.controller('ContentController', ['$scope', 'creators', '$routeParams', funct
   } else {
     creators.then(function(data) {
       for (var d in data) {
-        $('#' + d + '_clicks').text(data[d].clicks);
+        $('#' + d + '_clicks').append('<i class="fas fa-eye"></i> ' + data[d].clicks);
       }
     });
   }
