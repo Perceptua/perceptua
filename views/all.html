@@ -26,7 +26,8 @@
     });
    
     $('.filter-option').click(function(ev) {
-      $('#' + ev.target.attr('id') + '-menu').fadeToggle('slow');
+      var option = $(ev.target).attr('id');
+      $('#' + option + '-menu').fadeToggle('slow');
     });
   });
 </script>
