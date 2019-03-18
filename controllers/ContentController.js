@@ -18,7 +18,7 @@ app.controller('ContentController', ['$scope', 'creators', '$routeParams', funct
   if ($routeParams.medium && !$routeParams.name) {
     var media = {};
     for (var a in $scope.all) {
-      if ($scope.all[a].medium == $routeParams.medium) {
+      if ($scope.all[a].medium.toLowerCase() == $routeParams.medium) {
         media[a] = $scope.all[a];
       }
     }
