@@ -53,9 +53,11 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   }
   */
   
-  creators.getCreators('public').then((data) => {
-    $scope.published = data;
-    console.log(data);
+  creators.getCreators('public').then((docs) => {
+    $scope.published = {};
+    docs.forEach((doc) => {
+      $scope.published[doc.id] = doc.data();
+    });
   });
   
 }]);
