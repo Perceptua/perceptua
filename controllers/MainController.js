@@ -52,6 +52,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     $scope.creator = $scope.all[$routeParams.name];
   }
   */
+  $scope.all = firebase.firestore().collection('creators').where('status', '==', 'public').get();
   
   $scope.getAll = function() {
     creators.getCreators('public').then((docs) => {
@@ -63,5 +64,5 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   console.log('starting...')
   $scope.getAll();
 
-  console.log($scope.all());
+  console.log($scope.all);
 }]);
