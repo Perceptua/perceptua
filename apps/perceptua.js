@@ -15,12 +15,15 @@ app.config(function($routeProvider) {
     templateUrl: "views/upcoming.html"
   })
   .when("/all", {
+    controller: "MainController",
     templateUrl: "views/all.html"
   })
   .when("/content/:medium", {
+    controller: "MainController",
     templateUrl: "views/all.html"
   })
   .when("/content/:medium/:name", {
+    controller: "MainController",
     templateUrl: "views/content.html"
   })
   .otherwise({
