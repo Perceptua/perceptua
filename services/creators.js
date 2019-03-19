@@ -2,8 +2,14 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
   return {
     getCreators: function(status='public', query=null) {
       return $q((resolve, reject) => {
-        resolve('resolved!');
+        resolve({
+          'aldous_huxley': {
+            name: 'Aldous Huxley',
+            medium: 'Literature',
+          }
+        });
       });
+      
       /*console.log('generating query...');
       var docs = firebase.firestore().collection('creators').where('status', '==', status);
 
