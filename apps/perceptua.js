@@ -14,15 +14,15 @@ app.config(function($routeProvider) {
       return "views/" + params.status + ".html";
     },
   })
-  .when("/published/:medium", {
+  .when("/:status/:medium", {
     controller: "MainController",
     templateUrl: "views/published.html",
   })
-  .when("/published/:medium/:name", {
+  .when("/:status/:medium/:name", {
     controller: "MainController",
     templateUrl: "views/content.html",
   })
   .otherwise({
-    redirectTo: "/featured"
+    redirectTo: "/featured",
   });
 });
