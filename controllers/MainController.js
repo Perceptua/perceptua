@@ -4,6 +4,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   if ($routeParams.medium && !$routeParams.name) {
     filter = {field: 'medium', value: $routeParams.medium};
   } else if ($routeParams.name) {
+    console.log(creators.convertToName($routeParams.name));
     filter = {field: 'name', value: creators.convertToName($routeParams.name)};
   }
   
