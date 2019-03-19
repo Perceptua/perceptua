@@ -13,5 +13,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
         console.log($scope[status]);
       });
     });
+  }
   
 }]);
