@@ -4,12 +4,12 @@
   <div class="screen-card hidden" id="filter-menu">
     <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="medium-menu">
-      <a class="nav-item" href="#/content/{{ m | slugify }}" ng-repeat="m in media">{{ m | titlecase }}</a>
+      <a class="nav-item" href="#/published/{{ m | slugify }}" ng-repeat="m in media">{{ m | titlecase }}</a>
     </div>
   </div>
   
   <div class="creator-card" *ngIf="published" ng-repeat="p in published">
-    <a class="greyscale" href="#/content/{{ p.medium | slugify }}/{{ p.name | slugify }}">
+    <a class="greyscale" href="#/published/{{ p.medium | slugify }}/{{ p.name | slugify }}">
       <creator creator="p"></creator>
     </a>
   </div>
