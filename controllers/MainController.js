@@ -11,8 +11,9 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
       $scope[status] = {};
       docs.forEach((doc) => {
         $scope[status][doc.id] = doc.data();
-        console.log($scope[status]);
       });
+      console.log(status + ': ');
+      console.log($scope[status]);
     });
   }
   
