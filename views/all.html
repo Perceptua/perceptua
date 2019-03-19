@@ -9,7 +9,7 @@
   </div>
   
   <div class="creator-card" *ngIf="published" ng-repeat="p in published">
-    <a class="greyscale" href="#/content/{{ p.medium | slugify }}/{{ p.name | slugify }}">
+    <a class="greyscale" href="#/content/published/{{ p.medium | slugify }}/{{ p.name | slugify }}">
       <creator creator="p"></creator>
     </a>
   </div>
