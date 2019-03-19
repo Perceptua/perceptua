@@ -2,9 +2,9 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   var filter = null;
   
   if ($routeParams.medium && !$routeParams.name) {
-    filter = {medium: $routeParams.medium};
+    filter = {field: 'medium', value: $routeParams.medium};
   } else if ($routeParams.name) {
-    filter = {name: $routeParams.name};
+    filter = {field: 'name', value: $routeParams.name};
   }
   
   creators.getCreators('published', filter).then((data) => {
