@@ -19,11 +19,12 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         });
         deferred.resolve(creators);
         console.log('resolved promise...');
-        return deferred.promise;
       }).catch((error) => {
         deferred.reject(error);
-        return deferred.promise;
       });
+      
+      console.log('returning promise...');
+      return deferred.promise;
     }
   };
 }]);
