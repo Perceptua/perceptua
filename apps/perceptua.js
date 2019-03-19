@@ -9,20 +9,18 @@ app.config(function($routeProvider) {
     templateUrl: "views/about.html"
   })
   .when("/featured", {
+    controller: "FeaturedController",
     templateUrl: "views/featured.html"
   })
-  .when("/upcoming", {
-    templateUrl: "views/upcoming.html"
-  })
-  .when("/all", {
+  .when("/:status", {
     controller: "MainController",
     templateUrl: "views/all.html"
   })
-  .when("/content/:medium", {
+  .when("/published/:medium", {
     controller: "MainController",
     templateUrl: "views/all.html"
   })
-  .when("/content/:medium/:name", {
+  .when("/published/:medium/:name", {
     controller: "MainController",
     templateUrl: "views/content.html"
   })
