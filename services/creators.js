@@ -12,6 +12,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
           name += ' ';
         }
       }
+      console.log(name);
       return name;
     },
     getCreators: function(status, filter) {
