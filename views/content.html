@@ -1,10 +1,10 @@
 <a class="hidden info greyscale" id="back" style="float: left;" href="#/{{ 'published' }}"><i class="fas fa-angle-left"></i> Back</a><br>
 
 <div class="content-container" id="creator">
-  <div class="screen-card" *ngIf="published" ng-repeat="p in published">
-    <input type="hidden" id="url" data-content-url="{{ p.content }}">
-    <h3>{{ p.name }}</h3>
-    <p>{{ p.medium | titlecase }}</p>
+  <div class="screen-card" *ngIf="creators" ng-repeat="c in creators">
+    <input type="hidden" id="url" data-content-url="{{ c.content }}">
+    <h3>{{ c.name }}</h3>
+    <p>{{ c.medium | titlecase }}</p>
     <div class="hidden" id="content"></div>
   </div>
 </div>
