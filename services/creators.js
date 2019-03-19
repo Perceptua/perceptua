@@ -7,7 +7,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         if (allNames[a].length == 1) {
           allNames[a] += '.'
         }
-        name += allNames[a];
+        name += allNames[a].charAt(0).toUpperCase() + allNames[a].slice(1);
         if (a < allNames.length - 1) {
           name += ' ';
         }
