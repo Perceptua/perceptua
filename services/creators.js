@@ -6,7 +6,13 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         if (query) {
           docs = docs.where(query.field, '==', query.value);
         }
-        resolve(docs.get());
+        docs.get().then((docs) => {
+          var creators = {};
+          docs.forEach((doc) => {
+            creators[doc.id] = doc.data();
+          });
+          resolve(creators);
+        });
       });
     },
   };
