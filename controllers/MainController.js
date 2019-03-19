@@ -1,6 +1,6 @@
 app.controller(
   'MainController', 
-  ['$scope', '$routeParams', 'creators', function($scope, $routeParams, creators) { 
+  ['$scope', '$routeParams', '$q', 'creators', function($scope, $routeParams, $q, creators) { 
     $scope.title = 'perceptua';
 
     /*
@@ -55,10 +55,12 @@ app.controller(
     }
     */
     console.log('starting...')
-    creators.getCreators('public').then((data) => {
-      console.log('retrieved data...');
-      console.log(data);
-      $scope.all = data;
+    $q((resolve, reject) => {
+      creators.getCreators('public').then((data) => {
+        console.log('retrieved data...');
+        $scope.all = data;
+        resolve(data);
+      });
     });
     
     console.log($scope.all);
