@@ -8,6 +8,13 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
     }*/
 
     console.log('executing query...');
-    resolve(docs.get());
+    docs.get().then((docs) => {
+      var creators = {};
+      console.log('looping...');
+      docs.forEach((doc) => {
+        creators[doc.id] = doc.data();
+      });
+      resolve(creators);
+    });
   });
 }]);
