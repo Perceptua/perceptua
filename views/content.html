@@ -1,11 +1,11 @@
-<input type="hidden" id="url" data-content-url="{{ creator.content }}">
+<input type="hidden" id="url" data-content-url="{{ published.content }}">
 
 <a class="hidden info greyscale" id="back" style="float: left;" href="#/all"><i class="fas fa-angle-left"></i> Back</a><br>
 
 <div class="content-container" id="creator">
   <div class="screen-card">
-    <h3>{{ creator.name }}</h3>
-    <p>{{ creator.medium }}</p>
+    <h3>{{ published.name }}</h3>
+    <p>{{ published.medium | uppercase }}</p>
     <div class="hidden" id="content"></div>
   </div>
 </div>
