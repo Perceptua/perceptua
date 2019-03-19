@@ -8,17 +8,17 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         docs = docs.where(query.field, '==', query.value);
       }
       
-      docs.get().then((docs) => {
+      return docs.get().then((docs) => {
         var creators = {};
         docs.forEach((doc) => {
           creators[doc.id] = doc.data();
         });
         deferred.resolve(creators);
+        return deferred.promise;
       }).catch((error) => {
         deferred.reject(error);
+        return deferred.promise;
       });
-      
-      return deferred.promise;
     }
   };
 }]);
