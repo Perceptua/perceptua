@@ -1,15 +1,17 @@
 app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
   return {
     getCreators: function(status='public', query=null) {
-      console.log('generating query...');
-      var docs = firebase.firestore().collection('creators').where('status', '==', status);
+      return $q((resolve, reject) => {
+        console.log('generating query...');
+        var docs = firebase.firestore().collection('creators').where('status', '==', status);
 
-      if (query) {
-        docs = docs.where(query.field, '==', query.value);
-      }
+        if (query) {
+          docs = docs.where(query.field, '==', query.value);
+        }
 
-      console.log('executing query...');
-      return docs.get();
+        console.log('executing query...');
+        resolve(docs.get());
+      });
     },
   };
 }]);
