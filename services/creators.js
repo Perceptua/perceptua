@@ -11,8 +11,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       
       return $q((resolve, reject) => {
         console.log('executing query...');
-        resolve(docs.get());
-          /*.then((docs) => {
+        docs.get().then((docs) => {
           console.log('retrived docs...');
           docs.forEach((doc) => {
             creators[doc.id] = doc.data();
@@ -22,7 +21,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         }).catch((error) => {
           console.log('rejecting promise...');
           reject(error);
-        });*/
+        });
       });
     }
   };
