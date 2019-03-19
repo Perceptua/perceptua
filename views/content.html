@@ -1,8 +1,7 @@
-<input type="hidden" id="url" data-content-url="{{ published.content }}">
-
 <a class="hidden info greyscale" id="back" style="float: left;" href="#/all"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<div class="content-container" id="creator">
+<div class="content-container" *ngIf="published" id="creator">
+  <input type="hidden" id="url" data-content-url="{{ published.content }}">
   <div class="screen-card">
     <h3>{{ published.name }}</h3>
     <p class="medium">{{ published.medium }}</p>
