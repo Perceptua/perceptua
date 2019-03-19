@@ -1,7 +1,7 @@
 <h3 id="welcome" class="hidden">welcome to perceptua.</h3>
 
 <div class="content-container" id="featured">
-  <div class="screen-card" ng-repeat="f in featured">
+  <div class="screen-card" *ngIf="featured" ng-repeat="f in featured">
     <creator creator="f"></creator>
     <br>
     <access></access>
