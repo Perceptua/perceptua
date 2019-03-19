@@ -8,10 +8,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   }
   
   creators.getCreators('published', filter).then((data) => {
-    $scope.published = data;
-    $scope.media = [];
-    for (var p in $scope.published) {
-      $scope.media.push($scope.published[p].medium);
-    }
+    $scope.published = data.creators;
+    $scope.media = data.media
   });
 }]);
