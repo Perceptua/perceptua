@@ -9,12 +9,12 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         docs = docs.where(query.field, '==', query.value);
       }
       
-      console.log('executing query...');
       return $q((resolve, reject) => {
-        docs.get().then((docs) => {
+        console.log('executing query...');
+        resolve(docs.get());
+          /*.then((docs) => {
           console.log('retrived docs...');
           docs.forEach((doc) => {
-            console.log('looping through docs...');
             creators[doc.id] = doc.data();
           });
           console.log('resolving promise...');
@@ -22,7 +22,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         }).catch((error) => {
           console.log('rejecting promise...');
           reject(error);
-        });
+        });*/
       });
     }
   };
