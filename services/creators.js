@@ -10,6 +10,6 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
 
       console.log('executing query...');
       resolve(docs.get());
-    }
+    });
   };
 }]);
