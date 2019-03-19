@@ -54,8 +54,9 @@ app.controller(
       $scope.creator = $scope.all[$routeParams.name];
     }
     */
-
+    console.log('starting...')
     creators.getCreators('public').then((data) => {
+      console.log('retrieved creators...')
       $scope.all = data;
     });
     
