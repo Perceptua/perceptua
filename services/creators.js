@@ -10,7 +10,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       }
       
       console.log('executing query...');
-      return docs.get().then((docs) => {
+      docs.get().then((docs) => {
         console.log('retrieved docs...');
         var creators = {};
         docs.forEach((doc) => {
