@@ -15,4 +15,4 @@ app.factory('name', ['$rootScope', '$q', function($rootScope, $q) {
       return name;
     },
   };
-});
+}]);
