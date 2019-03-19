@@ -55,9 +55,9 @@ app.controller(
     }
     */
     console.log('starting...')
-    creators.then((docs) => {
+    creators.then((data) => {
       console.log('retrieved docs...');
-      $scope.all = docs;
+      $scope.all = data;
     });
     
     console.log($scope.all);
