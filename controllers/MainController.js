@@ -1,16 +1,17 @@
 app.controller('MainController', ['$scope', '$routeParams', 'creators', function($scope, $routeParams, creators) { 
   $scope.title = 'perceptua';
   
-  console.log($routeParams.status);
+  console.log($routeParams);
   
-  if ($routeParams.status) {
-    console.log($routeParams.status);
-    creators.getCreators($routeParams.status).then((docs) => {
-      $scope[$routeParams.status] = {};
+  var statusArray = ['featured', 'upcoming', 'published'];
+  
+  for (var status in statusArray) {
+    creators.getCreators(status).then((docs) => {
+      $scope[status] = {};
       docs.forEach((doc) => {
-        $scope[$routeParams.status[doc.id]] = doc.data();
+        $scope[status][doc.id] = doc.data();
+        console.log($scope[status]);
       });
     });
-  } 
   
 }]);
