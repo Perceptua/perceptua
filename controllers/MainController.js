@@ -54,9 +54,8 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   */
   
   creators.getCreators('public').then((data) => {
-    $scope.all = data;
+    $scope.published = data;
     console.log(data);
   });
   
-  console.log($scope.all);
 }]);
