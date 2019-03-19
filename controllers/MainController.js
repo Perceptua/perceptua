@@ -1,6 +1,6 @@
 app.controller(
   'MainController', 
-  ['$scope', '$routeParams', '$rootScope', '$q', 'creators', function($scope, $routeParams, $rootScope, $q, creators) { 
+  ['$scope', '$routeParams', 'creators', function($scope, $routeParams, creators) { 
     $scope.title = 'perceptua';
 
     /*
@@ -55,12 +55,10 @@ app.controller(
     }
     */
 
-    $q((resolve, reject) => {
-      return creators.getCreators('public').then((data) => {
-        $scope.all = data;
-        resolve($scope.all);
-      });
+    creators.getCreators('public').then((data) => {
+      $scope.all = data;
     });
+    
     console.log($scope.all);
   },
 ]);
