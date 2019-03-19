@@ -60,5 +60,5 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     });
   }
 
-  console.log($scope.all);
+  console.log($scope.all());
 }]);
