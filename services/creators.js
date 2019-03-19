@@ -10,7 +10,8 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       }
       
       console.log('executing query...');
-      return true;
+      return $q((resolve) => {
+      });
     }
   };
 }]);
