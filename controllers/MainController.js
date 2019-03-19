@@ -5,12 +5,13 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   
   var statusArray = ['featured', 'upcoming', 'published'];
   
-  for (var status in statusArray) {
+  for (var s in statusArray) {
+    var status = statusArray[s];
     creators.getCreators(status).then((docs) => {
-      $scope.staus = {};
+      $scope[status] = {};
       docs.forEach((doc) => {
-        $scope.status[doc.id] = doc.data();
-        console.log($scope.status);
+        $scope[status][doc.id] = doc.data();
+        console.log($scope[status]);
       });
     });
   }
