@@ -55,7 +55,10 @@ app.controller(
     }
     */
     console.log('starting...')
-    $scope.all = creators.getCreators('public');
+    creators.getCreators().then((docs) => {
+      console.log('retrieved docs...');
+      $scope.all = docs;
+    });
     
     console.log($scope.all);
   },
