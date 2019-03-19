@@ -56,8 +56,12 @@ app.controller(
     */
     console.log('starting...')
     $q((resolve, reject) => {
+      $scope.all = {};
       console.log('testing firestore retrival...');
       var docs = firebase.firestore().collection('creators').get();
+      docs.forEach((doc) => {
+        $scope.all[doc.id] = doc.data();
+      });
       console.log('retrieved docs from firestore...');
       creators.getCreators('public').then((data) => {
         console.log('retrieved data...');
