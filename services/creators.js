@@ -9,16 +9,8 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         docs = docs.where(query.field, '==', query.value);
       }
       
-      return docs.get().then((docs) => {
-        console.log('retrived docs...');
-        return $q((resolve, reject) => {
-          docs.forEach((doc) => {
-            creators[doc.id] = doc.data();
-          });
-          console.log('resolving promise...');
-          resolve(creators);
-        });
-      });
+      console.log('executing query...');
+      return docs.get();
     }
   };
 }]);
