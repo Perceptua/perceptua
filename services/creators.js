@@ -11,6 +11,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       
       console.log('executing query...');
       return $q((resolve) => {
+        console.log('returning promise...');
       });
     }
   };
