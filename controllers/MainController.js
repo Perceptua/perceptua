@@ -7,10 +7,10 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   
   for (var status in statusArray) {
     creators.getCreators(status).then((docs) => {
-      $scope[status] = {};
+      $scope.staus = {};
       docs.forEach((doc) => {
-        $scope[status][doc.id] = doc.data();
-        console.log($scope[status]);
+        $scope.status[doc.id] = doc.data();
+        console.log($scope.status);
       });
     });
   }
