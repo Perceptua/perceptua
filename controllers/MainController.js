@@ -9,6 +9,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     console.log('index: ' + s);
     var status = statusArray[s];
     console.log('list item: ' + status);
+    /*
     creators.getCreators(status).then((docs) => {
       $scope[status] = {};
       docs.forEach((doc) => {
@@ -17,6 +18,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
       console.log(status + ': ');
       console.log($scope[status]);
     });
+    */
   }
   
 }]);
