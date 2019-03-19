@@ -55,13 +55,7 @@ app.controller(
     }
     */
     console.log('starting...')
-    creators.getCreators('public').then((docs) => {
-      $scope.all = {};
-      console.log('retrieved data...');
-      docs.forEach((doc) => {
-        $scope.all[doc.id] = doc.data();
-      });
-    });
+    $scope.all = creators.getCreators('public');
     
     console.log($scope.all);
   },
