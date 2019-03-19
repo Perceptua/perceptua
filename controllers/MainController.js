@@ -56,11 +56,11 @@ app.controller(
     */
     console.log('starting...')
     creators.getCreators('public').then((docs) => {
+      $scope.all = {};
       console.log('retrieved data...');
-      docs.get().then((data) => {
-        console.log(data);
+      docs.forEach((doc) => {
+        $scope.all[doc.id] = doc.data();
       });
-      $scope.all = docs;
     });
     
     console.log($scope.all);
