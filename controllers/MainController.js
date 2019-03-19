@@ -52,19 +52,11 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     $scope.creator = $scope.all[$routeParams.name];
   }
   */
-  $scope.all = firebase.firestore().collection('creators').where('status', '==', 'public').get().then((docs) => {
-    $scope.all = docs;
+  
+  creators.getCreators('public').then((data) => {
+    $scope.all = data;
+    console.log(data);
   });
   
-  $scope.getAll = function() {
-    creators.getCreators('public').then((docs) => {
-      console.log('retrieved docs...');
-      $scope.all = docs;
-    });
-  }
-  
-  console.log('starting...')
-  $scope.getAll();
-
   console.log($scope.all);
 }]);
