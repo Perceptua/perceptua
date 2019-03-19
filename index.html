@@ -49,8 +49,8 @@
       <h1>perceptua</h1>
       <div id="site-nav">
         <a class="nav-item" href="#/featured">Featured</a>
-        <a class="nav-item" href="#/upcoming">Upcoming</a>
-        <a class="nav-item" href="#/all">All</a>
+        <a class="nav-item" href="#/{{ 'upcoming' }}">Upcoming</a>
+        <a class="nav-item" href="#/{{ 'published' }}">All</a>
         <a class="nav-item" href="#/suggest">Suggest</a>
         <a class="nav-item" href="#/about">About</a>
       </div>
@@ -58,19 +58,23 @@
     
     <div ng-view></div>
     
+    <!-- Modules -->
     <script src="apps/perceptua.js"></script>
     
     <!-- Controllers -->
     <script src="controllers/MainController.js"></script>
+    <script src="controllers/FeaturedController.js"></script>
     
     <!-- Services -->
     <script src="services/creators.js"></script>
     
-    <!-- Directives & Filters -->
+    <!-- Directives -->
     <script src="directives/access.js"></script>
     <script src="directives/creator.js"></script>
     <script src="directives/suggest.js"></script>
-    <script src="filters/slugify.js"></script>
     
+    <!-- Filters -->
+    <script src="filters/slugify.js"></script>
+    <script src="filters/titlecase.js"></script>
   </body>
 </html>
