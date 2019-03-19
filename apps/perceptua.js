@@ -8,16 +8,22 @@ app.config(function($routeProvider) {
   .when("/about", {
     templateUrl: "views/about.html"
   })
-  .when("/content/:status", {
+  .when("/featured", {
+    templateUrl: "views/featured.html"
+  })
+  .when("/upcoming", {
+    templateUrl: "views/upcoming.html"
+  })
+  .when("/all", {
     templateUrl: "views/all.html"
   })
-  .when("/content/:status/:medium", {
+  .when("/content/:medium", {
     templateUrl: "views/all.html"
   })
-  .when("/content/:status/:medium/:name", {
+  .when("/content/:medium/:name", {
     templateUrl: "views/content.html"
   })
   .otherwise({
-    redirectTo: "/about"
+    redirectTo: "/featured"
   });
 });
