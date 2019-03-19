@@ -57,6 +57,9 @@ app.controller(
     console.log('starting...')
     creators.getCreators('public').then((docs) => {
       console.log('retrieved data...');
+      docs.get().then((data) => {
+        console.log(data);
+      });
       $scope.all = docs;
     });
     
