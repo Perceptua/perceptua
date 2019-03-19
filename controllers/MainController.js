@@ -1,6 +1,6 @@
 app.controller(
   'MainController', 
-  ['$scope', '$routeParams', '$q', 'creators', function($scope, $routeParams, $q, creators) { 
+  ['$scope', '$routeParams', 'creators', function($scope, $routeParams, creators) { 
     $scope.title = 'perceptua';
 
     /*
@@ -55,19 +55,9 @@ app.controller(
     }
     */
     console.log('starting...')
-    $q((resolve, reject) => {
-      $scope.all = {};
-      console.log('testing firestore retrival...');
-      var docs = firebase.firestore().collection('creators').get();
-      for (var doc in docs) {
-        $scope.all[doc.id] = doc.data();
-      }
-      console.log('retrieved docs from firestore...');
-      creators.getCreators('public').then((data) => {
-        console.log('retrieved data...');
-        $scope.all = data;
-        resolve(data);
-      });
+    creators.getCreators('public').then((data) => {
+      console.log('retrieved data...');
+      $scope.all = data;
     });
     
     console.log($scope.all);
