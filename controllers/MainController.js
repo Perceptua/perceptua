@@ -5,12 +5,12 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   var orderBy = {field: 'added', order: 'desc'};
   
   if ($routeParams.sort && !$routeParams.name) {
-    filter = {field: 'medium', value: $routeParams.sort};
-    
     if ($routeParams.sort == 'older') {
       orderBy = {field: 'added', order: 'asc'};
     } else if ($routeParams.sort == 'clicks') {
       orderBy = {field: 'clicks', order: 'desc'};
+    } else {
+      filter = {field: 'medium', value: $routeParams.sort};
     }
     
   } else if ($routeParams.name) {
