@@ -25,13 +25,13 @@ app.directive('access', function() {
       scope.failAccess = function(error=false) {
         $('#access-loader').fadeOut('slow');
         if (!error) {
-          var text = 'Incorrect Access Code. ';
+          var text = 'Incorrect access code. ';
         } else {
-          var text = 'Something Went Wrong. ';
+          var text = 'Something went wrong. ';
         }
         
         $('#access-input').css('border', '0.25em solid #990033');
-        $('#error').append('<p style="font-size:0.75em;">' + text + 'Please Try Again.' + '</p>');
+        $('#error').append('<p style="font-size:0.75em;">' + text + 'Please try again.' + '</p>');
       }
               
       scope.checkAccess = function() {
