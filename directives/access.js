@@ -56,7 +56,7 @@ app.directive('access', function() {
       }
       
       scope.showAccessHelp = function() {
-        $('#access-help').toggleFade('slow');
+        $('#access-help').fadeToggle('slow');
       }
       
     } 
