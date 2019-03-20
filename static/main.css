@@ -170,28 +170,6 @@ header {
 
 
 
-/* Footer (Not Used)
-
-footer {
-	width: 100%;
-	margin: 0;
-	padding: 1em 0;
-}
-
-.footer-item {
-	display: inline-block;
-	margin: 0 0.5em;
-}
-
-.logo {
-	display: block;
-	width: 2em;
-	margin: auto;
-}
-*/
-
-
-
 /* Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
@@ -212,6 +190,9 @@ footer {
 @media screen and (min-width: 768px) {
 	.text {
 		margin: 1em;
+	}
+	.content-grid {
+		grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 	}
 }
 
