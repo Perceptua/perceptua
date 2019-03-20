@@ -6,6 +6,7 @@ app.directive('access', function() {
     link: function(scope, element, attrs) {
             
       scope.grantAccess = function(url) {
+        $('#access-loader').fadeOut('slow');
         $('access').first().fadeOut('slow');
         $('#featured').fadeOut('slow', function() {
           $('#welcome').fadeIn('slow');
@@ -22,6 +23,7 @@ app.directive('access', function() {
       }
       
       scope.failAccess = function(error=false) {
+        $('#access-loader').fadeOut('slow');
         if (!error) {
           var text = 'Incorrect Access Code. ';
         } else {
@@ -34,6 +36,7 @@ app.directive('access', function() {
               
       scope.checkAccess = function() {
         $('#error').empty();
+        $('#access-loader').fadeIn('slow');
         $('#access-input').css('border', '0.25em solid var(--dark)');
         var code = $('#access-input').val();
         $.ajax({
