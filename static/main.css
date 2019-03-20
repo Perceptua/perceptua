@@ -109,6 +109,11 @@ header {
 	animation: spin 2s linear infinite;
 }
 
+.image-container {
+	overflow: hidden;
+	width: 100%;
+}
+
 .hidden, .content-container {
 	display: none;
 }
