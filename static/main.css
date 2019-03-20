@@ -152,6 +152,10 @@ header {
 	margin: 1em auto;
 }
 
+.medium {
+	text-transform: capitalize;
+}
+
 #background-image {
 	font-size: 0.5em;
 }
