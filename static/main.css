@@ -125,7 +125,7 @@ header {
 .content-grid {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 	grid-auto-rows: 1fr;
 }
 	
