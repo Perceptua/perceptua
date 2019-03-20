@@ -114,6 +114,10 @@ header {
 	cursor: pointer;
 }
 
+.right {
+	text-align: right;
+}
+
 .filter-option {
 	cursor: pointer;
 }
@@ -154,6 +158,10 @@ header {
 
 .medium {
 	text-transform: capitalize;
+}
+
+.added, .clicks {
+	font-size: 0.5em;
 }
 
 #background-image {
