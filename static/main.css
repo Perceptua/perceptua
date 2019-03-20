@@ -101,7 +101,7 @@ header {
 	border-radius: 50%;
 	width: 2em;
 	height: 2em;
-	margin: auto;
+	margin: 0.5em auto;
 	animation: spin 2s linear infinite;
 }
 
