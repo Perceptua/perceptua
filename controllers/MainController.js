@@ -3,7 +3,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   
   var filter = null;
   var orderBy = {field: 'added', order: 'desc'};
-  
   if ($routeParams.sort && !$routeParams.name) {
     if ($routeParams.sort == 'older') {
       orderBy = {field: 'added', order: 'asc'};
@@ -12,7 +11,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     } else {
       filter = {field: 'medium', value: $routeParams.sort};
     }
-    
   } else if ($routeParams.name) {
     filter = {field: 'name', value: creators.getFullName($routeParams.name)};
   }
@@ -20,5 +18,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   creators.getCreators($scope.status, filter, orderBy).then((data) => {
     $scope.creators = data.creators;
     $scope.media = data.media
+    $scope.random = data.random;
   });
 }]);
