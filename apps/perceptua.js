@@ -14,11 +14,11 @@ app.config(function($routeProvider) {
       return "views/" + params.status + ".html";
     },
   })
-  .when("/:status/:medium", {
+  .when("/:status/:sort", {
     controller: "MainController",
     templateUrl: "views/published.html",
   })
-  .when("/:status/:medium/:name", {
+  .when("/:status/:sort/:name", {
     controller: "MainController",
     templateUrl: "views/content.html",
   })
