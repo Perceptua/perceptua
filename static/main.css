@@ -180,9 +180,6 @@ header {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
-	.screen-card {
-		width: 50%;
-	}
 	.logo {
 		display: inline-block;
 	}
@@ -190,6 +187,9 @@ header {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+	.screen-card {
+		width: 75%;
+	}
 	.text {
 		margin: 1em;
 	}
@@ -200,4 +200,7 @@ header {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+	.screen-card {
+		width: 50%;
+	}
 }
