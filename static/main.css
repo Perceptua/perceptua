@@ -114,6 +114,10 @@ header {
 	cursor: pointer;
 }
 
+.filter-option {
+	cursor: pointer;
+}
+
 .content-grid {
 	width: 100%;
 	display: grid;
@@ -146,10 +150,6 @@ header {
 .text {
 	text-align: left;
 	margin: 1em auto;
-}
-
-.medium {
-	text-transform: capitalize;
 }
 
 #background-image {
