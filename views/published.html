@@ -13,7 +13,9 @@
     </div>
     <p>{{ surprise }}</p>
     <p>{{ surprise.name }}</p>
-    <a class="greyscale" href="#/{{ 'published' }}/{{ surprise.medium | slugify }}/{{ surprise.name | slugify }}">Surprise Me</a>
+    <a class="greyscale" *ngIf="surprise" href="#/{{ 'published' }}/{{ surprise.medium | slugify }}/{{ surprise.name | slugify }}">
+      Surprise Me
+    </a>
   </div>
   
   <div class="content-grid">
