@@ -18,7 +18,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
   creators.getCreators($scope.status, filter, orderBy).then((data) => {
     $scope.creators = data.creators;
     $scope.media = data.media
-    $scope.random = data.random;
-    console.log($scope.random.name);
+    $scope.surprise = data.random;
+    console.log($scope.surprise.name);
   });
 }]);
