@@ -38,6 +38,7 @@ html {
 	overflow-y: scroll;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
+	word-wrap: break-word;
 	text-align: center;
 	color: var(--greyscale);
 }
@@ -113,6 +114,14 @@ header {
 	cursor: pointer;
 }
 
+.content-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+	grid-auto-rows: 1fr;
+}
+	
+
 .creator-card, .screen-card {
 	background-color: rgba(103, 96, 135, 0.75);
 	border: 0.25em solid var(--accent);
@@ -122,7 +131,6 @@ header {
 
 .creator-card {
 	display: inline-block;
-	width: 37.5%;
 	margin: 0.25em;
 }
 
@@ -190,9 +198,6 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-	.creator-card {
-		width: 25%;
-	}
 	.text {
 		margin: 1em;
 	}
