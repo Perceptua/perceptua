@@ -49,6 +49,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 input {
 	padding: 0.25em;
 	text-align: center;
