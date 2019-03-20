@@ -1,11 +1,17 @@
 <div class="content-container" id="published">
-  <p class="info" id="filter" style="text-align: right;">Filter <i class="fas fa-caret-down"></i></p>
+  <p class="info right" id="filter">Sort <i class="fas fa-caret-down"></i></p>
   
   <div class="screen-card hidden" id="filter-menu">
     <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="medium-menu">
       <a class="nav-item" href="#/{{ 'published' }}/{{ m | slugify }}" ng-repeat="m in media">{{ m | titlecase }}</a>
     </div>
+    <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
+    <div class="hidden option-menu" id="date-menu">
+      <a class="nav-item" href="#/{{ 'published' }}/{{ 'newer' }}">New <i class="fas fa-arrow-right"></i> Old</a>
+      <a class="nav-item" href="#/{{ 'published' }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
+    </div>
+    <a class="greyscale" href="#/{{ 'published' }}/{{ 'clicks' }}">Views</a>
   </div>
   
   <div class="content-grid">
