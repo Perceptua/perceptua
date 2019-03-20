@@ -19,6 +19,5 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     $scope.creators = data.creators;
     $scope.media = data.media
     $scope.surprise = data.random;
-    console.log($scope.surprise.name);
   });
 }]);
