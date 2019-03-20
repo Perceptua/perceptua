@@ -6,14 +6,18 @@
     <div class="hidden option-menu" id="medium-menu">
       <a class="nav-item" href="#/{{ 'published' }}/{{ m | slugify }}" ng-repeat="m in media">{{ m | titlecase }}</a>
     </div>
+    
     <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="date-menu">
       <a class="nav-item" href="#/{{ 'published' }}/">New <i class="fas fa-arrow-right"></i> Old</a>
       <a class="nav-item" href="#/{{ 'published' }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
     </div>
-    <a class="greyscale" *ngIf="surprise" href="#/{{ 'published' }}/{{ surprise.medium | slugify }}/{{ surprise.name | slugify }}">
-      Surprise Me
-    </a>
+    
+    <p *ngIf="surprise">
+      <a class="greyscale" href="#/{{ 'published' }}/{{ surprise.medium | slugify }}/{{ surprise.name | slugify }}">
+        Surprise Me
+      </a>
+    </p>
   </div>
   
   <div class="content-grid">
