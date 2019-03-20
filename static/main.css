@@ -50,7 +50,7 @@ a {
 }
 
 img {
-	max-width: 75%;
+	max-width: 100%;
 }
 
 input {
@@ -186,6 +186,9 @@ header {
 @media screen and (min-width: 600px) {
 	.logo {
 		display: inline-block;
+	}
+	img {
+		max-width: 75%;
 	}
 }
 
