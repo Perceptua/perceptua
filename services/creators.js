@@ -22,7 +22,6 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
           docs = docs.where(filter.field, '==', filter.value);
         }
         if (orderBy) {
-          console.log(orderBy);
           docs = docs.orderBy(orderBy.field, orderBy.order);
         }
         
