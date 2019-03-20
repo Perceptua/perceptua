@@ -8,9 +8,9 @@ app.controller('MainController', ['$scope', '$routeParams', 'creators', function
     filter = {field: 'medium', value: $routeParams.sort};
     
     if ($routeParams.sort == 'newer') {
-      orderBy = {field: 'date', order: 'desc'};
+      orderBy = {field: 'added', order: 'desc'};
     } else if ($routeParams.sort == 'older') {
-      orderBy = {field: 'date', order: 'asc'};
+      orderBy = {field: 'added', order: 'asc'};
     } else if ($routeParams.sort == 'clicks') {
       orderBy = {field: 'clicks', order: 'desc'};
     }
