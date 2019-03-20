@@ -26,10 +26,11 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         }
         
         docs.get().then((docs) => {
-          var creators = {};
+          var index = 0;
+          var creators = [];
           var media = [];
           docs.forEach((doc) => {
-            creators[doc.id] = doc.data();
+            creators.push(doc.data());
             if (!media.includes(doc.data().medium)) {
               media.push(doc.data().medium);
             }
