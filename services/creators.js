@@ -26,7 +26,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
         }
         
         docs.get().then((docs) => {
-          var index = 0;
+          var index = Math.floor(Math.random() * docs.length);
           var creators = [];
           var media = [];
           docs.forEach((doc) => {
@@ -38,6 +38,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
           resolve({
             creators: creators,
             media: media,
+            random: creators[index],
           });
         });
       });
