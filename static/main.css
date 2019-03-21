@@ -50,6 +50,7 @@ a {
 }
 
 img {
+	margin: 0.5em auto;
 	max-width: 100%;
 }
 
