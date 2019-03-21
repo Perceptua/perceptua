@@ -28,12 +28,6 @@
 /* Tags */
 
 html {
-	/*background-image: url('images/iceberg.png');
-	background-color: black;
-	background-position: center top;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;*/
 	overflow-x: hidden;
 	overflow-y: scroll;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -52,6 +46,7 @@ body:before {
 	width: 100%;
 	height: 100%;
 	z-index: -10;
+	background-color: black;
 	background: url(images/iceberg.png) no-repeat center center;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
