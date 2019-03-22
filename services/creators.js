@@ -1,5 +1,7 @@
 app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
   return {
+    
+    // converts name slug to string with spaces & '.' after middle initial
     getFullName: function(string) {
       var name = '';
       var allNames = string.split('_');
@@ -14,6 +16,8 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
       }
       return name;
     },
+    
+    // query firestore collection for requested creators
     getCreators: function(status, filter, orderBy) {
       return $q((resolve, reject) => {
         var docs = firebase.firestore().collection('creators').where('status', '==', status);
