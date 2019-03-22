@@ -38,6 +38,10 @@ html {
 	color: var(--greyscale);
 }
 
+/* Enables fixed background on mobile
+Based on Vincent's answer on Stack Overflow
+https://stackoverflow.com/questions/26372127/background-fixed-no-repeat-not-working-on-mobile
+*/
 body:before {
 	content: "";
 	display: block;
