@@ -1,4 +1,6 @@
 app.filter('slugify', function() {
+  // convert name to slug
+  // captures text names & middle initials with '.'
   return function(string) {
     if (typeof string === 'string' || string instanceof String) {
       var words = string.replace('.', '').split(' ');
