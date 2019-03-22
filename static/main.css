@@ -30,6 +30,7 @@
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
+	background-color: black;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	word-wrap: break-word;
