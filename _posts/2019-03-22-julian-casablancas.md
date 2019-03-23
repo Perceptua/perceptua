@@ -1,7 +1,7 @@
 ---
 title: Julian Casablancas
 layout: post
-categories: [music]
+categories: [Music]
 ---
 
 ![Julian Casablancas is an American singer & songwriter](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea)
