@@ -5,14 +5,13 @@ layout: default
 ---
 
 {% for post in site.posts %}
-    <a class=" greyscale creator-card" href="{{post.url }}">
-      <p class="added right">{{ post.date | date: "%A, %-d %B %Y" }}</p>
-      <h3>{{ post.title }}</h3>
-      {% if post.image %}
-        [{{ post.description }}]({{ post.image }})
-      {% endif %}
-      {% for c in post.categories %}
-        <p class="medium">{{ c }}</p>
-      {% endfor %}
-    </a>
+<a class=" greyscale creator-card" href="{{post.url }}">
+  <h3>{{ post.title }}</h3>
+  {% if post.image %}
+    [{{ post.description }}]({{ post.image }})
+  {% endif %}
+  {% for c in post.categories %}
+    <p class="medium">{{ c }}</p>
+  {% endfor %}
+</a>
 {% endfor %}
