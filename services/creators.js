@@ -4,7 +4,7 @@ app.factory('creators', ['$rootScope', '$q', function($rootScope, $q) {
     // converts name slug to string with spaces & '.' after middle initial
     getFullName: function(string) {
       var name = '';
-      var allNames = string.split('_');
+      var allNames = string.split('-');
       for (var a in allNames) {
         if (allNames[a].length == 1) {
           allNames[a] += '.'
