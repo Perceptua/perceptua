@@ -1,10 +1,10 @@
--name: Featured
+- name: Featured
   link: /#/featured
 - name: Upcoming
   link: /upcoming
--name: All
+- name: All
   link /published
--name: Suggest
+- name: Suggest
   link: /suggest
 - name: About
   link: /about
