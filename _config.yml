@@ -1,1 +1,5 @@
 permalink: :categories/:title:output_ext
+collections:
+  creators:
+    output: true
+    relative_directory: _creators
