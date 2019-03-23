@@ -1,50 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>perceptua</title>
-    
-    <meta name="description" content="dive deep">
-    <meta name="keywords" content="art, music, literature, poetry, film, photography">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="/static/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#676087">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#676087">
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    
-  </head>
+  {% include head.html title="{{ page.title }}" description="{{ page.description }}" keywords="{{ page.tags }}" %}
   <body>
-    
-    <header>
-      <h1>Perceptua</h1>
-      <div id="site-nav">
-        <a class="nav-item" href="#/{{ 'featured' }}">Featured</a>
-        <a class="nav-item" href="#/{{ 'upcoming' }}">Upcoming</a>
-        <a class="nav-item" href="#/{{ 'published' }}">All</a>
-        <a class="nav-item" href="#/suggest">Suggest</a>
-        <a class="nav-item" href="#/about">About</a>
-      </div>
-    </header>
-    
     <div>{{ content }}</div>
-    
   </body>
 </html>
