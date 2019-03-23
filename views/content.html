@@ -12,13 +12,6 @@
 <script>
   $(document).ready(function() {
     $('#back').fadeIn('slow');
-    $('#creator').fadeIn('slow', function() {
-      var url = $('#url').attr('data-content-url');
-      if (url.length > 0) {
-        $('#content').load(url, function() {
-          $('#content').fadeIn('slow');
-        });
-      }
-    });
+    $('#creator').fadeIn('slow');
   });
 </script>
