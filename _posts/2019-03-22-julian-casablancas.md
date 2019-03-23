@@ -1,10 +1,10 @@
 ---
 title: Julian Casablancas
-description: Julian Casablancas is an American singer & songwriter.
-image: https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea
 layout: post
 categories: [Music]
 ---
+
+![Julian Casablancas is an American singer & songwriter.][1]
 
 Julian Casablancas is a name everyone should know. Julian is the lead singer of The Voidz & The Strokes, and also released an impressive solo album, Phrazes for the Young, in 2009. He is an extremely talented vocalist, and his lyrics get at the very heart of contemporary culture. His song “River of Brakelights” is, in my view, a profound commentary on the technological and economic forces driving the modern world.
 
@@ -33,5 +33,7 @@ The sense of hopelessness Casablancas expresses in River of Brakelights is as br
 ---
 
 Image [Source](https://www.discogs.com/artist/430106-Julian-Casablancas)
+
+[1]: https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea
 
 
