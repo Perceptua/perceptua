@@ -1,9 +1,9 @@
 - name: Featured
-  link: /#/{{ 'featured' }}
+  link: /#/featured
 - name: Upcoming
-  link: /#/{{ 'upcoming' }}
+  link: /#/upcoming
 - name: All
-  link: /#/{{ 'published' }}
+  link: /#/published
 - name: Suggest
   link: /#/suggest
 - name: About
