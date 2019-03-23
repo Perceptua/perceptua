@@ -3,7 +3,7 @@
 - name: Upcoming
   link: /upcoming
 - name: All
-  link /published
+  link: /published
 - name: Suggest
   link: /suggest
 - name: About
