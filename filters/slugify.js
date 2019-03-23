@@ -9,7 +9,7 @@ app.filter('slugify', function() {
       for (var w in words) {
         slug += words[w].toLowerCase();
         if (w < words.length - 1) {
-          slug += '_';
+          slug += '-';
         }
       }
 
