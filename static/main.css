@@ -65,7 +65,8 @@ a {
 	text-decoration: none;
 }
 
-img {
+img, iframe {
+	display: block;
 	margin: 0.5em auto;
 	max-width: 100%;
 	border-radius: 0.5em;
