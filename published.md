@@ -5,8 +5,6 @@ layout: default
 ---
 
 {% for post in site.posts %}
-  <a class="greyscale" href="{{ post.url }}">
-
     <div class="creator-card">
 
       <p class="added right">{{ post.date | date: "%A, %-d %B %Y" }}</p>
@@ -22,6 +20,4 @@ layout: default
       {% endfor %}
       
     </div>
-
-  </a>
 {% endfor %}
