@@ -4,6 +4,6 @@ layout: post
 categories: [music]
 ---
 
-### Julian Casablancas
+Julian Casablancas has info right here.
 
 ![Julian Casablancas is an American singer-songwriter.](/static/images/casablancas.jfif)
