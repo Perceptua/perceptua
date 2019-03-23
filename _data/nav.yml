@@ -1,3 +1,5 @@
+-name: Featured
+  link: /#/featured
 - name: Upcoming
   link: /upcoming
 -name: All
