@@ -13,18 +13,18 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 A few lines, in particular, distinguish the clarity of Casablancas’ vision of American culture from that of the run-of-the-mill social critic.
 
-### *“I shop therefore I am the cause*
-### *Protect me from what I was”*
+> *“I shop therefore I am the cause*
+> *Protect me from what I was”*
 
 A play on Descartes’ “I think therefore I am,” Casablancas calls out the proclivity of contemporary culture to reduce people to their purchases as consumers – and for people to do this implicitly to <i>themselves</i> – rather than imbuing them with deeper purpose or showing an appreciation for the richness of conscious experience. Where we might identify with our inmost beliefs & ideas or with the relationships & experiences which color our lives, we are instead preoccupied with the brands of our clothing & the gadgets in our pockets. We have alienated ourselves from our full humanity, & many of us do not understand or do not want to understand what it would mean to live our lives in service of a higher aim. The rapid advancements of the last 150 years have not come without their costs.
 
-### *“I'm at your feet, where critters meet*
-### *Who should be asleep and not crossing roads or highways”*
+> *“I'm at your feet, where critters meet*
+> *Who should be asleep and not crossing roads or highways”*
 
 Anyone who has been behind the wheel on an American highway has seen the carnage. Casablancas recalls once more the alienation from nature our technology-drivensociety has produced. At whose feet he is I’m not sure, though Mother Nature springs to mind. Certainly, a plea such as this would be well addressed to the mother whose children are ground beneath the wheels of forces they do not understand. The very next lines describe these forces in vivid detail.
 
-### *“In the afterlife of super cities, rapidly devouring its outskirts*
-### *Its neon octopus arms redecorating late at night”*
+> *“In the afterlife of super cities, rapidly devouring its outskirts*
+> *Its neon octopus arms redecorating late at night”*
 
 The imagery in these lines is extremely evocative. Pay close attention the next time you travel from a suburban area into the city, or vice versa. I’m sure you will see the “neon octopus arms” stretching out from the city center, “rapidly devouring its outskirts.” Urban sprawl, some have called it. Casablancas really brings the idea to life in a way which captures its creeping, expanding essence. The chaotic & chromatic section which follows develops it even further.
 
