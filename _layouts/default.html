@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-  {% include head.html title="{{ page.title }}" description="{{ page.description }}" keywords="{{ page.tags }}" %}
+  {% include head.html title="{{ page.title }}" description="{{ page.description }}" %}
   <body>
+    {% include header.html %}
     <div>{{ content }}</div>
   </body>
 </html>
