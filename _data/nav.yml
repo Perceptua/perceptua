@@ -1,0 +1,8 @@
+- name: Upcoming
+  link: /upcoming
+-name: All
+  link /published
+-name: Suggest
+  link: /suggest
+- name: About
+  link: /about
