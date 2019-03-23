@@ -6,7 +6,7 @@ layout: default
 
 {% for post in site.posts %}
   <div class="creator-card">
-    <p class="added right">{{ post.date: "%-d %B %Y" }}</p>
+    <p class="added right">{{ post.date | date: "%a, %-d %b, %y" }}</p>
     
     <h3>{{ post.title }}</h3>
     
