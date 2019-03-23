@@ -8,7 +8,7 @@ layout: default
 
   <a class="greyscale" href="{{ post.url }}">
     <div class="creator-card">
-      <p class="added right">{{ post.date | date: "%a, %-d %b, %y" }}</p>
+      <p class="added right">{{ post.date | date: "%A, %-d %B %Y" }}</p>
 
       <h3>{{ post.title }}</h3>
 
