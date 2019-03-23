@@ -4,7 +4,7 @@ layout: post
 categories: [music]
 ---
 
-[Julian Casablancas is an American singer & songwriter](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea)
+![Julian Casablancas is an American singer & songwriter](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea)
 
 Image [Source](https://www.discogs.com/artist/430106-Julian-Casablancas)
 
