@@ -2,7 +2,6 @@
 title: Julian Casablancas
 layout: post
 categories: [music]
-permalink: none
 ---
 
 ### Julian Casablancas
