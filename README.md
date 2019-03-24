@@ -1,4 +1,4 @@
-# perceptua
+# Perceptua
 
 ## Dive Deep.
 
