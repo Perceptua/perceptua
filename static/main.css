@@ -148,7 +148,7 @@ header {
 .content-grid {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+	grid-template-columns: repeat(auto-fit, 50%);
 	grid-auto-rows: 1fr;
 }
 	
@@ -204,6 +204,9 @@ header {
 	img {
 		max-width: 75%;
 	}
+	.content-grid {
+		grid-template-columns: repeat(auto-fit, 33%);
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -213,9 +216,6 @@ header {
 	}
 	.text {
 		margin: 1em;
-	}
-	.content-grid {
-		grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
 	}
 }
 
