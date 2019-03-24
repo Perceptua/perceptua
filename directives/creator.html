@@ -1,15 +1,3 @@
 <p class="added right">{{ creator.added.seconds * 1000 | date }}</p>
 <h3>{{ creator.name }}</h3>
-<img class="hidden creator-image" src="{{ creator.image }}" alt="{{ creator.name }}" crossorigin="Anonymous">
 <p class="medium">{{ creator.medium }}</p>
-
-<script>
-  $(document).ready(function() {
-    $('.creator-image').each(function() {
-      var source = $(this).attr('src');
-      if (source.length > 1) {
-        $(this).fadeIn('slow');
-      }
-    });
-  });
-</script>
