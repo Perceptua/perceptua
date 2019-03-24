@@ -33,6 +33,13 @@
   $(document).ready(function() {
     $('#published').fadeIn('slow');
     
+    $('.creator-image').each(function() {
+      var source = $(this).attr('src');
+      if (source.length > 1) {
+        $(this).fadeIn('slow');
+      });
+    });
+    
     $('#filter').click(function() {
       $('#filter-menu').fadeToggle('slow');
     });
