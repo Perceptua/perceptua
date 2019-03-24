@@ -4,10 +4,12 @@
 <p class="medium">{{ creator.medium }}</p>
 
 <script>
-  $('.creator-image').each(function() {
+  $(document).ready(function() {
+    $('.creator-image').each(function() {
       var source = $(this).attr('src');
       if (source.length > 1) {
         $(this).fadeIn('slow');
       }
     });
+  });
 </script>
