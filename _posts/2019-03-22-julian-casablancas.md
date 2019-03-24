@@ -6,7 +6,7 @@ categories: [Music]
 
 ![Julian Casablancas is an American singer & songwriter.][1]
 
-Julian Casablancas is a name everyone should know. Julian is the lead singer of The Voidz & The Strokes, and also released an impressive solo album, Phrazes for the Young, in 2009. He is an extremely talented vocalist, and his lyrics get at the very heart of contemporary culture. His song “River of Brakelights” is, in my view, a profound commentary on the technological and economic forces driving the modern world.
+Julian Casablancas is a name everyone should know. Casablancas is the lead singer of The Voidz & The Strokes, and also released an impressive solo album, Phrazes for the Young, in 2009. He is an extremely talented vocalist, and his lyrics get at the very heart of contemporary culture. His song “River of Brakelights” is, in my view, a profound commentary on the technological and economic forces driving the modern world.
 
 <iframe width="75%" src="https://www.youtube.com/embed/DaaKsg6n8Sg" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,7 +21,7 @@ A play on Descartes’ “I think therefore I am,” Casablancas calls out the p
 > *“I'm at your feet, where critters meet*
 > *Who should be asleep and not crossing roads or highways”*
 
-Anyone who has been behind the wheel on an American highway has seen the carnage. Casablancas recalls once more the alienation from nature our technology-drivensociety has produced. At whose feet he is I’m not sure, though Mother Nature springs to mind. Certainly, a plea such as this would be well addressed to the mother whose children are ground beneath the wheels of forces they do not understand. The very next lines describe these forces in vivid detail.
+Anyone who has been behind the wheel on an American highway has seen the carnage. Casablancas recalls once more the alienation from nature our technology-driven society has produced. At whose feet he is I’m not sure, though Mother Nature springs to mind. Certainly, a plea such as this would be well addressed to the mother whose children are ground beneath the wheels of forces they do not understand. The very next lines describe these forces in vivid detail.
 
 > *“In the afterlife of super cities, rapidly devouring its outskirts*
 > *Its neon octopus arms redecorating late at night”*
