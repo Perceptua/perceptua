@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+  </head>
   <body>
     {% include header.html %}
     <div>{{ content }}</div>
