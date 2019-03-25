@@ -1,7 +1,9 @@
 ---
 title: Julian Casablancas
-layout: post
+description: Julian Casablancas is an American singer-songwriter.
+keywords: 'alternative rock, indie rock'
 categories: [Music]
+layout: post
 ---
 
 ![Julian Casablancas is an American singer & songwriter.][1]
