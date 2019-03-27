@@ -23,7 +23,7 @@ A play on Descartes’ “I think therefore I am,” Casablancas calls out the p
 > *“I'm at your feet, where critters meet*
 > *Who should be asleep and not crossing roads or highways”*
 
-Anyone who has been behind the wheel on an American highway has seen the carnage. Casablancas recalls once more the alienation from nature our technology-driven society has produced. At whose feet he is I’m not sure, though Mother Nature springs to mind. Certainly, a plea such as this would be well addressed to the mother whose children are ground beneath the wheels of forces they do not understand. The very next lines describe these forces in vivid detail.
+Anyone who has been behind the wheel on an American highway has seen the carnage. Casablancas recalls once more the alienation from nature our technology-driven society has produced. At whose feet he is I’m not sure, though Mother Nature springs to mind. Certainly, a plea such as this would be well addressed to the mother whose children are ground beneath the wheels of forces they do not understand. In this regard, it is not only four-legged critters who have been displaced, but we two-legged ones as well.
 
 > *“In the afterlife of super cities, rapidly devouring its outskirts*
 > *Its neon octopus arms redecorating late at night”*
