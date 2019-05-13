@@ -7,6 +7,7 @@ app.directive('access', function() {
       
       // animation to display featured content
       scope.grantAccess = function(url) {
+        window.sessionStorage.setItem('access', 'true');
         $('#access-loader').fadeOut('slow');
         $('access').first().fadeOut('slow');
         $('#featured').fadeOut('slow', function() {
@@ -37,7 +38,7 @@ app.directive('access', function() {
       }
       
       // send request with access code to firebase function endpoint
-      scope.checkAccess = function() {
+      scope.checkAccess = function(sessionAccess=false) {
         $('#error').empty();
         $('#access-loader').fadeIn('slow');
         $('#access-input').css('border', '0.25em solid var(--dark)');
@@ -46,6 +47,7 @@ app.directive('access', function() {
           url: 'https://us-central1-perceptua-b6ea3.cloudfunctions.net/checkAccess',
           dataType: 'json',
           data: {
+            'sessionAccess': sessionAccess,
             'code': code,
           },
           success: function(data) {
@@ -59,6 +61,16 @@ app.directive('access', function() {
             scope.failAccess(error=true);
           },
         });
+      }
+      
+      scope.checkSessionAccess = function() {
+        var access = window.sessionStorage.getItem('access');
+        if (access == 'true') {
+          scope.checkAccess(access);
+        } else {
+          $('#enter-button').fadeOut('slow');
+          $('#access-form').fadeIn('slow');
+        }
       }
       
       // show info text
