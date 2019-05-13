@@ -63,15 +63,17 @@ app.directive('access', function() {
         });
       }
       
+      /* fix me: implement session tracking for accessing featured content
       scope.checkSessionAccess = function() {
         var access = window.sessionStorage.getItem('access');
-        if (access == 'true') {
+        if (access == 'some_value') {
           scope.checkAccess(access);
         } else {
           $('#enter-button').fadeOut('slow');
           $('#access-form').fadeIn('slow');
         }
       }
+      */
       
       // show info text
       scope.showAccessHelp = function() {
