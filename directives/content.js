@@ -1,4 +1,3 @@
-// not in use
 app.directive('content', function() { 
   return { 
     restrict: 'E', 
