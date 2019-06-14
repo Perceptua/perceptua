@@ -104,6 +104,10 @@ header {
 	margin-bottom: 0.5em;
 }
 
+#site-title {
+	margin: 0.25em;
+}
+
 .nav-item {
 	margin: auto 0.5em;
 	color: var(--greyscale);
