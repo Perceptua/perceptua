@@ -1,10 +1,10 @@
-app.directive('creator', function() { 
+app.directive('content', function() { 
   return { 
     restrict: 'E', 
     scope: {
-      creator: '=',
+      content: '=',
     }, 
-    templateUrl: 'directives/creator.html',
+    templateUrl: 'directives/content.html',
     link: function(scope, element, attrs) {
     }
   };
