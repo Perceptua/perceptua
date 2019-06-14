@@ -1,8 +1,8 @@
 <div class="content-container" id="upcoming">
   <div class="content-grid">
-    <div class="creator-card" *ngIf="creators" ng-repeat="c in creators">
-      <a class="greyscale" href="#/{{ 'upcoming' }}/{{ c.medium | slugify }}/{{ c.name | slugify }}">
-        <creator creator="c"></creator>
+    <div class="content-card" *ngIf="content" ng-repeat="c in content">
+      <a class="greyscale" href="#/{{ 'upcoming' }}/{{ c.medium | slugify }}/{{ c.title | slugify }}">
+        <content content="c"></content>
       </a>
     </div>
   </div>
