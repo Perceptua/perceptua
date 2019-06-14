@@ -23,4 +23,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'content', function(
     $scope.media = data.media
     $scope.surprise = data.random;
   });
+  
+  console.log($scope.content);
 }]);
