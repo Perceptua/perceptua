@@ -3,7 +3,7 @@
 <div class="content-container">
   <div class="screen-card" *ngIf="content" ng-repeat="c in content">
     <input type="hidden" id="url" data-content-url="{{ c.content }}">
-    <h3>{{ c.name }}</h3>
+    <h3>{{ c.title }}</h3>
     <p>{{ c.medium | titlecase }}</p>
     <div class="hidden" id="content"></div>
   </div>
