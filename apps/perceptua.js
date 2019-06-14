@@ -18,7 +18,7 @@ app.config(function($routeProvider) {
     controller: "MainController",
     templateUrl: "views/published.html",
   })
-  .when("/:status/:sort/:name", {
+  .when("/:status/:sort/:title", {
     controller: "MainController",
     templateUrl: "views/content.html",
   })
