@@ -186,7 +186,6 @@ header {
 
 .medium, .title {
 	text-transform: capitalize;
-	margin: 0.25em;
 }
 
 .added, .clicks {
