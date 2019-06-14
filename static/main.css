@@ -101,10 +101,11 @@ button:hover {
 
 header {
 	border-bottom: 1px solid var(--greyscale);
-	margin-bottom: 0.5em;
+	width: 95%;
+	margin-bottom: 0.5em auto;
 }
 
-#site-title {
+#site-title, #site-nav {
 	margin: 0.25em;
 }
 
