@@ -1,5 +1,5 @@
 <header>
-  <h1>Perceptua</h1>
+  <a class="greyscale" href="/#/featured"><h1 id="site-title">Perceptua</h1></a>
   <div id="site-nav">
     {% for n in site.data.nav %}
       <a class="nav-item" href="{{ n.link }}" {% if page.url == n.link %}style="color: var(--brand);"{% endif %}>{{ n.name }}</a>
