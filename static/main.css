@@ -102,7 +102,7 @@ button:hover {
 header {
 	border-bottom: 1px solid var(--greyscale);
 	width: 95%;
-	margin-bottom: 0.5em auto;
+	margin: 0.25em auto;
 }
 
 #site-title, #site-nav {
