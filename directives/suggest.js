@@ -5,7 +5,7 @@ app.directive('suggest', function() {
     templateUrl: 'directives/suggest.html',
     link: function(scope, element, attrs) {
       
-      scope.suggestCreator = function() {
+      scope.suggestContent = function() {
         $('#received-suggestion').fadeIn('slow');
       }
       
