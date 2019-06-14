@@ -157,19 +157,19 @@ header {
 }
 	
 
-.creator-card, .screen-card {
+.content-card, .screen-card {
 	background-color: rgba(103, 96, 135, 0.75);
 	border: 0.25em solid var(--accent);
 	border-radius: 0.5em;
 	padding: 0.5em;
 }
 
-.creator-card {
+.content-card {
 	display: inline-block;
 	margin: 0.25em;
 }
 
-.creator-card:hover {
+.content-card:hover {
 	background-color: rgb(116, 182, 181, 0.5);
 }
 
