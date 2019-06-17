@@ -105,7 +105,19 @@ header {
 	margin: 0.25em auto;
 }
 
-#site-title, #site-nav {
+#logo {
+	height: 1.25em;
+    	padding: 0.125em;
+    	border: 2px solid var(--greyscale);
+    	border-radius: 1.25em;
+    	margin: 0;
+}
+
+#site-title {
+	margin: 0 0 0.5em 0;
+}
+
+#site-nav {
 	margin: 0.25em;
 }
 
