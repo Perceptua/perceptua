@@ -112,9 +112,12 @@ header {
     	border-radius: 1.25em;
 }
 
-#site-title, #logo {
-	display: inline-block;
+#site-title {
 	margin: 0 0 0.5em 0;
+}
+
+#logo, #site-title {
+	display: inline-block;
 }
 
 #site-nav {
