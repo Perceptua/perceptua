@@ -110,6 +110,7 @@ header {
     	padding: 0.125em;
     	border: 2px solid var(--greyscale);
     	border-radius: 1.25em;
+	margin: 0;
 }
 
 #site-title {
