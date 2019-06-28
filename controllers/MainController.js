@@ -14,7 +14,6 @@ app.controller('MainController', ['$scope', '$routeParams', 'content', function(
       filter = {field: 'medium', value: $routeParams.sort};
     }
   } else if ($routeParams.title) {
-    console.log(content.getTitle($routeParams.title));
     filter = {field: 'title', value: content.getTitle($routeParams.title)};
   }
   
