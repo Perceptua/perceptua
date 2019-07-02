@@ -56,7 +56,7 @@ body:before {
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
-	background-size: contain;
+	background-size: 75%;
 }
 
 a {
@@ -108,8 +108,6 @@ header {
 #logo {
 	height: 1.5em;
     	padding: 0.125em;
-    	border: 2px solid var(--greyscale);
-    	border-radius: 1.5em;
 	margin: 0;
 }
 
@@ -231,6 +229,9 @@ header {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+	body:before {
+		background-size: 50%;
+	}
 	.screen-card {
 		width: 75%;
 	}
@@ -241,6 +242,9 @@ header {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+	body:before {
+		background-size: 33%;
+	}
 	.screen-card {
 		width: 50%;
 	}
