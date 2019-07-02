@@ -52,7 +52,7 @@ body:before {
 	height: 100%;
 	z-index: -10;
 	background-color: black;
-	background: url(images/perceptua-low-poly.png) no-repeat center center;
+	background: url(images/perceptua-low-poly.svg) no-repeat center center;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
