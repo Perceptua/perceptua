@@ -6,8 +6,6 @@ categories: [Music]
 layout: post
 ---
 
-![Julian Casablancas is an American singer & songwriter.][1]
-
 Julian Casablancas is a name everyone should know. Casablancas is the lead singer of The Voidz & The Strokes, and also released an impressive solo album, Phrazes for the Young, in 2009. He is an extremely talented vocalist, and his lyrics get at the very heart of contemporary culture. His song “River of Brakelights” is, in my view, a profound commentary on the technological and economic forces driving the modern world.
 
 <iframe width="75%" src="https://www.youtube.com/embed/DaaKsg6n8Sg" frameborder="0"
@@ -31,11 +29,5 @@ Anyone who has been behind the wheel on an American highway has seen the carnage
 The imagery in these lines is extremely evocative. Pay close attention the next time you travel from a suburban area into the city, or vice versa. I’m sure you will see the “neon octopus arms” stretching out from the city center, “rapidly devouring its outskirts.” Urban sprawl, some have called it. Casablancas really brings the idea to life in a way which captures its creeping, expanding essence. The chaotic & chromatic section which follows develops it even further.
 
 The sense of hopelessness Casablancas expresses in River of Brakelights is as brilliant as it is painful. Its excellent writing, brilliant vocal performance, and addictively catchy chorus have brought my thumb to the repeat button on more than one occasion.
-
----
-
-Image [Source](https://www.discogs.com/artist/430106-Julian-Casablancas)
-
-[1]: https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcasablancas.jfif?alt=media&token=cabe6894-6f84-4402-ad9c-deba357d66ea
 
 
