@@ -5,10 +5,19 @@ categories: [Literature]
 layout: post
 ---
 
+### Video
 <iframe
   width="560" height="315" src="https://www.youtube.com/embed/tVBcdmfaI0I" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+
+### Audio
+<audio controls>
+  <source src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FBrave%20New%20World.mp3?alt=media&token=1823db64-fa19-4233-9c0a-55b4e234ffc1" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+### Text
 
   *Brave New World* is Aldous Huxley’s famous & extremely prescient story of a dystopian future in which every aspect of life is controlled by an all-powerful state. It’s essential reading for informed thinkers, & it’s less than 200 pages, so go & read it if you haven’t already. I won’t waste much time describing the plot.
   
