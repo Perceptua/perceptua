@@ -12,7 +12,7 @@ layout: post
 </iframe>
 
 ### Audio
-<audio controls>
+<audio controls controlsList="nodownload">
   <source src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FBrave%20New%20World.mp3?alt=media&token=1823db64-fa19-4233-9c0a-55b4e234ffc1" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
