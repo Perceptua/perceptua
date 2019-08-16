@@ -1,3 +1,10 @@
+---
+title: Brave New World
+keywords: 'literature, novella, dystopian'
+categories: [Literature]
+layout: post
+---
+
 <div class="screen-card">
   <img crossorigin="Anonymous" src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/featured%2Fhuxley.jpg?alt=media&token=1015d5dc-8f24-4b77-b68c-8a02b16add32">
 
