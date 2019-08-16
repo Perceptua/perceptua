@@ -23,6 +23,6 @@ app.config(function($routeProvider) {
     templateUrl: "views/content.html",
   })
   .otherwise({
-    redirectTo: "/featured",
+    redirectTo: "/published",
   });
 });
