@@ -6,10 +6,14 @@ app.controller('MainController', ['$scope', '$routeParams', 'content', function(
   var filter = null;
   var orderBy = {field: 'added', order: 'desc'};
   
+  if ($routeParams.status == 'upcoming') {
+    orderBy.order = 'asc';
+  }
+  
   // update query from $routeParams of requested resource
   if ($routeParams.sort && !$routeParams.title) {
     if ($routeParams.sort == 'older') {
-      orderBy = {field: 'added', order: 'asc'};
+      orderBy.order = 'asc';
     } else {
       filter = {field: 'medium', value: $routeParams.sort};
     }
