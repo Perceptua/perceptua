@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<a class="hidden info greyscale" id="back" style="float: left;" href="#/published"><i class="fas fa-angle-left"></i> Back</a><br>
+
 <div id="content" class="hidden screen-card">
   <h3>{{ page.title }}</h3>
   
@@ -11,6 +13,16 @@ layout: default
   
   <div class="text">
     {{ content }}
+  </div>
+  
+  <div style="display:flex;justify-content:space-between;">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a href="{{ page.next.url }}">Next: {{ page.next.title }}</a>
+    {% endif %}
   </div>
 </div>
 
