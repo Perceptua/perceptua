@@ -21,10 +21,7 @@ layout: post
 
   *Brave New World* is Aldous Huxley’s famous & extremely prescient story of a dystopian future in which every aspect of life is controlled by an all-powerful state. It’s essential reading for informed thinkers, & it’s less than 200 pages, so go & read it if you haven’t already. I won’t waste much time describing the plot.
   
-<iframe
-  style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-  src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=perceptua02-20&marketplace=amazon&region=US&placement=0060776099&asins=0060776099&linkId=08fd3c1084859f33d0862c649af734a2&show_border=true&link_opens_in_new_window=false&price_color=4bee8f&title_color=f2f2f2&bg_color=676087">
-</iframe>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=perceptua02-20&marketplace=amazon&region=US&placement=0060776099&asins=0060776099&linkId=05404cca5faa4713991bc822d2db2b08&show_border=false&link_opens_in_new_window=false&price_color=f2f2f2&title_color=f2f2f2&bg_color=74b6b5"></iframe>
 
   The true genius of the book, what really sets Huxley apart, is an intuition for the psychology of social control. As opposed to the rulers of some other fictional dystopias, the agents of Huxley’s World State do not maintain control through violence and outright oppression. Instead, they begin to mold obedient citizens from a very young age - before they are even conceived, in fact. Children are pre-sorted into social classes, forbidden to have any private thoughts or close personal relationships, and essentially hypnotized into conformity. The government provides plenty of vacuous entertainment to occupy all of their spare time. Bright lights, pleasant smells, and sensuous experiences are designed to keep everyone complacent, & all with one aim in mind - stability. It is through stability that the state maintains its grip on its citizens.
 
