@@ -146,6 +146,14 @@ header {
 	padding: 1em 0.5em;
 }
 
+.content-title {
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+.display-title {
+	font-family: 'Poiret One', cursive;
+}
+
 .loader {
 	border: 0.5em dotted var(--greyscale);
 	border-top: 0.5em dotted var(--brand);
