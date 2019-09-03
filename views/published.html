@@ -21,11 +21,11 @@
   </div>
   
   <div class="content-grid">
-    <a class="greyscale" href="/{{ c.medium | slugify }}/{{ c.title | slugify }}">
-      <div class="content-card" *ngIf="content" ng-repeat="c in content">
+    <div class="content-card" *ngIf="content" ng-repeat="c in content">
+      <a class="greyscale" href="/{{ c.medium | slugify }}/{{ c.title | slugify }}">
         <content content="c"></content>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </div>
 
