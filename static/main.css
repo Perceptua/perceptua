@@ -191,6 +191,7 @@ header {
 .content-card {
 	display: inline-block;
 	margin: 0.25em;
+	cursor: pointer;
 }
 
 .content-card:hover {
