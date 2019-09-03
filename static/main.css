@@ -207,7 +207,12 @@ header {
 	margin: 1em auto;
 }
 
-.title, .creator, .medium {
+.title {
+	text-transform: capitalize;
+}
+
+.creator, .medium {
+	margin: 0;
 	text-transform: capitalize;
 }
 
