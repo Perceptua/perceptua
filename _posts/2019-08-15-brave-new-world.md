@@ -1,6 +1,7 @@
 ---
 title: Brave New World
-keywords: 'literature, novella, dystopian'
+description: The enduring meaning of Aldous Huxley's dystopian novella, Brave New World.
+keywords: Aldous Huxley, literature, novella
 categories: [Literature]
 layout: post
 ---
