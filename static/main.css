@@ -223,6 +223,8 @@ header {
 .footer {
 	display: flex;
 	justify-content: space-between;
+	width: 75%;
+	margin: auto;
 }
 
 /* Media Queries */
