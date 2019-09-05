@@ -1,8 +1,9 @@
 ---
 title: Brave New World
+creator: Aldous Huxley
+categories: [Literature]
 description: The enduring meaning of Aldous Huxley's dystopian novella, Brave New World.
 keywords: Aldous Huxley, literature, novella
-categories: [Literature]
 layout: post
 ---
 
