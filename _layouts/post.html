@@ -7,8 +7,10 @@ layout: default
 <div id="content" class="hidden screen-card">
   <h3>{{ page.title }}</h3>
   
+  <p>{{ page.creator }}</p>
+  
   {% for c in page.categories %}
-    <p>{{ c }}</p>
+    <p class="info">{{ c }}</p>
   {% endfor %}
   
   <div class="text">
