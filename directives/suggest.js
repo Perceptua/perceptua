@@ -17,7 +17,14 @@ app.directive('suggest', function() {
       }
       
       function showReceived() {
-        $('#received-suggestion').fadeIn('slow');
+        $('#received-suggestion').fadeIn('slow', function() {
+          
+          $('#suggest-form').fadeOut('slow', function() {
+            $('#suggest-form').empty().fadeIn('slow');
+          });
+          
+          $('#received-suggestion').fadeOut('slow');
+        });
       }
       
     }
