@@ -5,12 +5,19 @@ app.directive('suggest', function() {
     templateUrl: 'directives/suggest.html',
     link: function(scope, element, attrs) {
       
-      scope.suggestContent = function() {
-        $('#received-suggestion').fadeIn('slow');
+      scope.createSuggestion = function() {
+        var data = {};
+        $('.suggest-field').each(function(field) {
+          data[field.attr('id')] = field.val();
+        });
+        
+        firebase.firestore().collection('suggestions').add(data).then(function() {
+          showReceived();
+        });
       }
       
-      scope.showEmail = function() {
-        $('#email').fadeIn('slow');
+      function showReceived() {
+        $('#received-suggestion').fadeIn('slow');
       }
       
     }
