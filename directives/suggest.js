@@ -7,8 +7,8 @@ app.directive('suggest', function() {
       
       scope.createSuggestion = function() {
         var data = {};
-        $('.suggest-field').each(function(field) {
-          data[field.attr('id')] = field.val();
+        $('.suggest-field').each(function() {
+          data[$(this).attr('id')] = $(this).val();
         });
         
         firebase.firestore().collection('suggestions').add(data).then(function() {
