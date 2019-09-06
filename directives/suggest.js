@@ -20,7 +20,8 @@ app.directive('suggest', function() {
         $('#received-suggestion').fadeIn('slow', function() {
           
           $('#suggest-form').fadeOut('slow', function() {
-            $('#suggest-form').empty().fadeIn('slow');
+            $('#suggest-form').find('input[type=text]').val('');
+            $('#suggest-form').fadeIn('slow');
           });
           
           $('#received-suggestion').fadeOut('slow');
