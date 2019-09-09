@@ -13,11 +13,9 @@ app.directive('suggest', function() {
         var data = {frequency: 1};
         $('.suggest-field').each(function() {
           var id = $(this).attr('id');
-          var input = $(this).val();
-          var chars = input.split('');
+          var input = $(this).val().toLowerCase();
           
           data[id] = input;
-          data[id + '_chars'] = chars; // store character array for search
         });
         
         firebase.firestore().collection('suggestions').add(data).then(function() {
@@ -41,11 +39,14 @@ app.directive('suggest', function() {
             docs.forEach(function(doc) {
               suggestions.push(doc.data()[field]);
             });
-          alert(suggestions);
           return suggestions;
         }).catch(function(error) {
           console.log(error);
         });
+      }
+      
+      function autocomplete(suggestions) {
+        console.log(suggestions);
       }
       
       function showReceived() {
