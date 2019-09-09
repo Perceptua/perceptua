@@ -39,13 +39,13 @@ app.directive('suggest', function() {
             docs.forEach(function(doc) {
               suggestions.push(doc.data()[field]);
             });
-          return suggestions;
+          return autocomplete(field, suggestions);
         }).catch(function(error) {
           console.log(error);
         });
       }
       
-      function autocomplete(suggestions) {
+      function autocomplete(field, suggestions) {
         console.log(suggestions);
       }
       
