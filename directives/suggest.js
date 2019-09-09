@@ -25,10 +25,9 @@ app.directive('suggest', function() {
         });
       }
       
-      scope.fetchSuggestions = function(ev) {
+      scope.fetchSuggestions = function(field) {
         var suggestions = [];
-        var field = $(ev.target).attr('id');
-        var input = $(ev.target).val().toLowerCase();
+        var input = $('#' + field).val().toLowerCase();
         var bound = input + 'a'; // create upper bound for query
         
         firebase.firestore().collection('suggestions')
