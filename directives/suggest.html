@@ -1,11 +1,11 @@
 <p>What content would you like to see featured on Perceptua?</p>
 
 <form id="suggest-form">
-  <input type="text" class="suggest-field" id="title" ng-model="title" ng-change="fetchSuggestions(event)">
+  <input type="text" class="suggest-field" id="title" ng-model="title" ng-change="fetchSuggestions('title')">
   <br>
-  <input type="text" class="suggest-field" id="creator" ng-model="creator" ng-change="fetchSuggestions(event)">
+  <input type="text" class="suggest-field" id="creator" ng-model="creator" ng-change="fetchSuggestions('creator')">
   <br>
-  <input type="text" class="suggest-field" id="medium" ng-model="medium" ng-change="fetchSuggestions(event)">
+  <input type="text" class="suggest-field" id="medium" ng-model="medium" ng-change="fetchSuggestions('medium')">
 </form>
 
 <button id="suggest-button" ng-click="createSuggestion()">Suggest</button>
