@@ -5,6 +5,10 @@ app.directive('suggest', function() {
     templateUrl: 'directives/suggest.html',
     link: function(scope, element, attrs) {
       
+      scope.title = 'Title';
+      scope.creator = 'Creator Name';
+      scope.medium = 'Medium (e.g. Music, Film)';
+      
       scope.createSuggestion = function() {
         var data = {frequency: 1};
         $('.suggest-field').each(function() {
@@ -33,6 +37,7 @@ app.directive('suggest', function() {
             docs.forEach(function(doc) {
               suggestions.push(doc.data()[field]);
             });
+          alert(suggestions);
           return suggestions;
         }).catch(function(error) {
           console.log(error);
@@ -50,13 +55,6 @@ app.directive('suggest', function() {
           $('#received-suggestion').fadeOut('slow');
         });
       }
-      
-      $(document).ready(function() {
-        $('.suggest-field').change(function(ev) {
-          var suggesions = scope.fetchSuggestions(ev);
-          alert(suggestions);
-        });
-      });
       
     }
   };
