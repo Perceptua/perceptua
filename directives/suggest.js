@@ -28,8 +28,13 @@ app.directive('suggest', function() {
       scope.fetchSuggestions = function(field) {
         var suggestions = [];
         var input = $('#' + field).val().toLowerCase();
-        var bound = input + 'a'; // create upper bound for query
         
+        /* 
+          increment final char of input to create query bound. based on icktoofay's answer at
+          https://stackoverflow.com/questions/2256607/how-to-get-the-next-letter-of-the-alphabet-in-javascript
+        */
+        var bound = input.slice(0, -1) + String.fromCharCode(input.charCodeAt(input.length - 1) + 1)
+                
         firebase.firestore().collection('suggestions')
           .where(field, '>=', input).where(field, '<', bound)
           .get().then(function(docs) {
