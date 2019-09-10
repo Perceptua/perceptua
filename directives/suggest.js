@@ -9,12 +9,6 @@ app.directive('suggest', function() {
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
       
-      class Suggestion {
-        constructor(data) {
-          this.data = data;
-        }
-      }
-      
       scope.createSuggestion = function() {
         var data = {frequency: 1};
         $('.suggest-field').each(function() {
@@ -43,8 +37,7 @@ app.directive('suggest', function() {
           .where(field, '>=', input).where(field, '<', bound)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
-              var suggestion = new Suggestion(doc.data());
-              suggestions.push(suggestion);
+              suggestions.push(doc.data());
             });
           
             return autocomplete(field, suggestions);
@@ -58,15 +51,15 @@ app.directive('suggest', function() {
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
             '<p class="autocomplete" onclick="fillForm(' + suggestions[s] + ')">'
-              + suggestions[s].data[field] + 
+              + suggestions[s][field] + 
             '</p>'
           );
         }
       }
       
-      function fillForm(suggestion) {
-        for (var field in suggestion) {
-          $('#' + field).val(suggestion[field]);
+      function fillForm(data) {
+        for (var field in data) {
+          $('#' + field).val(data[field]);
           $('#' + field + '-autocomplete').empty();
         }
       }
