@@ -49,18 +49,7 @@ app.directive('suggest', function() {
           );
         }
       }
-      
-      scope.fillForm = function(docId) {
-        firebase.firestore().collection('suggestions').doc(docId)
-          .get().then(function(doc) {
-            var data = doc.data();
-            for (var field in data) {
-              $('#' + field).val(data[field]);
-              $('#' + field + '-autocomplete').empty();
-            }
-          });
-      }
-      
+            
       function showReceived() {
         $('#received-suggestion').fadeIn('slow', function() {
           $('#suggest-form').fadeOut('slow', function() {
@@ -74,3 +63,14 @@ app.directive('suggest', function() {
     }
   };
 });
+
+function fillForm(docId) {
+  firebase.firestore().collection('suggestions').doc(docId)
+    .get().then(function(doc) {
+      var data = doc.data();
+      for (var field in data) {
+        $('#' + field).val(data[field]);
+        $('#' + field + '-autocomplete').empty();
+      }
+    });
+}
