@@ -9,6 +9,15 @@ app.directive('suggest', function() {
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
       
+      class Suggestion {
+        constructor(data) {
+          this.title = data.title;
+          this.creator = data.creator;
+          this.medium = data.medium;
+          this.frequency = data.frequency;
+        }
+      }
+      
       scope.createSuggestion = function() {
         var data = {frequency: 1};
         $('.suggest-field').each(function() {
@@ -37,8 +46,10 @@ app.directive('suggest', function() {
           .where(field, '>=', input).where(field, '<', bound)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
-              suggestions.push(doc.data()[field]);
+              var suggestion = new Suggestion(doc.data());
+              suggestions.push(suggestion);
             });
+          
           return autocomplete(field, suggestions);
         }).catch(function(error) {
           console.log(error);
@@ -46,7 +57,18 @@ app.directive('suggest', function() {
       }
       
       function autocomplete(field, suggestions) {
-        console.log(suggestions);
+        for (var s in suggestions) {
+          $('#' + field + '-autocomplete').append(
+            '<p class="autocomplete" onclick="' + fillForm(s) + '">' + s[field] + '</p>'
+          );
+        }
+      }
+      
+      function fillForm(suggestion) {
+        for (var field in suggestion) {
+          $('#' + field).val(suggestion[field]);
+          $('#' + field + '-autocomplete').empty();
+        }
       }
       
       function showReceived() {
