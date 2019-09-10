@@ -217,6 +217,20 @@ header {
 	margin: 0;
 }
 
+.autocomplete-container {
+	width: 50%;
+	background-color: var(--accent);
+}
+
+.autocomplete {
+	color: var(--dark);
+	margin: 0;
+}
+
+.autocomplete:hover {
+	background-color: var(--accent);
+}
+
 .social {
 	margin: 0.5em auto;
 }
