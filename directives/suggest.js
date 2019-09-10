@@ -42,9 +42,9 @@ app.directive('suggest', function() {
       function autocomplete(field, suggestions) {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
-          var json = JSON.stringify(suggestions[s]);
+          var dataString = String(suggestions[s]);
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm("' + json + '")">'
+            '<p class="autocomplete" onclick="fillForm(' + dataString + ')">'
               + suggestions[s][field] + 
             '</p>'
           );
