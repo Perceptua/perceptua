@@ -54,10 +54,10 @@ app.directive('suggest', function() {
       }
       
       function autocomplete(field, suggestions) {
-        console.log(field, suggestions);
+        $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="' + fillForm(suggestions[s]) + '">'
+            '<p class="autocomplete" onclick="fillForm(' + suggestions[s] + ')">'
               + suggestions[s].data[field] + 
             '</p>'
           );
