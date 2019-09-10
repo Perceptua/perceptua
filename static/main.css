@@ -219,11 +219,13 @@ header {
 
 .autocomplete-container {
 	width: 50%;
-	background-color: var(--accent);
+	margin: auto;
+	border-radius: 0.5em;
+	background-color: var(--greyscale);
 }
 
 .autocomplete {
-	color: var(--dark);
+	color: black;
 	margin: 0;
 }
 
