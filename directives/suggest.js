@@ -43,14 +43,14 @@ app.directive('suggest', function() {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(' + s + ')">'
+            '<p class="autocomplete" onclick="fillForm(\'' + s + '\')">'
               + suggestions[s] + 
             '</p>'
           );
         }
       }
       
-      function fillForm(docId) {
+      scope.fillForm = function(docId) {
         firebase.firestore().collection('suggestions').doc(docId)
           .get().then(function(doc) {
             var data = doc.data();
