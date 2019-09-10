@@ -8,6 +8,7 @@ app.directive('suggest', function() {
       scope.title = 'Title';
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
+      scope.suggestions = [];
       
       scope.createSuggestion = function() {
         var data = {frequency: 1};
@@ -24,7 +25,6 @@ app.directive('suggest', function() {
       }
       
       scope.fetchSuggestions = function(field) {
-        var suggestions = [];
         var input = $('#' + field).val().toLowerCase();
         
         /* 
@@ -37,29 +37,29 @@ app.directive('suggest', function() {
           .where(field, '>=', input).where(field, '<', bound)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
-              suggestions.push(doc.data());
+              scope.suggestions.push(doc.data());
             });
           
-            return autocomplete(field, suggestions);
+            return autocomplete(field);
         }).catch(function(error) {
           console.log(error);
         });
       }
       
-      function autocomplete(field, suggestions) {
+      function autocomplete(field) {
         $('#' + field + '-autocomplete').empty();
-        for (var s in suggestions) {
+        for (var s in scope.suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(' + suggestions[s] + ')">'
-              + suggestions[s][field] + 
+            '<p class="autocomplete" onclick="fillForm(' + s + ')">'
+              + scope.suggestions[s][field] + 
             '</p>'
           );
         }
       }
       
-      function fillForm(data) {
-        for (var field in data) {
-          $('#' + field).val(data[field]);
+      function fillForm(index) {
+        for (var field in scope.suggestions[index]) {
+          $('#' + field).val(scope.suggestions[index][field]);
           $('#' + field + '-autocomplete').empty();
         }
       }
