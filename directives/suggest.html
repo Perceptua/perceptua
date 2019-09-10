@@ -3,17 +3,17 @@
 <form id="suggest-form">
   <input type="text" class="suggest-field" id="title" onclick="selectText(event)"
          ng-model="title" ng-change="fetchSuggestions('title')">
-  <div id="title-autocomplete"></div>
+  <div class="autocomplete-container" id="title-autocomplete"></div>
   <br>
   
   <input type="text" class="suggest-field" id="creator" onclick="selectText(event)"
          ng-model="creator" ng-change="fetchSuggestions('creator')">
-  <div id="creator-autocomplete"></div>
+  <div class="autocomplete-container" id="creator-autocomplete"></div>
   <br>
   
   <input type="text" class="suggest-field" id="medium" onclick="selectText(event)"
          ng-model="medium" ng-change="fetchSuggestions('medium')">
-  <div id="creator-autocomplete"></div>
+  <div class="autocomplete-container" id="medium-autocomplete"></div>
 </form>
 
 <button id="suggest-button" ng-click="createSuggestion()">Suggest</button>
