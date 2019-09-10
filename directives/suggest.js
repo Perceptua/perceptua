@@ -43,7 +43,7 @@ app.directive('suggest', function() {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(\'' + s + '\')">'
+            '<p class="autocomplete" ng-click="fillForm(\'' + s + '\')">'
               + suggestions[s] + 
             '</p>'
           );
