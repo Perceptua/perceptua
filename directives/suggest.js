@@ -22,7 +22,7 @@ app.directive('suggest', function() {
       }
       
       scope.fetchSuggestions = function(field) {
-        var suggestions = [];
+        var suggestions = {};
         var input = $('#' + field).val().toLowerCase();
         // increment final char of input to create query bound. based on icktoofay's answer at
         // https://stackoverflow.com/questions/2256607/how-to-get-the-next-letter-of-the-alphabet-in-javascript
@@ -31,7 +31,7 @@ app.directive('suggest', function() {
           .where(field, '>=', input).where(field, '<', bound)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
-              suggestions.push(doc.data());
+              suggestions[doc.id] = (doc.data()[field]);
             });
             return autocomplete(field, suggestions);
         }).catch(function(error) {
@@ -42,22 +42,23 @@ app.directive('suggest', function() {
       function autocomplete(field, suggestions) {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
-          var dataString = String(suggestions[s]);
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(' + dataString + ')">'
-              + suggestions[s][field] + 
+            '<p class="autocomplete" onclick="fillForm(' + s + ')">'
+              + suggestions[s] + 
             '</p>'
           );
         }
       }
       
-      function fillForm(json) {
-        console.log(json);
-        var suggestion = JSON.parse(json);
-        for (var field in suggestion) {
-          $('#' + field).val(suggestion[field]);
-          $('#' + field + '-autocomplete').empty();
-        }
+      function fillForm(docId) {
+        firebase.firestore().collection('suggestions').doc(docId)
+          .get().then(function(doc) {
+            var data = doc.data();
+            for (var field in data) {
+              $('#' + field).val(data[field]);
+              $('#' + field + '-autocomplete').empty();
+            }
+          });
       }
       
       function showReceived() {
