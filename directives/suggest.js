@@ -52,6 +52,7 @@ app.directive('suggest', function() {
       }
       
       scope.fillForm = function(index) {
+        console.log(index);
         for (var field in scope.suggestions[index]) {
           $('#' + field).val(scope.suggestions[index][field]);
           $('#' + field + '-autocomplete').empty();
