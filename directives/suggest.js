@@ -42,18 +42,19 @@ app.directive('suggest', function() {
       function autocomplete(field, suggestions) {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
-          var dataString = JSON.stringify(suggestions[s]);
+          var json = JSON.stringify(suggestions[s]);
+          console.log(json);
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(' + dataString + ')">'
+            '<p class="autocomplete" onclick="fillForm(' + json + ')">'
               + suggestions[s][field] + 
             '</p>'
           );
         }
       }
       
-      function fillForm(data) {
-        console.log(data);
-        var suggestion = JSON.parse(data);
+      function fillForm(json) {
+        console.log(json);
+        var suggestion = JSON.parse(json);
         for (var field in suggestion) {
           $('#' + field).val(suggestion[field]);
           $('#' + field + '-autocomplete').empty();
