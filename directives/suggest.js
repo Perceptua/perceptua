@@ -40,10 +40,28 @@ app.directive('suggest', function() {
       }
       
       function autocomplete(field, suggestions) {
-        $('#' + field + '-autocomplete').empty();
+        $('.autocomplete-container').empty();
+        if (field == 'title') {
+          createFormWidget(suggestions);
+        } else {
+          createFieldWidget(field, suggestions);
+        }
+      }
+      
+      function createFormWidget(suggestions) {
+        for (var s in suggestions) {
+          $('#title-autocomplete').append(
+            '<p class="autocomplete" onclick="fillForm(\'' + s + '\')">'
+              + suggestions[s] + 
+            '</p>'
+          );
+        }
+      }
+      
+      function createFieldWidget(field, suggestions) {
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(\'' + s + '\')">'
+            '<p class="autocomplete" onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')">'
               + suggestions[s] + 
             '</p>'
           );
@@ -70,7 +88,12 @@ function fillForm(docId) {
       var data = doc.data();
       for (var field in data) {
         $('#' + field).val(data[field]);
-        $('#' + field + '-autocomplete').empty();
+        $('.autocomplete-container').empty();
       }
     });
+}
+
+function fillField(field, value) {
+  $('#' + field).val(value);
+  $('.autocomplete-container').empty();
 }
