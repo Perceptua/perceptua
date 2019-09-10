@@ -43,9 +43,8 @@ app.directive('suggest', function() {
         $('#' + field + '-autocomplete').empty();
         for (var s in suggestions) {
           var json = JSON.stringify(suggestions[s]);
-          console.log(json);
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(' + json + ')">'
+            '<p class="autocomplete" onclick="fillForm("' + json + '")">'
               + suggestions[s][field] + 
             '</p>'
           );
