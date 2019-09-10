@@ -41,7 +41,7 @@ app.directive('suggest', function() {
         var bound = input.slice(0, -1) + String.fromCharCode(input.charCodeAt(input.length - 1) + 1)
         
         firebase.firestore().collection('suggestions')
-          .where(field, '>=', input).where(field, '<', bound)
+          .where(field, '>=', input).where(field, '<', bound).limit(5)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
               var value = doc.data()[field];
