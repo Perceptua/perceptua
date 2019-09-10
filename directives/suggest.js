@@ -47,6 +47,7 @@ app.directive('suggest', function() {
               var value = doc.data()[field];
               if (!values.includes(value)) { // if value is unique
                 suggestions[doc.id] = value;
+                values.push(value);
               }
             });
             return autocomplete(field, suggestions);
