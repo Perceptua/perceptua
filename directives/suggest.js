@@ -11,10 +11,7 @@ app.directive('suggest', function() {
       
       class Suggestion {
         constructor(data) {
-          this.title = data.title;
-          this.creator = data.creator;
-          this.medium = data.medium;
-          this.frequency = data.frequency;
+          this.data = data;
         }
       }
       
@@ -50,16 +47,17 @@ app.directive('suggest', function() {
               suggestions.push(suggestion);
             });
           
-          return autocomplete(field, suggestions);
+            return autocomplete(field, suggestions);
         }).catch(function(error) {
           console.log(error);
         });
       }
       
       function autocomplete(field, suggestions) {
+        console.log(field, suggestions);
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="' + fillForm(s) + '">' + s[field] + '</p>'
+            '<p class="autocomplete" onclick="' + fillForm(s) + '">' + s.data[field] + '</p>'
           );
         }
       }
