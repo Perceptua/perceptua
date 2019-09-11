@@ -4,7 +4,6 @@ function selectText(ev) {
 
 function addFormNav(inputSelector) {
   $(inputSelector).keydown(function(ev) {
-    console.log(inputSelector, ev.keyCode);
     var items = $('.item');
     var selected = items.filter('.active');
     var current;
