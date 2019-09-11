@@ -18,18 +18,18 @@ app.directive('suggest', function() {
         });
         console.log(fields);
         firebase.firestore().collection('suggestion_title')
-          .where('name', '==', fields.title).get().then(function(doc) {
-            if (doc.exists) { // if title has been suggested
+          .where('name', '==', fields.title).get().then(function(docs) {
+            if (docs.length > 0) { // if title has been suggested
               console.log('found ' + fields.title);
             } else {
               firebase.firestore().collection('suggestion_creator')
-                .where('name', '==', fields.creator).get().then(function(doc) {
-                  if (doc.exists) { // if creator has been suggested
+                .where('name', '==', fields.creator).get().then(function(docs) {
+                  if (docs.length > 0) { // if creator has been suggested
                     console.log('found ' + fields.creator);
                   } else {
                     firebase.firestore().collection('suggestion_medium')
-                      .where('name', '==', fields.medium).get().then(function(doc) {
-                        if (doc.exists) { // if medium has been suggested
+                      .where('name', '==', fields.medium).get().then(function(docs) {
+                        if (docs.length > 0) { // if medium has been suggested
                           console.log('found ' + fields.medium);
                         }
                     });
