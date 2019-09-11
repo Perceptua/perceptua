@@ -63,6 +63,7 @@ app.directive('suggest', function() {
         } else {
           createFieldWidget(field, suggestions);
         }
+        addFormNav('.suggest-field');
       }
       
       function createFormWidget(suggestions) {
@@ -104,7 +105,3 @@ function fillField(field, value) {
   $('#' + field).val(value);
   $('.autocomplete').empty();
 }
-
-$(document).ready(function() {
-  addFormNav('.suggest-field');
-});
