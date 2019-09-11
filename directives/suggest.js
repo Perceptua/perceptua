@@ -105,7 +105,7 @@ function resolveReferences(refs) {
   for (var r in refs) {
     refs[r].get().then(function(doc) {
       if (doc.exists) {
-        console.log(doc.data().name);
+        console.log(r);
         $(r).val(doc.data().name);
       }
     });
