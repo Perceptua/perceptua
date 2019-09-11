@@ -217,11 +217,22 @@ header {
 	margin: 0;
 }
 
-.autocomplete-container {
+.field-wrapper {
 	width: 50%;
-	margin: auto;
-	border-radius: 0.5em;
+}
+
+.suggest-field {
+	width: 100%;
+}
+
+.autocomplete-container {
+	width: 100%;
+	position: absolute;
+	left: 25%;
+	z-index: 99;
 	background-color: var(--greyscale);
+	border-radius: 0.5em;
+	cursor: pointer;
 }
 
 .autocomplete {
@@ -230,7 +241,7 @@ header {
 }
 
 .autocomplete:hover {
-	background-color: var(--accent);
+	color: var(--brand);
 }
 
 .social {
