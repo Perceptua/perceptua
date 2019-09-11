@@ -220,7 +220,6 @@ header {
 .autocomplete-container {
 	position: relative;
 	margin: auto;
-	background-color: var(--greyscale);
 	cursor: pointer;
 }
 
@@ -230,13 +229,13 @@ header {
 	left: 32%;
 	right: 32%;
 	z-index: 99;
-	color: var(--dark);
 	margin: 0;
 }
 
 .autocomplete div {
 	padding: 0.25em;
 	cursor: pointer;
+	color: black;
 	background-color: var(--greyscale);
 	border-bottom: 1px solid var(--dark);
 }
