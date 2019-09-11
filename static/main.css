@@ -227,10 +227,10 @@ header {
 .autocomplete {
 	position: absolute;
 	top: 100%;
-	left: 0;
-	right: 0;
+	left: 32%;
+	right: 32%;
 	z-index: 99;
-	color: black;
+	color: var(--dark);
 	margin: 0;
 }
 
