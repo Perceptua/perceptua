@@ -67,20 +67,20 @@ app.directive('suggest', function() {
       
       function createFormWidget(suggestions) {
         for (var s in suggestions) {
-          $('#title-autocomplete').append(
-            '<p class="autocomplete" onclick="fillForm(\'' + s + '\')">'
+          $('#title-autocomplete').find('.autocomplete').first().append(
+            '<div onclick="fillForm(\'' + s + '\')"><span>'
               + suggestions[s] + 
-            '</p>'
+            '</span></div>'
           );
         }
       }
       
       function createFieldWidget(field, suggestions) {
         for (var s in suggestions) {
-          $('#' + field + '-autocomplete').append(
-            '<p class="autocomplete" onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')">'
+          $('#' + field + '-autocomplete').find('.autocomplete').first().append(
+            '<div onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')"></span>'
               + suggestions[s] + 
-            '</p>'
+            '</span></div>'
           );
         }
       }
