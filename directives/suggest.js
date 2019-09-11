@@ -9,6 +9,8 @@ app.directive('suggest', function() {
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
       
+      addFormNav('.suggest-field'); // listen for keyboard events in form fields
+      
       scope.createSuggestion = function() {
         var data = {frequency: 1};
         $('.suggest-field').each(function() {
@@ -104,7 +106,3 @@ function fillField(field, value) {
   $('#' + field).val(value);
   $('.autocomplete').empty();
 }
-
-$(document).ready(function() {
-  addFormNav('.suggest-field');
-});
