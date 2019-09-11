@@ -24,7 +24,7 @@ function addFormNav(inputSelector) {
       else {
         current = selected.prev();
       }
-    } else if (ev.keyCode == 13 && items.length > 0) { // enter
+    } else if ((ev.keyCode == 13 || ev.keyCode == 9) && items.length > 0) { // enter or tab
       $(selected).first().click();
     }
     
