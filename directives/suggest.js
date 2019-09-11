@@ -67,7 +67,7 @@ app.directive('suggest', function() {
       
       function createFormWidget(suggestions) {
         for (var s in suggestions) {
-          $('#title-autocomplete').find('.autocomplete').first().append(
+          $('#title-autocomplete').find('.autocomplete').append(
             '<div onclick="fillForm(\'' + s + '\')"><span>'
               + suggestions[s] + 
             '</span></div>'
@@ -77,7 +77,7 @@ app.directive('suggest', function() {
       
       function createFieldWidget(field, suggestions) {
         for (var s in suggestions) {
-          $('#' + field + '-autocomplete').find('.autocomplete').first().append(
+          $('#' + field + '-autocomplete').find('.autocomplete').append(
             '<div onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')"></span>'
               + suggestions[s] + 
             '</span></div>'
