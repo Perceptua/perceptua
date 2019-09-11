@@ -217,31 +217,33 @@ header {
 	margin: 0;
 }
 
-.field-wrapper {
-	width: 50%;
-}
-
-.suggest-field {
-	width: 100%;
-}
-
 .autocomplete-container {
-	width: 100%;
-	position: absolute;
-	left: 25%;
-	z-index: 99;
+	position: relative;
+	margin: auto;
 	background-color: var(--greyscale);
-	border-radius: 0.5em;
 	cursor: pointer;
 }
 
 .autocomplete {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
 	color: black;
 	margin: 0;
 }
 
-.autocomplete:hover {
+.autocomplete div {
+	padding: 0.25em;
+	cursor: pointer;
+	background-color: var(--greyscale);
+	border-bottom: 1px solid var(--dark);
+}
+
+.autocomplete:hover, .autocomplete-active {
 	color: var(--brand);
+	background-color: var(--dark);
 }
 
 .social {
