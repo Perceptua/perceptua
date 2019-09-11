@@ -240,7 +240,7 @@ header {
 	border-bottom: 1px solid var(--dark);
 }
 
-.autocomplete div:hover, .autocomplete-active {
+.autocomplete div:hover, .active {
 	color: var(--brand);
 	background-color: var(--dark);
 }
