@@ -16,7 +16,7 @@ app.directive('suggest', function() {
         $('.suggest-field').each(function() {
           fields[$(this).attr('id')] = $(this).val();
         });
-        
+        console.log(fields);
         firebase.firestore().collection('suggestion_title')
           .where('name', '==', fields.title).get().then(function(doc) {
             if (doc.exists) { // if title has been suggested
