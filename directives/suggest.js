@@ -102,11 +102,13 @@ function fillForm(docId) {
 }
 
 function resolveReferences(refs) {
+  console.log(refs);
   for (var r in refs) {
+    var field = r;
     refs[r].get().then(function(doc) {
       if (doc.exists) {
-        console.log(r);
-        $(r).val(doc.data().name);
+        console.log(field);
+        $(field).val(doc.data().name);
       }
     });
   }
