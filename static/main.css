@@ -241,8 +241,8 @@ header {
 }
 
 .autocomplete div:hover, .active {
-	color: var(--brand);
-	background-color: var(--dark);
+	color: var(--brand); !important
+	background-color: var(--dark); !important
 }
 
 .social {
