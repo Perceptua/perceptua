@@ -32,6 +32,6 @@ function addFormNav(inputSelector) {
       return false;
     }
     
-    $(current).addClass('.active');
+    $(current).addClass('active');
   });
 }
