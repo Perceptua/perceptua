@@ -42,11 +42,11 @@ app.directive('suggest', function() {
         // https://stackoverflow.com/questions/2256607/how-to-get-the-next-letter-of-the-alphabet-in-javascript
         var bound = input.slice(0, -1) + String.fromCharCode(input.charCodeAt(input.length - 1) + 1)
         
-        firebase.firestore().collection('suggestions')
-          .where(field, '>=', input).where(field, '<', bound).limit(5)
+        firebase.firestore().collection('suggestion_' + field)
+          .where('name', '>=', input).where('name', '<', bound).limit(5)
           .get().then(function(docs) {
             docs.forEach(function(doc) {
-              var value = doc.data()[field];
+              var value = doc.data().name;
               if (!values.includes(value)) { // if value is unique
                 suggestions[doc.id] = value;
                 values.push(value);
@@ -92,14 +92,23 @@ app.directive('suggest', function() {
 });
 
 function fillForm(docId) {
-  firebase.firestore().collection('suggestions').doc(docId)
+  firebase.firestore().collection('suggestion_title').doc(docId)
     .get().then(function(doc) {
       var data = doc.data();
-      for (var field in data) {
-        $('#' + field).val(data[field]);
-        $('.autocomplete').empty();
+      $('#title').val(data.name);
+      resolveReferences({'#creator': data.creator, '#medium': data.medium});
+      $('.autocomplete').empty();
+    });
+}
+
+function resolveReferences(refs) {
+  for (var r in refs) {
+    refs[r].get().then(function(doc) {
+      if (doc.exists) {
+        $(r).val(doc.data().name);
       }
     });
+  }
 }
 
 function fillField(field, value) {
