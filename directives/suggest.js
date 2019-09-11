@@ -96,22 +96,18 @@ function fillForm(docId) {
     .get().then(function(doc) {
       var data = doc.data();
       $('#title').val(data.name);
-      resolveReferences({'#creator': data.creator, '#medium': data.medium});
+      resolveReference('#creator', data.creator); // set data from referenced docs
+      resolveReference('#medium', data.medium);
       $('.autocomplete').empty();
     });
 }
 
-function resolveReferences(refs) {
-  console.log(refs);
-  for (var r in refs) {
-    var field = r;
-    refs[r].get().then(function(doc) {
-      if (doc.exists) {
-        console.log(field);
-        $(field).val(doc.data().name);
-      }
-    });
-  }
+function resolveReference(field, ref) {
+  ref.get().then(function(doc) {
+    if (doc.exists) {
+      $(field).val(doc.data().name);
+    }
+  });
 }
 
 function fillField(field, value) {
