@@ -57,7 +57,7 @@ app.directive('suggest', function() {
       }
       
       function autocomplete(field, suggestions) {
-        $('.autocomplete-container').empty();
+        $('.autocomplete').empty();
         if (field == 'title') {
           createFormWidget(suggestions);
         } else {
@@ -95,12 +95,12 @@ function fillForm(docId) {
       var data = doc.data();
       for (var field in data) {
         $('#' + field).val(data[field]);
-        $('.autocomplete-container').empty();
+        $('.autocomplete').empty();
       }
     });
 }
 
 function fillField(field, value) {
   $('#' + field).val(value);
-  $('.autocomplete-container').empty();
+  $('.autocomplete').empty();
 }
