@@ -68,7 +68,7 @@ app.directive('suggest', function() {
       function createFormWidget(suggestions) {
         for (var s in suggestions) {
           $('#title-autocomplete').append(
-            '<div onclick="fillForm(\'' + s + '\')"><span>'
+            '<div class="item" onclick="fillForm(\'' + s + '\')"><span>'
               + suggestions[s] + 
             '</span></div>'
           );
@@ -78,7 +78,7 @@ app.directive('suggest', function() {
       function createFieldWidget(field, suggestions) {
         for (var s in suggestions) {
           $('#' + field + '-autocomplete').append(
-            '<div onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')"></span>'
+            '<div class="item" onclick="fillField(\'' + field + '\',\'' + suggestions[s] + '\')"></span>'
               + suggestions[s] + 
             '</span></div>'
           );
@@ -104,3 +104,36 @@ function fillField(field, value) {
   $('#' + field).val(value);
   $('.autocomplete').empty();
 }
+
+$(document).ready(function() {
+  $('.suggest-field').keydown(function(ev) {
+    var items = $('.item');
+    var selected = items.filter('.active');
+    var current;
+    
+    if (!items.length > 0) { return false; }
+    items.removeClass('active');
+    
+    if (ev.keyCode == 40) { // down arrow
+      if (!selected.length || selected.is(':last-child') ) {
+        current = items.first();
+      }
+      else {
+        current = selected.next();
+      }
+    } else if (ev.keyCode == 38) { // up arrow
+      if (!selected.length || selected.is(':first-child') ) {
+        current = items.last();
+      }
+      else {
+        current = selected.prev();
+      }
+    } else if (ev.keyCode == 13) { // enter
+      $(selected).first().click();
+    } else {
+      return false;
+    }
+    
+    $(current).addClass('.active');
+  });
+});
