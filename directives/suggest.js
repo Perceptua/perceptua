@@ -11,43 +11,45 @@ app.directive('suggest', function() {
       
       addFormNav('.suggest-field'); // listen for keyboard events in form fields
       
-      scope.checkSuggestion = function() {
+      scope.submitSuggestion = function() {
         var fields = {};
         $('.suggest-field').each(function() {
           fields[$(this).attr('id')] = $(this).val();
         });
-        console.log(fields);
-        firebase.firestore().collection('suggestion_title')
-          .where('name', '==', fields.title).get().then(function(snap) {
-            if (!snap.empty) { // if title has been suggested
-              console.log('found ' + fields.title);
+        checkExists(fields, update=true);
+      }
+      
+      function checkExists(fields, update=false) {
+        for (var f in fields) {
+          firebase.firestore().collection('suggestion_' + f)
+            .where('name', '==', fields[f]).limit(1).get().then(function(snapshot) {
+            if (!snapshot.empty && update) {
+              incrementFrequency(snapshot.docs[0]);
+            } else if (!snapshot.empty) {
+              return snapshot.docs[0].id;
             } else {
-              firebase.firestore().collection('suggestion_creator')
-                .where('name', '==', fields.creator).get().then(function(snap) {
-                  if (!snap.empty) { // if creator has been suggested
-                    console.log('found ' + fields.creator);
-                  } else {
-                    firebase.firestore().collection('suggestion_medium')
-                      .where('name', '==', fields.medium).get().then(function(snap) {
-                        if (!snap.empty) { // if medium has been suggested
-                          console.log('found ' + fields.medium);
-                        }
-                    });
-                  }
-              });
+              return createSuggestion(f, fields);
             }
+          });
+        }
+      }
+      
+      function createSuggestion(field, values) {
+        var data = {frequency: 1, name: values.field};
+        if (field == 'title') {
+          data.creator = checkExists({creator: values.creator})
+          data.medium = checkExists({medium: values.medium});
+        }
+        firebase.firestore().collection('suggestion_' + field).add(data).then(function(doc) {
+          showReceived();
+          return doc.id;
         });
       }
       
-      scope.createSuggestion = function() {
-        var data = {frequency: 1};
-        $('.suggest-field').each(function() {
-          var id = $(this).attr('id');
-          var input = $(this).val().toLowerCase();
-          data[id] = input;
-        });
-        firebase.firestore().collection('suggestions').add(data).then(function() {
-          showReceived();
+      function incrementFrequency(docRef) {
+        docRef.get().then(function(doc) {
+          var frequency = doc.data().frequency + 1;
+          docRef.update({'frequency': frequency});
         });
       }
       
