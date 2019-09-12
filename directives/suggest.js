@@ -16,7 +16,16 @@ app.directive('suggest', function() {
         $('.suggest-field').each(function() {
           formData[$(this).attr('id')] = $(this).val();
         });
-        updateSuggestion(getOrCreate('title', formData)); // update frequency of all fields
+        
+        var promise = new Promise(function(resolve, reject) {
+          var suggestion = getOrCreate('title', formData); // update frequency of all fields
+          console.log(suggestion);
+          resolve(suggestion);
+        });
+        
+        promise.then(function(ref) {
+          updateSuggestion(ref);
+        });
       }
       
       function getOrCreate(field, values) {
