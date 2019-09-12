@@ -9,48 +9,54 @@ app.directive('suggest', function() {
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
       
-      addFormNav('.suggest-field'); // listen for keyboard events in form fields
+      addFormNav('.suggest-field'); // listen for keyboard events in form fields (/static/ui.js)
       
       scope.submitSuggestion = function() {
-        var fields = {};
+        var formData = {};
         $('.suggest-field').each(function() {
-          fields[$(this).attr('id')] = $(this).val();
+          formData[$(this).attr('id')] = $(this).val();
         });
-        checkExists(fields, update=true);
+        updateSuggestion(getOrCreate('title', formData)); // update frequency of all fields
       }
       
-      function checkExists(fields, update=false) {
-        for (var f in fields) {
-          firebase.firestore().collection('suggestion_' + f)
-            .where('name', '==', fields[f]).limit(1).get().then(function(snapshot) {
-            if (!snapshot.empty && update) {
-              incrementFrequency(snapshot.docs[0].ref);
-            } else if (!snapshot.empty) {
-              return snapshot.docs[0].id;
-            } else {
-              return createSuggestion(f, fields);
-            }
-          });
-        }
+      function getOrCreate(field, values) {
+        firebase.firestore().collection('suggestion_' + field)
+          .where('name', '==', values[field]).limit(1).get().then(function(snapshot) {
+          if (!snapshot.empty) {
+            return snapshot.docs[0].ref;
+          } else {
+            return createSuggestion(field, values);
+          }
+        });
       }
       
       function createSuggestion(field, values) {
-        var data = {frequency: 1, name: values.field};
+        var data = {frequency: 0, name: values.field};
         if (field == 'title') {
-          data.creator = checkExists({creator: values.creator})
-          data.medium = checkExists({medium: values.medium});
+          data['creator'] = getOrCreate('creator', values);
+          data['medium'] = getOrCreate('medium', values);
         }
         firebase.firestore().collection('suggestion_' + field).add(data).then(function(doc) {
-          showReceived();
-          return doc.id;
+          return doc.ref;
         });
       }
       
-      function incrementFrequency(docRef) {
-        docRef.get().then(function(doc) {
-          var frequency = doc.data().frequency + 1;
-          docRef.update({'frequency': frequency});
+      function updateSuggestion(titleRef) {
+        titleRef.get().then(function(doc) {
+          var data = doc.data();
+          var refList = [data.creator, data.medium];
+          incrementFrequencies(refList);
+          titleRef.update({'frequency': data.frequency + 1});
         });
+      }
+      
+      function incrementFrequencies(refList) {
+        for (var ref in refList) {
+          ref.get().then(function(doc) {
+            var freq = doc.data().frequency + 1;
+            ref.update({'frequency': freq});
+          });
+        }
       }
       
       function showReceived() {
