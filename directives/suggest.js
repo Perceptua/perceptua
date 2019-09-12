@@ -17,38 +17,34 @@ app.directive('suggest', function() {
           formData[$(this).attr('id')] = $(this).val();
         });
         
-        var promise = new Promise(function(resolve, reject) {
-          var suggestion = getOrCreate('title', formData); // update frequency of all fields
-          console.log(suggestion);
-          resolve(suggestion);
-        });
-        
-        promise.then(function(ref) {
-          updateSuggestion(ref);
+        getOrCreate('title', formData).then(function(ref) {
+          updateSuggestion(ref); // update frequency of all fields
         });
       }
       
       function getOrCreate(field, values) {
-        firebase.firestore().collection('suggestion_' + field)
-          .where('name', '==', values[field]).limit(1).get().then(function(snapshot) {
-          if (!snapshot.empty) {
-            return snapshot.docs[0].ref;
-          } else {
-            var suggestion = createSuggestion(field, values);
-            console.log(suggestion);
-            return suggestion;
-          }
+        return new Promise(function(resolve, reject) {
+          firebase.firestore().collection('suggestion_' + field)
+            .where('name', '==', values[field]).limit(1).get().then(function(snapshot) {
+            if (!snapshot.empty) {
+              resolve(snapshot.docs[0].ref);
+            } else {
+              resolve(createSuggestion(field, values));
+            }
+          });
         });
       }
       
       function createSuggestion(field, values) {
-        var data = {frequency: 0, name: values.field};
-        if (field == 'title') {
-          data['creator'] = getOrCreate('creator', values);
-          data['medium'] = getOrCreate('medium', values);
-        }
-        firebase.firestore().collection('suggestion_' + field).add(data).then(function(doc) {
-          return doc.ref;
+        return new Promise(resolve, reject) {
+          var data = {frequency: 0, name: values.field};
+          if (field == 'title') {
+            data['creator'] = getOrCreate('creator', values);
+            data['medium'] = getOrCreate('medium', values);
+          }
+          firebase.firestore().collection('suggestion_' + field).add(data).then(function(doc) {
+            resolve(doc.ref);
+          });
         });
       }
       
