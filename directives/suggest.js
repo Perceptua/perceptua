@@ -25,7 +25,9 @@ app.directive('suggest', function() {
           if (!snapshot.empty) {
             return snapshot.docs[0].ref;
           } else {
-            return createSuggestion(field, values);
+            var suggestion = createSuggestion(field, values);
+            console.log(suggestion);
+            return suggestion;
           }
         });
       }
