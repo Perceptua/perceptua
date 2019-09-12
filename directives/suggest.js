@@ -24,7 +24,7 @@ app.directive('suggest', function() {
           firebase.firestore().collection('suggestion_' + f)
             .where('name', '==', fields[f]).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty && update) {
-              incrementFrequency(snapshot.docs[0]);
+              incrementFrequency(snapshot.docs[0].ref);
             } else if (!snapshot.empty) {
               return snapshot.docs[0].id;
             } else {
