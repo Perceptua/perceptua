@@ -14,31 +14,29 @@ app.directive('suggest', function() {
       scope.submitSuggestion = function() {
         var formData = new Map();
         $('.suggest-field').each(function() {
-          formData.set($(this).attr('id'), $(this).val().toLowerCase());
+          if ($(this).val() != scope[$(this).attr('id')]) { // cehck if user updated form
+            getOrCreate($(this).attr('id'), $(this).val().toLowerCase());
+          }
         });
-        
-        getOrCreate(formData);
       }
       
-      function getOrCreate(formMap) {
-        for (var [key, value] of formMap) {
-          console.log('getting ' + key);
-          firebase.firestore().collection('suggestion_' + key)
-            .where('name', '==', value).limit(1).get().then(function(snapshot) {
-            if (!snapshot.empty) {
-              console.log('incrementing ' + value);
-              incrementFrequency(snapshot.docs[0].ref);
-            } else {
-              console.log('creating ' + value);
-              createSuggestion(key, formMap);
-            }
-          });
-        }
+      function getOrCreate(field, value) {
+        console.log('getting ' + field);
+        firebase.firestore().collection('suggestion_' + field)
+          .where('name', '==', value).limit(1).get().then(function(snapshot) {
+          if (!snapshot.empty) {
+            console.log('incrementing ' + value);
+            incrementFrequency(snapshot.docs[0].ref);
+          } else {
+            console.log('creating ' + value);
+            createSuggestion(field, value);
+          }
+        });
       }
       
-      function createSuggestion(key, formMap) {
-        var data = {frequency: 1, name: formMap.get(key)};
-        console.log(formMap);
+      function createSuggestion(key, value) {
+        var data = {frequency: 1, name: fvalue};
+        console.log(key, value);
         /*
         firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
           if (key == 'title') {
