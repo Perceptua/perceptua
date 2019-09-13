@@ -22,6 +22,7 @@ app.directive('suggest', function() {
       
       function getOrCreate(formMap) {
         for (var [key, value] of formMap) {
+          console.log('getting ' + key);
           firebase.firestore().collection('suggestion_' + key)
             .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
