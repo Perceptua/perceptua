@@ -8,6 +8,7 @@ app.directive('suggest', function() {
       scope.title = 'Title';
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
+      scope.titleRef = null;
       
       addFormNav('.suggest-field'); // listen for keyboard events in form fields (/static/ui.js)
       
@@ -23,10 +24,8 @@ app.directive('suggest', function() {
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
-              console.log('incrementing ' + value);
               incrementFrequency(snapshot.docs[0].ref);
             } else {
-              console.log('creating ' + value);
               createSuggestion(field, value);
             }
         }).catch(function(error) {
@@ -37,15 +36,16 @@ app.directive('suggest', function() {
       function createSuggestion(key, value) {
         var data = {frequency: 1, name: value};
         console.log(data);
-        /*
-        firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
-          if (key == 'title') {
-            getOrCreate('creator', formMap);
-            getOrCreate('medium', formMap);
-            showReceived();
-          }
+        firebase.firestore().collection('suggestion_' + key).add(data)
+          .then(function(docRef) {
+            if (key == 'title') {
+              scope.titleRef = docRef;
+            } else {
+              assignToTitle(scope.titleRef, key, docRef);
+            }
+        }).catch(function(error) {
+          console.log(error);
         });
-        */
       }
       
       function incrementFrequency(ref) {
@@ -55,11 +55,8 @@ app.directive('suggest', function() {
         });
       }
       
-      function assignToTitle(key, docRef, title) {
-        firebase.firestore().collection('suggestion_title').where('name', '==', title)
-          .get().then(function(snapshot) {
-            snapshot.docs[0].ref.update({key: docRef});
-        });
+      function assignToTitle(titleRef, key, keyRef) {
+        titleRef.get().update({key: keyRef});
       }
       
       function showReceived() {
