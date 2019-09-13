@@ -35,12 +35,11 @@ app.directive('suggest', function() {
       
       function createSuggestion(key, formMap) {
         var data = {frequency: 1, name: formMap.get(key)};
-        if (key == 'title') {
-          getOrCreate('creator', formMap);
-          getOrCreate('medium', formMap);
-        }
         firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
-          if (key == 'title' || key == 'medium') {
+          if (key == 'title') {
+            getOrCreate('creator', formMap);
+            getOrCreate('medium', formMap);
+          } else {
             assignToTitle(key, doc.ref, formMap.get('title'));
           }
         });
