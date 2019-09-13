@@ -36,7 +36,7 @@ app.directive('suggest', function() {
       }
       
       function createSuggestion(field, values) {
-        return new Promise(resolve, reject) {
+        return new Promise(function(resolve, reject) {
           var data = {frequency: 0, name: values.field};
           if (field == 'title') {
             data['creator'] = getOrCreate('creator', values);
