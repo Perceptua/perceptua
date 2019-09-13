@@ -24,13 +24,15 @@ app.directive('suggest', function() {
         console.log('getting ' + field);
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
-          if (!snapshot.empty) {
-            console.log('incrementing ' + value);
-            incrementFrequency(snapshot.docs[0].ref);
-          } else {
-            console.log('creating ' + value);
-            createSuggestion(field, value);
-          }
+            if (!snapshot.empty) {
+              console.log('incrementing ' + value);
+              incrementFrequency(snapshot.docs[0].ref);
+            } else {
+              console.log('creating ' + value);
+              createSuggestion(field, value);
+            }
+        }).catch(function(error) {
+          console.log(error);
         });
       }
       
