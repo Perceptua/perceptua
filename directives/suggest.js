@@ -35,7 +35,7 @@ app.directive('suggest', function() {
       
       function createSuggestion(key, formMap) {
         var data = {frequency: 1, name: formMap.get(key)};
-        if (field == 'title') {
+        if (key == 'title') {
           getOrCreate('creator', formMap);
           getOrCreate('medium', formMap);
         }
