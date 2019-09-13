@@ -20,7 +20,6 @@ app.directive('suggest', function() {
       }
       
       function getOrCreate(field, value) {
-        console.log('getting ' + field);
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
@@ -50,12 +49,11 @@ app.directive('suggest', function() {
         ref.get().then(function(doc) {
           var freq = doc.data().frequency + 1;
           ref.update({'frequency': freq});
-          updateSuggestions(field);
+          // FIXME: wait for title doc creation, update suggestions
         });
       }
       
       function updateSuggestions(field) {
-        console.log(scope.refs);
         if (field == 'title') {
           showReceived();
         } else {
