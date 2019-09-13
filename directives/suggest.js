@@ -37,7 +37,7 @@ app.directive('suggest', function() {
       
       function createSuggestion(key, formMap) {
         var data = {frequency: 1, name: formMap.get(key)};
-        console.log(formData);
+        console.log(formMap);
         /*
         firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
           if (key == 'title') {
