@@ -29,7 +29,6 @@ app.directive('suggest', function() {
             } else {
               createSuggestion(field, value);
             }
-            updateSuggestions(field);
         }).catch(function(error) {
           console.log(error);
         });
@@ -38,7 +37,10 @@ app.directive('suggest', function() {
       function createSuggestion(field, value) {
         var data = {frequency: 1, name: value};
         firebase.firestore().collection('suggestion_' + field)
-          .add(data).catch(function(error) {
+          .add(data).then(function(docRef) {
+            scope.refs[field] = docRef;
+            updateSuggestions(field);
+          }).catch(function(error) {
             console.log(error);
           });
       }
@@ -48,6 +50,7 @@ app.directive('suggest', function() {
         ref.get().then(function(doc) {
           var freq = doc.data().frequency + 1;
           ref.update({'frequency': freq});
+          updateSuggestions(field);
         });
       }
       
