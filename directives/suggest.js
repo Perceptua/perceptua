@@ -55,12 +55,13 @@ app.directive('suggest', function() {
       }
       
       function updateSuggestions(field) {
+        console.log(scope.refs);
         if (field == 'title') {
           showReceived();
         } else {
           var data = {};
           data[field] = scope.refs[field];
-          scope.refs.title.update(data);
+          scope.refs['title'].update(data);
         }
       }
       
