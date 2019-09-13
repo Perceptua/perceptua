@@ -67,10 +67,16 @@ app.directive('suggest', function() {
       function showReceived() {
         $('#received-suggestion').fadeIn('slow', function() {
           $('#suggest-form').fadeOut('slow', function() {
-            $('#suggest-form').find('input[type=text]').val('');
+            resetForm();
             $('#suggest-form').fadeIn('slow');
           });
           $('#received-suggestion').fadeOut('slow');
+        });
+      }
+      
+      function resetForm() {
+        $('.suggest-field').each(function() {
+          $(this).val(scope[$(this).attr('id')]);
         });
       }
       
