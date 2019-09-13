@@ -56,7 +56,7 @@ app.directive('suggest', function() {
       function assignToTitle(key, docRef, title) {
         firebase.firestore().collection('suggestion_title').where('name', '==', title)
           .get().then(function(snapshot) {
-            snapshot.docs[0].update({key: docRef});
+            snapshot.docs[0].ref.update({key: docRef});
         });
       }
       
