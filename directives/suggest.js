@@ -39,8 +39,7 @@ app.directive('suggest', function() {
           if (key == 'title') {
             getOrCreate('creator', formMap);
             getOrCreate('medium', formMap);
-          } else {
-            assignToTitle(key, doc.ref, formMap.get('title'));
+            showReceived();
           }
         });
       }
