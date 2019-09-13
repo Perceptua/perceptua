@@ -14,7 +14,7 @@ app.directive('suggest', function() {
       scope.submitSuggestion = function() {
         var formData = new Map();
         $('.suggest-field').each(function() {
-          formData.set($(this).attr('id'), $(this).val());
+          formData.set($(this).attr('id'), $(this).val().toLowerCase());
         });
         
         getOrCreate(formData);
@@ -37,6 +37,8 @@ app.directive('suggest', function() {
       
       function createSuggestion(key, formMap) {
         var data = {frequency: 1, name: formMap.get(key)};
+        console.log(formData);
+        /*
         firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
           if (key == 'title') {
             getOrCreate('creator', formMap);
@@ -44,6 +46,7 @@ app.directive('suggest', function() {
             showReceived();
           }
         });
+        */
       }
       
       function incrementFrequency(ref) {
