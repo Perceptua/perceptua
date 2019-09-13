@@ -14,9 +14,7 @@ app.directive('suggest', function() {
       scope.submitSuggestion = function() {
         var formData = new Map();
         $('.suggest-field').each(function() {
-          if ($(this).val() != scope[$(this).attr('id')]) { // cehck if user updated form
-            getOrCreate($(this).attr('id'), $(this).val().toLowerCase());
-          }
+          getOrCreate($(this).attr('id'), $(this).val().toLowerCase());
         });
       }
       
