@@ -35,8 +35,8 @@ app.directive('suggest', function() {
       }
       
       function createSuggestion(key, value) {
-        var data = {frequency: 1, name: fvalue};
-        console.log(key, value);
+        var data = {frequency: 1, name: value};
+        console.log(data);
         /*
         firebase.firestore().collection('suggestion_' + key).add(data).then(function(doc) {
           if (key == 'title') {
