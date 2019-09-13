@@ -8,7 +8,7 @@ app.directive('suggest', function() {
       scope.title = 'Title';
       scope.creator = 'Creator Name';
       scope.medium = 'Medium (e.g. Music, Film)';
-      scope.titleRef = null;
+      scope.refs = {};
       
       addFormNav('.suggest-field'); // listen for keyboard events in form fields (/static/ui.js)
       
@@ -24,10 +24,12 @@ app.directive('suggest', function() {
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
-              incrementFrequency(field, snapshot.docs[0].ref);
+              scope.refs[field] = snapshot.docs[0].ref;
+              incrementFrequency(field);
             } else {
               createSuggestion(field, value);
             }
+            updateSuggestions(field);
         }).catch(function(error) {
           console.log(error);
         });
@@ -35,29 +37,28 @@ app.directive('suggest', function() {
       
       function createSuggestion(field, value) {
         var data = {frequency: 1, name: value};
-        firebase.firestore().collection('suggestion_' + field).add(data)
-          .then(function(docRef) {
-            if (field == 'title') {
-              scope.titleRef = docRef;
-              showReceived(); // only showReceived once
-            } else {
-              data = {};
-              data[field] = docRef;
-              scope.titleRef.update(data); // assign creator & medium to title
-            }
-        }).catch(function(error) {
-          console.log(error);
-        });
+        firebase.firestore().collection('suggestion_' + field)
+          .add(data).catch(function(error) {
+            console.log(error);
+          });
       }
       
-      function incrementFrequency(field, ref) {
+      function incrementFrequency(field) {
+        var ref = scope.refs[field];
         ref.get().then(function(doc) {
           var freq = doc.data().frequency + 1;
           ref.update({'frequency': freq});
-          if (field == 'title') { // only showReceived once
-            showReceived();
-          }
         });
+      }
+      
+      function updateSuggestions(field) {
+        if (field == 'title') {
+          showReceived();
+        } else {
+          var data = {};
+          data[field] = scope.refs[field];
+          scope.refs.title.update(data);
+        }
       }
       
       function showReceived() {
