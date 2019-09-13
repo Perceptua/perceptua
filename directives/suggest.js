@@ -35,14 +35,15 @@ app.directive('suggest', function() {
       
       function createSuggestion(field, value) {
         var data = {frequency: 1, name: value};
-        console.log(data);
         firebase.firestore().collection('suggestion_' + field).add(data)
           .then(function(docRef) {
             if (field == 'title') {
               scope.titleRef = docRef;
               showReceived(); // only showReceived once
             } else {
-              scope.titleRef.update({field: docRef}); // assign creator & medium to title
+              data = {};
+              data[field] = docRef;
+              scope.titleRef.update(data); // assign creator & medium to title
             }
         }).catch(function(error) {
           console.log(error);
