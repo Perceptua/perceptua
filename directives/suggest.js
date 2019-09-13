@@ -24,7 +24,7 @@ app.directive('suggest', function() {
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
-              incrementFrequency(snapshot.docs[0].ref);
+              incrementFrequency(field, snapshot.docs[0].ref);
             } else {
               createSuggestion(field, value);
             }
@@ -33,30 +33,30 @@ app.directive('suggest', function() {
         });
       }
       
-      function createSuggestion(key, value) {
+      function createSuggestion(field, value) {
         var data = {frequency: 1, name: value};
         console.log(data);
-        firebase.firestore().collection('suggestion_' + key).add(data)
+        firebase.firestore().collection('suggestion_' + field).add(data)
           .then(function(docRef) {
-            if (key == 'title') {
+            if (field == 'title') {
               scope.titleRef = docRef;
+              showReceived(); // only showReceived once
             } else {
-              assignToTitle(scope.titleRef, key, docRef);
+              scope.titleRef.update({field: docRef}); // assign creator & medium to title
             }
         }).catch(function(error) {
           console.log(error);
         });
       }
       
-      function incrementFrequency(ref) {
+      function incrementFrequency(field, ref) {
         ref.get().then(function(doc) {
           var freq = doc.data().frequency + 1;
           ref.update({'frequency': freq});
+          if (field == 'title') { // only showReceived once
+            showReceived();
+          }
         });
-      }
-      
-      function assignToTitle(titleRef, key, keyRef) {
-        titleRef.get().update({key: keyRef});
       }
       
       function showReceived() {
