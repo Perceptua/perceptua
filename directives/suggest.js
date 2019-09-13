@@ -25,8 +25,10 @@ app.directive('suggest', function() {
           firebase.firestore().collection('suggestion_' + key)
             .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
+              console.log('incrementing ' + value);
               incrementFrequency(snapshot.docs[0].ref);
             } else {
+              console.log('creating ' + value);
               createSuggestion(key, formMap);
             }
           });
