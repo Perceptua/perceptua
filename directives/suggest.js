@@ -53,6 +53,7 @@ app.directive('suggest', function() {
       
       function updateRefs(field, ref) {
         scope.refs[field] = ref;
+        console.log(scope.refs);
         if (scope.refs.length == 3) { // if title, creator, & medium keys exist
           showReceived();
           scope.refs['title'].update({
