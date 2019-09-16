@@ -1,20 +1,20 @@
 <h3 id="welcome" class="hidden">Welcome to Perceptua.</h3>
 
-<div class="content-container" id="featured">
+<div class="content-container" id="featured-container">
   <div class="screen-card" *ngIf="content" ng-repeat="c in content">
     <content content="c"></content>
     <br>
-    
+
     <!-- hide access until featured content is ready -->
     <div class="hidden">
       <access></access>
     </div>
-    
+
   </div>
 </div>
 
 <script>
   $(document).ready(function() {
-    $('#featured').fadeIn('slow');
+    $('#featured-container').fadeIn('slow');
   });
 </script>

@@ -1,6 +1,6 @@
 <a class="hidden info greyscale" id="back" style="float: left;" href="#/{{ status }}"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<div class="content-container" id="content">
+<div class="content-container" id="content-container">
   <div class="screen-card" *ngIf="content" ng-repeat="c in content">
     <input type="hidden" id="url" data-content-url="{{ c.content }}">
     <h3 class="title">{{ c.title }}</h3>
@@ -13,6 +13,6 @@
 <script>
   $(document).ready(function() {
     $('#back').fadeIn('slow');
-    $('#content').fadeIn('slow');
+    $('#content-container').fadeIn('slow');
   });
 </script>
