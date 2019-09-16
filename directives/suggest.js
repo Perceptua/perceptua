@@ -73,9 +73,9 @@ app.directive('suggest', function() {
       }
       
       function resetForm() {
-        $('.suggest-field').each(function() {
-          $(this).val(scope[$(this).attr('id')]);
-        });
+        $('#title').val('Title');
+        $('#creator').val('Creator Name');
+        $('#medium').val('Medium (e.g. Music, Film)');
       }
       
       scope.fetchSuggestions = function(field) {
