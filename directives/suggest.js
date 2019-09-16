@@ -23,8 +23,9 @@ app.directive('suggest', function() {
         firebase.firestore().collection('suggestion_' + field)
           .where('name', '==', value).limit(1).get().then(function(snapshot) {
             if (!snapshot.empty) {
-              scope.refs[field] = snapshot.docs[0].ref;
-              incrementFrequency(field);
+              var ref = snapshot.docs[0].ref;
+              updateRefs(field, ref);
+              incrementFrequency(field, ref);
             } else {
               createSuggestion(field, value);
             }
@@ -37,29 +38,27 @@ app.directive('suggest', function() {
         var data = {frequency: 1, name: value};
         firebase.firestore().collection('suggestion_' + field)
           .add(data).then(function(docRef) {
-            scope.refs[field] = docRef;
-            updateSuggestions(field);
+            updateRefs(field, docRef);
           }).catch(function(error) {
             console.log(error);
           });
       }
       
-      function incrementFrequency(field) {
-        var ref = scope.refs[field];
+      function incrementFrequency(field, ref) {
         ref.get().then(function(doc) {
           var freq = doc.data().frequency + 1;
           ref.update({'frequency': freq});
-          // FIXME: wait for title doc creation, update suggestions
         });
       }
       
-      function updateSuggestions(field) {
-        if (field == 'title') {
+      function updateRefs(field, ref) {
+        scope.refs[field] = ref;
+        if (scope.refs.length == 3) { // if title, creator, & medium keys exist
           showReceived();
-        } else {
-          var data = {};
-          data[field] = scope.refs[field];
-          scope.refs['title'].update(data);
+          scope.refs['title'].update({
+            creator: scope.refs['creator'],
+            medium: scope.refs['medium'],
+          });
         }
       }
       
