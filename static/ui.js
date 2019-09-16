@@ -1,5 +1,21 @@
+$(document).ready(function() {
+  selectNavLink();
+});
+
 function selectText(ev) {
   $(ev.target).select();
+}
+
+function selectNavLink() {
+  $('.nav-item').removeClass('brand'); // clear highlighted link
+  var hrefArray = window.location.href.split('/');
+  var page = hrefArray[hrefArray.length - 1];
+  
+  $('.nav-item').each(function() {
+    if ($(this).attr('id') == page) {
+      $(this).addClass('brand');
+    }
+  });
 }
 
 function addFormNav(inputSelector) {
