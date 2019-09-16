@@ -1,4 +1,4 @@
-<div class="content-container" id="upcoming">
+<div class="content-container" id="upcoming-container">
   <div class="content-grid">
     <div class="content-card" *ngIf="content" ng-repeat="c in content">
       <a class="greyscale" href="#/{{ 'upcoming' }}/{{ c.medium | slugify }}/{{ c.title | slugify }}">
@@ -10,7 +10,7 @@
 
 <script>
   $(document).ready(function() {
-    $('#upcoming').fadeIn('slow');
+    $('#upcoming-container').fadeIn('slow');
   });
 </script>
 
