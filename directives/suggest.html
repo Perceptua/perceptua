@@ -1,5 +1,9 @@
 <p>What content would you like to see featured on Perceptua?</p>
 
+<p id="received-suggestion" style="display:none;">
+  Thank you for your suggestion.
+</p>
+
 <form id="suggest-form">
   <input type="text" class="suggest-field" id="title" onclick="selectText(event)"
          ng-model="title" ng-change="fetchSuggestions('title')">
@@ -23,7 +27,3 @@
 </form>
 
 <button id="suggest-button" ng-click="submitSuggestion()">Suggest</button>
-
-<p id="received-suggestion" style="display:none;">
-  Thank you for your suggestion.
-</p>
