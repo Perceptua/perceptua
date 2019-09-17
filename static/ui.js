@@ -1,7 +1,7 @@
 $(document).ready(function() {
   selectNavLink();
-  $('.nav-item').click(function() {
-    selectNavLink();
+  $('.nav-item').click(function(ev) {
+    selectNavLink(ev);
   });
 });
 
@@ -9,16 +9,20 @@ function selectText(ev) {
   $(ev.target).select();
 }
 
-function selectNavLink() {
+function selectNavLink(ev=null) {
   $('.nav-item').removeClass('highlight'); // clear highlighted link
   var hrefArray = window.location.href.split('/');
   var page = hrefArray[hrefArray.length - 1];
   
-  $('.nav-item').each(function() {
-    if ($(this).attr('id') == page) {
-      $(this).addClass('highlight');
-    }
-  });
+  if (ev) { // user click
+    $(ev.target).addClass('highlight');
+  } else {
+    $('.nav-item').each(function() {
+      if ($(this).attr('id') == page) {
+        $(this).addClass('highlight');
+      }
+    });
+  }
 }
 
 function addFormNav(inputSelector) {
