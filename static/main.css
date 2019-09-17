@@ -8,6 +8,7 @@
 	--greyscale: #f2f2f2;
 }
 
+.highlight { color: var(--brand) !important; }
 .brand { color: var(--brand); }
 .accent { color: var(--accent); }
 .light { color: var(--light); }
