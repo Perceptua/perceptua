@@ -1,5 +1,8 @@
 $(document).ready(function() {
   selectNavLink();
+  $('.nav-item').click(function() {
+    selectNavLink();
+  });
 });
 
 function selectText(ev) {
