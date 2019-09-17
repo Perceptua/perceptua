@@ -10,13 +10,13 @@ function selectText(ev) {
 }
 
 function selectNavLink() {
-  $('.nav-item').removeClass('brand'); // clear highlighted link
+  $('.nav-item').removeClass('highlight'); // clear highlighted link
   var hrefArray = window.location.href.split('/');
   var page = hrefArray[hrefArray.length - 1];
   
   $('.nav-item').each(function() {
     if ($(this).attr('id') == page) {
-      $(this).addClass('brand');
+      $(this).addClass('highlight');
     }
   });
 }
