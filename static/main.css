@@ -72,6 +72,7 @@ audio {
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Chrome, Opera */
+	opacity: 0.9;
 }
 
 img, iframe {
@@ -79,6 +80,7 @@ img, iframe {
 	margin: 0.5em auto;
 	max-width: 100%;
 	border-radius: 0.5em;
+	opacity: 0.9;
 }
 
 input {
@@ -293,5 +295,8 @@ header {
 	}
 	.screen-card, .text {
 		width: 50%;
+	}
+	img {
+		max-width: 50%;
 	}
 }
