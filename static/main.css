@@ -282,7 +282,7 @@ header {
 		background-size: 50%;
 	}
 	.screen-card, .text {
-		width: 85%;
+		width: 75%;
 	}
 }
 
@@ -292,6 +292,6 @@ header {
 		background-size: 33%;
 	}
 	.screen-card, .text {
-		width: 75%;
+		width: 50%;
 	}
 }
