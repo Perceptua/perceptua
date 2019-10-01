@@ -199,7 +199,7 @@ header {
 	background-color: rgb(116, 182, 181, 0.5);
 }
 
-.screen-card {
+.screen-card, .text {
 	width: 90%;
 	margin: 0.5em auto;
 }
@@ -281,11 +281,8 @@ header {
 	body:before {
 		background-size: 50%;
 	}
-	.screen-card {
+	.screen-card, .text {
 		width: 75%;
-	}
-	.text {
-		margin: 1em;
 	}
 }
 
@@ -294,7 +291,7 @@ header {
 	body:before {
 		background-size: 33%;
 	}
-	.screen-card {
+	.screen-card, .text {
 		width: 50%;
 	}
 }
