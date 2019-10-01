@@ -78,7 +78,7 @@ audio {
 img, iframe {
 	display: block;
 	margin: 0.5em auto;
-	max-width: 100%;
+	max-width: 90%;
 	border-radius: 0.5em;
 	opacity: 0.9;
 }
@@ -270,9 +270,6 @@ header {
 	.logo {
 		display: inline-block;
 	}
-	img {
-		max-width: 75%;
-	}
 	.content-grid {
 		grid-template-columns: repeat(auto-fit, 33%);
 	}
@@ -295,8 +292,5 @@ header {
 	}
 	.screen-card, .text {
 		width: 50%;
-	}
-	img {
-		max-width: 50%;
 	}
 }
