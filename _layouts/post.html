@@ -4,36 +4,39 @@ layout: default
 
 <a class="hidden info greyscale" id="back" style="float: left;" href="/#/published"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<h3>{{ page.title }}</h3>
-
-<p>{{ page.creator }}</p>
-
-{% for c in page.categories %}
-  <p class="info">{{ c }}</p>
-{% endfor %}
-
 <div class="text">
-  {{ content }}
-</div>
+  <h3>{{ page.title }}</h3>
 
-<div class="social">
-  <div class="sharethis-inline-share-buttons"></div>
-</div>
+  <p>{{ page.creator }}</p>
 
-<div>
-  <p>Want to help Perceptua grow? Support me on 
-    <a target="_blank" href="https://www.minds.com/averypherkel">Minds</a> or 
-    <a target="_blank" href="https://www.patreon.com/perceptua">Patreon</a>.
-  </p>
+  {% for c in page.categories %}
+    <p class="info">{{ c }}</p>
+  {% endfor %}
 
-<div class="footer">
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a>
-  {% endif %}
+  <div class="text">
+    {{ content }}
+  </div>
 
-  {% if page.next.url %}
-    <a href="{{ page.next.url }}">Next: {{ page.next.title }}</a>
-  {% endif %}
+  <div class="social">
+    <div class="sharethis-inline-share-buttons"></div>
+  </div>
+
+  <div>
+    <p>Want to help Perceptua grow? Support me on 
+      <a target="_blank" href="https://www.minds.com/averypherkel">Minds</a> or 
+      <a target="_blank" href="https://www.patreon.com/perceptua">Patreon</a>.
+    </p>
+  </div>
+
+  <div class="footer">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url }}">Previous: {{ page.previous.title }}</a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a href="{{ page.next.url }}">Next: {{ page.next.title }}</a>
+    {% endif %}
+  </div>
 </div>
 
 <script>
