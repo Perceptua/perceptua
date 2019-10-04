@@ -52,6 +52,7 @@ body:before {
 	width: 100%;
 	height: 100%;
 	z-index: -10;
+	opacity: 0.75;
 	background-color: black;
 	background: url(images/perceptua-low-poly.svg) no-repeat center center;
 	-webkit-background-size: contain;
@@ -278,7 +279,7 @@ header {
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 	body:before {
-		background-size: 50%;
+		background-size: 66%;
 	}
 	.screen-card, .text {
 		width: 75%;
@@ -288,7 +289,7 @@ header {
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 	body:before {
-		background-size: 33%;
+		background-size: 50%;
 	}
 	.screen-card, .text {
 		width: 50%;
