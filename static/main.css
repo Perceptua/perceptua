@@ -141,6 +141,7 @@ header {
 	margin: auto 0.5em;
 	color: var(--greyscale);
 	font-size: 0.75em;
+	font-weight: bold;
 }
 
 
