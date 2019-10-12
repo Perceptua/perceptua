@@ -7,6 +7,9 @@ keywords: Nietzsche, philosophy, art, culture
 layout: post
 ---
 
+### YouTube
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N7gvXAZMp6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Audio
 <audio controls>
   <source src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FThe%20Birth%20of%20Tragedy.wav?alt=media&token=3fd1a2a9-bbb6-4c9d-aa8f-15525f9af9a8">
