@@ -7,7 +7,7 @@ keywords: Aldous Huxley, literature, novella
 layout: post
 ---
 
-### Video
+### YouTube
 <iframe 
   width="560" height="315" src="https://www.youtube.com/embed/zA6XtvJ4TGU" frameborder="0" 
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -19,7 +19,6 @@ layout: post
 </audio>
 
 ### Text
-
   *Brave New World* is Aldous Huxley’s famous & extremely prescient story of a dystopian future in which every aspect of life is controlled by an all-powerful state. It’s essential reading for informed thinkers, & it’s less than 200 pages, so go & read it if you haven’t already. I won’t waste much time describing the plot.
 
   The true genius of the book, what really sets Huxley apart, is an intuition for the psychology of social control. As opposed to the rulers of some other fictional dystopias, the agents of Huxley’s World State do not maintain control through violence and outright oppression. Instead, they begin to mold obedient citizens from a very young age - before they are even conceived, in fact. Children are pre-sorted into social classes, forbidden to have any private thoughts or close personal relationships, and essentially hypnotized into conformity. The government provides plenty of vacuous entertainment to occupy all of their spare time. Bright lights, pleasant smells, and sensuous experiences are designed to keep everyone complacent, & all with one aim in mind - stability. It is through stability that the state maintains its grip on its citizens.
