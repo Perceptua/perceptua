@@ -7,6 +7,12 @@ keywords: Nietzsche, philosophy, art, culture
 layout: post
 ---
 
+### Audio
+<audio controls>
+  <source src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FThe%20Birth%20of%20Tragedy.wav?alt=media&token=3fd1a2a9-bbb6-4c9d-aa8f-15525f9af9a8">
+</audio>
+
+### Text
 Today, I want to discuss *The Birth of Tragedy*, by Friedrich Nietzsche. This book, the full title of which is *Die Geburt der Tragödie aus dem Geiste der Musik (The Birth of Tragedy Out of the Spirit of Music)* was Nietzsche’s first, published in 1872. It deals with the development of the tragic artform in Ancient Greece, as well as its cultural consequences & broader aesthetic significance. The book gets very dense, especially for someone (like myself) who has no formal training in philosophy. That said, if you can bear with me, I’m going to get into a select few of the topics Nietzsche covers, doing my best to represent his positions accurately. My goal is to show that *The Birth of Tragedy* contains many insights relevant to the way we think about art, life, & culture.
 
 A central concept in understanding Nietzsche’s analysis of the tragic is the distinction between what he terms the Apollonian & the Dionysian. He writes, 
