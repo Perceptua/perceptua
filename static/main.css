@@ -263,11 +263,9 @@ header {
 
 /* Media Queries */
 
-/* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 600px) {
 	.logo {
 		display: inline-block;
@@ -277,7 +275,6 @@ header {
 	}
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 	body:before {
 		background-size: 66%;
@@ -287,10 +284,18 @@ header {
 	}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 	body:before {
 		background-size: 50%;
+	}
+	.screen-card, .text {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body:before {
+		background-size: 33%;
 	}
 	.screen-card, .text {
 		width: 50%;
