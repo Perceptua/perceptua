@@ -4,12 +4,12 @@ layout: default
 
 <a class="hidden info greyscale" id="back" style="float: left;" href="/#/published"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<h3>{{ page.title }}</h3>
+<h1>{{ page.title }}</h1>
 
-<p>{{ page.creator }}</p>
+<h3>{{ page.creator }}</h3>
 
 {% for c in page.categories %}
-  <p class="info">{{ c }}</p>
+  <p>{{ c }}</p>
 {% endfor %}
 
 <div class="text">
