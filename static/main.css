@@ -162,7 +162,7 @@ header {
 	animation: spin 2s linear infinite;
 }
 
-.hidden, .content-container {
+.hidden, .content-container, .added.upcoming {
 	display: none;
 }
 
