@@ -1,4 +1,4 @@
-<p class="added right" *ngIf="{{ content.status == published }}">{{ content.added.seconds * 1000 | date }}</p>
+<p class="added right" ngIf="{{ content.status == published }}">{{ content.added.seconds * 1000 | date }}</p>
 <h3 class="title">{{ content.title }}</h3>
 <p class="creator">{{ content.creator }}</p>
 <p class="medium info">{{ content.medium }}</p>
