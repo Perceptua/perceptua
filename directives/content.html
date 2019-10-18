@@ -1,4 +1,6 @@
-<p class="added right" ng-if="{{ content.status == 'published' }}">{{ content.added.seconds * 1000 | date }}</p>
+<input type="hidden" ng-model="isPublished" ng-init="isPublished = {{ content.status == 'published' }}">
+
+<p class="added right" ng-if="isPublished">{{ content.added.seconds * 1000 | date }}</p>
 <h3 class="title">{{ content.title }}</h3>
 <p class="creator">{{ content.creator }}</p>
 <p class="medium info">{{ content.medium }}</p>
