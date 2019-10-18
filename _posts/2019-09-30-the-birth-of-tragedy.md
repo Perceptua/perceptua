@@ -3,7 +3,7 @@ title: The Birth Of Tragedy
 creator: Friedrich Nietzsche
 categories: [Philosophy]
 description: Nietzsche's The Birth of Tragedy contains many insights relevant to the way we think about art, life, & culture.
-keywords: nietzsche, birth of tragedy, philosophy podcast
+keywords: nietzsche, birth of tragedy, philosophy podcast, analysis video
 layout: post
 ---
 
