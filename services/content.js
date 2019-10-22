@@ -21,7 +21,7 @@ app.factory('content', ['$rootScope', '$q', function($rootScope, $q) {
         // construct object from firestore data
         docs.get().then((docs) => {
           var content = [];
-          var media = [];
+          var media = ['all'];
           docs.forEach((doc) => {
             var data = doc.data();
             content.push(data);
