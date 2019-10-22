@@ -4,7 +4,7 @@
   <div class="screen-card hidden" id="filter-menu">
     <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="medium-menu">
-      <a class="nav-item medium" href="#/{{ 'published' }}/{{ m | slugify }}" ng-repeat="m in media">{{ m }}</a>
+      <a class="nav-item medium" href="#/{{ 'published' }}/{{ m | slugify }}" ng-repeat="m in media">{{ m | capfirst }}</a>
     </div>
     
     <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
