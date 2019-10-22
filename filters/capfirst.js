@@ -6,7 +6,7 @@ app.filter('capfirst', function() {
       var capped = '';
 
       for (var w in words) {
-        capped += words[w][0].toUppercase() + words[w].slice(1);
+        capped += words[w][0].toUpperCase() + words[w].slice(1);
         if (w < words.length - 1) {
           capped += ' ';
         }
