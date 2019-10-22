@@ -14,7 +14,7 @@ app.controller('MainController', ['$scope', '$routeParams', 'content', function(
   if ($routeParams.sort && !$routeParams.title) {
     if ($routeParams.sort == 'older') {
       orderBy.order = 'asc';
-    } else {
+    } else if ($routeParams.sort != 'all') {
       filter = {field: 'medium', value: $routeParams.sort};
     }
   } else if ($routeParams.title) {
