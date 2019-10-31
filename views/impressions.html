@@ -12,11 +12,6 @@
       <a class="nav-item" href="#/{{ 'impressions' }}/">New <i class="fas fa-arrow-right"></i> Old</a>
       <a class="nav-item" href="#/{{ 'impressions' }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
     </div>
-
-    <p *ngIf="surprise">
-      <a class="greyscale" href="/{{ surprise.medium | slugify }}/{{ surprise.title | slugify }}">
-        Surprise Me
-      </a>
     </p>
   </div>
 
