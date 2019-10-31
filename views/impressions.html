@@ -26,7 +26,7 @@
       <h3 class="title">{{ c.title }}</h3>
       <p class="medium info">{{ c.medium }}</p>
       <audio controls>
-        <source src="{{ c.source }}">
+        <source src="{{ c.source | trusted }}">
       </audio>
     </div>
   </div>
