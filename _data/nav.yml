@@ -7,6 +7,9 @@
 - name: All
   id: published
   link: /#/published
+- name: Impressions
+  id: impressions
+  link: /#/impressions
 - name: Suggest
   id: suggest
   link: /#/suggest
