@@ -16,7 +16,9 @@ app.config(function($routeProvider) {
   })
   .when("/:status/:sort", {
     controller: "MainController",
-    templateUrl: "views/published.html",
+    templateUrl: function(params) {
+      return "views/" + params.status + ".html";
+    },
   })
   .when("/:status/:sort/:title", { // show selected upcoming content (published handled by Jekyll in _posts)
     controller: "MainController",
