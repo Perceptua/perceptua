@@ -1,4 +1,5 @@
 app.controller('MainController', ['$scope', '$routeParams', 'content', function($scope, $routeParams, content) {
+  console.log($routeParams);
   $scope.status = $routeParams.status;
   $scope.filter = $routeParams.filter;
   
