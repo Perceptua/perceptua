@@ -1,24 +1,19 @@
 app.controller('MainController', ['$scope', '$routeParams', 'content', function($scope, $routeParams, content) {
-  // can be 'featured', 'upcoming', or 'published'
   $scope.status = $routeParams.status;
+  $scope.filter = $routeParams.filter;
   
   // initialize filter & ordering for databse query
-  var filter = null;
+  var filter = {field: 'medium', value: $routeParams.filter};
   var orderBy = {field: 'added', order: 'desc'};
   
   if ($routeParams.status == 'upcoming') {
     orderBy.order = 'asc';
   }
   
-  // update query from $routeParams of requested resource
-  if ($routeParams.sort && !$routeParams.title) {
-    if ($routeParams.sort == 'older') {
-      orderBy.order = 'asc';
-    } else if ($routeParams.sort != 'all') {
-      filter = {field: 'medium', value: $routeParams.sort};
-    }
-  } else if ($routeParams.title) {
-    filter = {field: 'title', value: content.getTitle($routeParams.title)};
+  if ($routeParams.select == 'older') {
+    orderBy.order = 'asc';
+  } else {
+    filter = {field: 'title', value: content.getTitle($routeParams.select)};
   }
   
   // send query to service, include results in scope
