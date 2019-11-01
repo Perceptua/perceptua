@@ -1,15 +1,15 @@
 - name: Featured
   id: featured
-  link: /#/featured
+  link: /#/featured/all
 - name: Upcoming
   id: upcoming
-  link: /#/upcoming
+  link: /#/upcoming/all
 - name: All
   id: published
-  link: /#/published
+  link: /#/published/all
 - name: Impressions
   id: impressions
-  link: /#/impressions
+  link: /#/impressions/all
 - name: Suggest
   id: suggest
   link: /#/suggest
