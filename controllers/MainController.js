@@ -1,11 +1,13 @@
 app.controller('MainController', ['$scope', '$routeParams', 'content', function($scope, $routeParams, content) {
   $scope.status = $routeParams.status;
-  $scope.filter = $routeParams.filter;
   
-  // initialize filter & ordering for databse query
-  var filter = {field: 'medium', value: $routeParams.filter};
+  $scope.filter = $routeParams.filter
+  var filter = null;
+  if ($routeParams.filter != 'all') {
+    filter = {field: 'medium', value: $routeParams.filter};
+  }
+  
   var orderBy = {field: 'added', order: 'desc'};
-  
   if ($routeParams.status == 'upcoming') {
     orderBy.order = 'asc';
   }
