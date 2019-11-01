@@ -20,11 +20,11 @@
       <p class="added {{ c.status }} right">{{ c.added.seconds * 1000 | date }}</p>
       <h3 class="title">{{ c.title }}</h3>
       <p class="medium info">{{ c.medium }}</p>
+      <a href="{{ c.youtube | trusted }}"><i class="fab fa-youtube"></i></a>
+      <br>
       <audio controls>
         <source src="{{ c.source | trusted }}">
       </audio>
-      <br>
-      <a class="info" href="{{ c.youtube | trusted }}">View on YouTube</a>
     </div>
   </div>
 </div>
