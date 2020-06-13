@@ -4,7 +4,7 @@
 - name: Upcoming
   id: upcoming
   link: /#/upcoming/all
-- name: All
+- name: Published
   id: published
   link: /#/published/all
 - name: Impressions
