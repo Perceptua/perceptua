@@ -13,6 +13,3 @@
 - name: Suggest
   id: suggest
   link: /#/suggest
-- name: About
-  id: about
-  link: /#/about
