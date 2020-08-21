@@ -2,9 +2,6 @@ var app = angular.module('perceptua', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
-  .when("/suggest", {
-    templateUrl: "views/suggest.html",
-  })
   .when("/about", {
     templateUrl: "views/about.html",
   })
