@@ -29,6 +29,7 @@ Given that the world is unwilling to speak in coherent sentences, let alone divu
 Though life will soon end for the librarian, the hard labor of its pursuits will nonetheless prove worthwhile if the secrets of the Library are one day revealed.
 
 “The Library of Babel” instructs us that, though we face great obstacles in trying to impart meaning to the complexity and constant change which surround us, there may yet be a way to do so. Though we may not find our way through the labyrinth ourselves, and though we may not experience personally the justification of our struggles, we can nonetheless find meaning through the appreciation of the extraordinary fact of existence. Considered in this light, we might reframe our endeavors as a willingness to play the grand game that life has set before us, an exploration of all its possibilities. Though our turn may expire and life be crowned the victor, we triumph by merely engaging with such an opponent. Through this spirit of appreciation for the challenges which confront us—through playfulness, if you like—we may grab hold of that meaning which, sought in the brute facts of the world, so easily slips away. As Borges’ librarian concludes, “My solitude is cheered by that elegant hope” (118).
+
 Works Cited
 
 Bloch, William Goldbloom. The Unimaginable Mathematics of Borges’ Library of Babel. Oxford, Oxford University Press, 2008.
