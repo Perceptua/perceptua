@@ -1,5 +1,10 @@
-app.controller('MainController', ['$scope', '$routeParams', 'content', function($scope, $routeParams, content) {
+app.controller('MainController', ['$scope', '$routeParams', '$location', 'content', function($scope, $routeParams, $location, content) {
   $scope.status = $routeParams.status;
+  var choices = ['about', 'featured', 'published', 'upcoming']
+  
+  if (!choices.includes($scope.status)) {
+    $location.path('/');
+  }
   
   $scope.filter = $routeParams.filter
   var filter = null;
