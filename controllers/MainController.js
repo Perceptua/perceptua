@@ -2,7 +2,9 @@ app.controller('MainController', ['$scope', '$routeParams', '$location', 'conten
   $scope.status = $routeParams.status;
   var choices = ['about', 'featured', 'published', 'upcoming']
   
+  console.log($scope.status);
   if (!choices.includes($scope.status)) {
+    console.log($location.path());
     $location.path('/');
   }
   
