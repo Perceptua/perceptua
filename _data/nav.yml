@@ -7,6 +7,6 @@
 - name: Essays
   id: essays
   link: /#/essays/all
--name: Fiction
+- name: Fiction
   id: fiction
   link: /#/fiction/all
