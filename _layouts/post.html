@@ -9,7 +9,7 @@ layout: default
 <h3>{{ page.creator }}</h3>
 
 {% for c in page.categories %}
-  <p>{{ c }}</p>
+  <p>{{ c | replace: '-', ' ' }}</p>
 {% endfor %}
 
 <div class="text">
