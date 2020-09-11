@@ -4,6 +4,9 @@
 - name: Upcoming
   id: upcoming
   link: /#/upcoming/all
-- name: Published
-  id: published
-  link: /#/published/all
+- name: Essays
+  id: essays
+  link: /#/essays/all
+-name: Fiction
+  id: fiction
+  link: /#/fiction/all
