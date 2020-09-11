@@ -2,21 +2,21 @@
 
 <html>
   <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Perceptua</title>
-    
+
     <meta name="description" content="Perceptua is an open source website dedicated to exploring the arts & cognitive sciences.">
     <meta name="keywords" content="perceptua, humanities, cognitive science, philosophy podcast, analysis videos">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="static/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -25,7 +25,7 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#676087">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
-    
+
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
@@ -39,16 +39,16 @@
       };
       firebase.initializeApp(config);
     </script>
-    
+
     <!-- jQuery & Angular -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="libraries/angular.min.js"></script>
     <script src="libraries/angular-route.min.js"></script>
-    
+
   </head>
   <body ng-app="perceptua">
-    
+
     <header>
       <a class="greyscale" href="/#/featured">
         <h1 id="site-title">Perceptua</h1>
@@ -56,32 +56,33 @@
       <div id="site-nav">
         <a class="nav-item" id="featured" href="#/{{ 'featured' }}/all">Featured</a>
         <a class="nav-item" id="upcoming" href="#/{{ 'upcoming' }}/all">Upcoming</a>
-        <a class="nav-item" id="published" href="#/{{ 'published' }}/all">Published</a>
+        <a class="nav-item" id="essays" href="#/{{ 'essays' }}/all">Essays</a>
+        <a class="nav-item" id="fiction" href="#/{{ 'fiction' }}/all">Fiction</a>
       </div>
     </header>
-    
+
     <div ng-view></div>
-    
+
     <!-- Modules -->
     <script src="apps/perceptua.js"></script>
-    
+
     <!-- Controllers -->
     <script src="controllers/MainController.js"></script>
-    
+
     <!-- Services -->
     <script src="services/content.js"></script>
-    
+
     <!-- Directives -->
     <script src="directives/access.js"></script>
     <script src="directives/content.js"></script>
-    
+
     <!-- Filters -->
     <script src="filters/capfirst.js"></script>
     <script src="filters/slugify.js"></script>
     <script src="filters/trusted.js"></script>
-    
+
     <!-- Helper Functions, &c. -->
     <script src="static/ui.js"></script>
-    
+
   </body>
 </html>
