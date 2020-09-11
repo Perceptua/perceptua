@@ -1,7 +1,7 @@
 <div class="content-container" id="published-container">
   <input type="hidden" id="filter-on" name="filter-on" value="{{ filter }}">
   <p class="info right hidden" id="clear-filter"><a class="greyscale" href="#/{{ form }}/all">Clear Filters <i class="fas fa-times"></i></a></p>
-  <p class="info right hidden" id="filter">Sort <i class="fas fa-caret-down"></i></p>
+  <p class="info right" id="filter">Sort <i class="fas fa-caret-down"></i></p>
 
   <div class="screen-card hidden" id="filter-menu">
     <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
@@ -34,20 +34,17 @@
 <script>
   $(document).ready(function() {
     var filter = $('#filter-on').val();
+    if (filter != 'all') {
+      $('#clear-filter').fadeIn('slow');
+    }
     
-    if (filter == 'all') {
-      $('#filter').fadeIn('slow');
-      
-      $('#filter').click(function() {
-        $('#filter-menu').fadeToggle('slow');
-      });
+    $('#filter').click(function() {
+      $('#filter-menu').fadeToggle('slow');
+    });
 
     $('.filter-option').click(function(ev) {
       var option = $(ev.target).attr('id');
       $('#' + option + '-menu').fadeToggle('slow');
     });
-    } else {
-      $('#clear-filter').fadeIn('slow');
-    }
   });
 </script>
