@@ -1,4 +1,6 @@
 <div class="content-container" id="published-container">
+  <input type="hidden" id="filter-on" name="filter-on" value="{{ filter }}">
+  <a class="info right hidden" id="clear-filter" href="#/{{ form }}/all">Clear Filters <i class="fas fa-times"></i></a>
   <p class="info right" id="filter">Sort <i class="fas fa-caret-down"></i></p>
 
   <div class="screen-card hidden" id="filter-menu">
@@ -31,6 +33,12 @@
 
 <script>
   $(document).ready(function() {
+    var filter = $('#filter-on').val();
+    if (filter != 'all') {
+      $('#filter').hide();
+      $('#clear-filter').fadeIn('slow');
+    }
+    
     $('#filter').click(function() {
       $('#filter-menu').fadeToggle('slow');
     });
