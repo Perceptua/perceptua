@@ -9,8 +9,8 @@
 
     <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="date-menu">
-      <a class="nav-item" href="#/{{ 'published' }}/{{ filter }}">New <i class="fas fa-arrow-right"></i> Old</a>
-      <a class="nav-item" href="#/{{ 'published' }}/{{ filter }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
+      <a class="nav-item" href="#/{{ form }}/{{ filter }}">New <i class="fas fa-arrow-right"></i> Old</a>
+      <a class="nav-item" href="#/{{ form }}/{{ filter }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
     </div>
 
     <p *ngIf="surprise">
@@ -30,7 +30,7 @@
 </div>
 
 <script>
-  $(document).ready(function() {        
+  $(document).ready(function() {
     $('#filter').click(function() {
       $('#filter-menu').fadeToggle('slow');
     });
