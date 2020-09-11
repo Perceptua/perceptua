@@ -1,7 +1,7 @@
 ---
 title: The Journal of a Frenzied Prophet
 creator: Aphoricles
-categories: [short-stories]
+categories: [Short-Stories]
 description: Of the case of the Traveler & his Cypher
 keywords: short story, philosophy, symbolism, mysticism
 layout: post
