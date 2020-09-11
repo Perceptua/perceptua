@@ -2,7 +2,7 @@ app.factory('content', ['$rootScope', '$q', function($rootScope, $q) {
   return {
 
     // convert slug to title
-    getTitle: function(string) {
+    makeString: function(string) {
       return string.replace(/-/g, ' ');
     },
 
