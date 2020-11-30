@@ -10,9 +10,11 @@ layout: default
 
 <p>{{ page.creator }}</p>
 
+<p class="info">
 {% for c in page.categories %}
-  <p class="info category-tag">{{ c | replace: '-', ' ' }}</p>
+  <span class="category-tag">{{ c | replace: '-', ' ' }}</span>
 {% endfor %}
+</p>
 
 <div class="text">
   {{ content }}
