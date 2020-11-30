@@ -4,14 +4,14 @@ layout: default
 
 <a class="info greyscale" id="back" style="float: left;" href="/#/published/all"><i class="fas fa-angle-left"></i> Back</a><br>
 
-<h3>{{ page.date | date: '%B %d, %Y' }}<h3>
+<p class="info right">{{ page.date | date: '%B %d, %Y' }}<p>
 
-<h1>{{ page.title }}</h1>
+<h2>{{ page.title }}</h2>
 
-<h3>{{ page.creator }}</h3>
+<p>{{ page.creator }}</p>
 
 {% for c in page.categories %}
-  <p>{{ c | replace: '-', ' ' }}</p>
+  <p class="info category-tag">{{ c | replace: '-', ' ' }}</p>
 {% endfor %}
 
 <div class="text">
