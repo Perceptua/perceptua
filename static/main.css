@@ -227,6 +227,10 @@ header {
 	text-transform: capitalize;
 }
 
+.category-tag {
+	margin-right: 0.5em;
+}
+
 .added, .clicks {
 	font-size: 0.75em;
 	margin: 0;
