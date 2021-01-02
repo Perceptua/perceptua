@@ -1,7 +1,7 @@
 ---
 title: Squadronism
 creator: Aphorikles
-categories: [Collage]
+categories: [Art-Collages]
 description: An audiovisual experience.
 keywords: music, Zappa, culture, squadron
 layout: post
