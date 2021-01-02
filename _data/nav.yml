@@ -10,3 +10,6 @@
 - name: Fiction
   id: fiction
   link: /#/fiction/all
+- name: Media
+  id: media
+  link: /#/media/all
