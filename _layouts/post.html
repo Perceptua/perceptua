@@ -28,6 +28,13 @@ layout: default
   <div class="sharethis-inline-share-buttons"></div>
 </div>
 
+<div>
+  <h3>Related posts:</h3>
+  {% for post in site.posts %}
+    <p>{{ post.title }} ({{ post.categories}})</p>
+  {% endfor %}
+</div>
+
 <div class="footer">
   {% if page.previous.url %}
     <a href="{{ page.previous.url }}">Previous</a>
