@@ -10,7 +10,7 @@ layout: default
 
 <!-- <p>{{ page.creator }}</p> -->
 
-<p class="info">
+<p>
 {% for c in page.categories %}
   <span class="category-tag">{{ c | replace: '-', ' ' }}</span>
 {% endfor %}
@@ -23,7 +23,7 @@ layout: default
 <div class="left related-posts">
   <p style="margin:0;">Related posts:</p>
   {% for post in site.posts %}
-    {% if post.categories == page.categories %}
+    {% if post.categories == page.categories and post.url != page.url %}
       <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endif %}
   {% endfor %}
