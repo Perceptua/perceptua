@@ -179,6 +179,10 @@ header {
 	text-align: right;
 }
 
+.left {
+	text-align: left;
+}
+
 .filter-option {
 	cursor: pointer;
 }
