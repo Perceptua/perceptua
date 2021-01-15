@@ -25,7 +25,7 @@ layout: default
 </div>
 
 <div class="left">
-  <h3>Related posts:</h3>
+  <p>Related posts:</p>
   {% for post in site.posts %}
     {% if post.categories == page.categories %}
       <a href="{{ post.url }}">{{ post.title }}</a><br>
