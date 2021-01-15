@@ -24,25 +24,15 @@ layout: default
   <a target="_blank" href="https://twitter.com/Aphorikles"><i class="fab fa-twitter"></i> @Aphorikles</a>
 </div>
 
-<div class="social">
-  <div class="sharethis-inline-share-buttons"></div>
-</div>
-
-<div>
+<div class="left">
   <h3>Related posts:</h3>
   {% for post in site.posts %}
     {% if post.categories == page.categories %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a><br>
     {% endif %}
   {% endfor %}
 </div>
 
-<div class="footer">
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url }}">Previous</a>
-  {% endif %}
-
-  {% if page.next.url %}
-    <a href="{{ page.next.url }}">Next</a>
-  {% endif %}
+<div class="social">
+  <div class="sharethis-inline-share-buttons"></div>
 </div>
