@@ -37,6 +37,6 @@ app.config(function($routeProvider) {
     },
   })
   .otherwise({
-    redirectTo: "/essays/all/",
+    redirectTo: "/about",
   });
 });
