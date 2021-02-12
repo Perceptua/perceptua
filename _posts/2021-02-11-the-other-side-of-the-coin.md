@@ -1,5 +1,5 @@
 ---
-title: The Consecration of Days
+title: The Other Side of the Coin
 creator: Aphorikles
 categories: [Short-Stories]
 description: A short story by Aphorikles.
