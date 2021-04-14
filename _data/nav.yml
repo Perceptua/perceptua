@@ -13,3 +13,6 @@
 - name: Media
   id: media
   link: /#/media/all
+- name: Verse
+  id: verse
+  link: /#/verse/all
