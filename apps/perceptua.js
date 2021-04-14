@@ -1,7 +1,7 @@
 var app = angular.module('perceptua', ['ngRoute']);
 
 function getForm(form) {
-  var published = ['essays', 'fiction', 'media'];
+  var published = ['essays', 'fiction', 'media', 'verse'];
 
   if (published.includes(form)) {
     return 'published';
