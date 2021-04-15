@@ -1,9 +1,6 @@
-- name: Featured
-  id: featured
-  link: /#/featured/all
-- name: Upcoming
-  id: upcoming
-  link: /#/upcoming/all
+- name: About
+  id: about
+  link: /#/about
 - name: Essays
   id: essays
   link: /#/essays/all
@@ -16,3 +13,6 @@
 - name: Verse
   id: verse
   link: /#/verse/all
+- name: Upcoming
+  id: upcoming
+  link: /#/upcoming/all
