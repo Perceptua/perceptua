@@ -1,5 +1,5 @@
 ---
-title: Fatale
+title: The Last Best Hope of Earth
 creator: Aphorikles
 categories: [Art-Collages]
 description: Lincoln's words & stories.
