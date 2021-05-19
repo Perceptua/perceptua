@@ -1,0 +1,22 @@
+{
+  "name": "perceptua",
+  "version": "1.0.0",
+  "description": "art of histories, history of arts",
+  "main": "static/perceptua.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perceptua/perceptua.git"
+  },
+  "author": "Aphorikles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perceptua/perceptua/issues"
+  },
+  "homepage": "https://github.com/perceptua/perceptua#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
