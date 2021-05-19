@@ -2,7 +2,7 @@
   "name": "perceptua",
   "version": "1.0.0",
   "description": "art of histories, history of arts",
-  "main": "static/perceptua.js",
+  "main": "perceptua.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
