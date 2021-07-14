@@ -6,7 +6,7 @@ app.filter('slugify', function() {
       var slug = '';
 
       for (var w in words) {
-        slug += words[w].replace('&', 'and').replace(/[_]+/g, '').toLowerCase();
+        slug += words[w].replace('&', 'and').toLowerCase();
         if (w < words.length - 1) {
           slug += '-';
         }
