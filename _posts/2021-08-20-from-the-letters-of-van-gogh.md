@@ -1,7 +1,7 @@
 ---
 title: From the Letters of Van Gogh
 creator: Vincent van Gogh
-categories: [Letters]
+categories: [Art]
 description: Excerpts from the letters of Vincent Van Gogh to his brother, Theo.
 keywords: art, painting, letters
 layout: post
