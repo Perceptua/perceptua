@@ -201,7 +201,7 @@ header {
 }
 
 .content-card, .screen-card {
-	background-color: rgba(232, 228, 0, 0.14);
+	background-color: rgba(232, 228, 0, 0.07);
 	border: 0.25em solid var(--brand);
 	border-radius: 0.5em;
 	color: black;
