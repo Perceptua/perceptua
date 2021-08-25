@@ -249,12 +249,18 @@ header {
 	margin: 0.5em auto;
 }
 
+
+
+/* Footer */
+
 .footer {
-	display: flex;
-	justify-content: space-between;
-	width: 75%;
-	margin: auto;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	width: 100%;
 }
+
+
 
 /* Media Queries */
 
