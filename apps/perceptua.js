@@ -11,10 +11,6 @@ function getForm(form) {
 }
 
 app.config(function($routeProvider) {
-  $routeProvider
-  .when("/about", {
-    templateUrl: "views/about.html",
-  })
   .when("/:form", {
     controller: "MainController",
     templateUrl: function(params) {
@@ -37,6 +33,6 @@ app.config(function($routeProvider) {
     },
   })
   .otherwise({
-    redirectTo: "/about",
+    redirectTo: "/fiction/all",
   });
 });
