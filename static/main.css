@@ -114,7 +114,7 @@ button:hover {
 /* Header */
 
 header {
-	border-bottom: 1px solid brand;
+	border-bottom: 1px solid black;
 	width: 95%;
 	margin: 0.25em auto;
 }
@@ -127,6 +127,7 @@ header {
 
 #site-title {
 	margin: 0 0 0.5em 0;
+	color: black;
 }
 
 #logo, #site-title {
@@ -204,6 +205,7 @@ header {
 	background-color: rgba(232, 228, 0, 0.21);
 	border: 0.25em solid var(--brand);
 	border-radius: 0.5em;
+	color: black;
 	padding: 0.5em;
 }
 
