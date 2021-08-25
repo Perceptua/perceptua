@@ -114,7 +114,7 @@ button:hover {
 /* Header */
 
 header {
-	border-bottom: 1px solid var(--greyscale);
+	border-bottom: 1px solid black;
 	width: 95%;
 	margin: 0.25em auto;
 }
