@@ -1,7 +1,7 @@
 /* Color Scheme */
 
 :root {
-	--brand: #4bee8f;
+	--brand: #ff6666;
 	--accent: #74b6b5;
 	--light: #b5fdaf;
 	--dark: #676087;
@@ -31,12 +31,12 @@
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
-	background-color: black;
+	background-color: white;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: large;
 	word-wrap: break-word;
 	text-align: center;
-	color: var(--greyscale);
+	color: black;
 }
 
 /* Enables fixed background on mobile
@@ -53,8 +53,8 @@ body:before {
 	height: 100%;
 	z-index: -10;
 	opacity: 0.49;
-	background-color: black;
-	background: url(images/perceptua-low-poly.svg) no-repeat center center;
+	background-color: white;
+	background: url(images/aph_red.png) no-repeat center center;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -139,7 +139,6 @@ header {
 
 .nav-item {
 	margin: auto 0.5em;
-	color: var(--greyscale);
 	font-size: 0.75em;
 	font-weight: bold;
 }
@@ -238,34 +237,6 @@ header {
 .added, .clicks {
 	font-size: 0.75em;
 	margin: 0;
-}
-
-.autocomplete-container {
-	position: relative;
-	margin: auto;
-	cursor: pointer;
-}
-
-.autocomplete {
-	position: absolute;
-	top: 100%;
-	left: 32%;
-	right: 32%;
-	z-index: 99;
-	margin: 0;
-}
-
-.autocomplete div {
-	padding: 0.25em;
-	cursor: pointer;
-	color: black;
-	background-color: var(--greyscale);
-	border-bottom: 1px solid var(--dark);
-}
-
-.autocomplete div:hover, .active {
-	color: var(--brand) !important;
-	background-color: var(--dark) !important;
 }
 
 .related-posts {
