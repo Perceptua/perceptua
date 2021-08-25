@@ -11,6 +11,7 @@ function getForm(form) {
 }
 
 app.config(function($routeProvider) {
+  $routeProvider
   .when("/:form", {
     controller: "MainController",
     templateUrl: function(params) {
