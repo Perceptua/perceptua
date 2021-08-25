@@ -1,11 +1,11 @@
 /* Color Scheme */
 
 :root {
-	--brand: #ff6666;
-	--accent: #74b6b5;
-	--light: #b5fdaf;
-	--dark: #676087;
-	--greyscale: #f2f2f2;
+	--brand: #09594C;
+	--accent: #E8E400;
+	--light: #E84B0C;
+	--dark: #2D0A59;
+	--greyscale: #FAF9BB;
 }
 
 .highlight { color: var(--brand) !important; }
