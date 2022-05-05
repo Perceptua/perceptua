@@ -10,6 +10,3 @@
 - name: Verse
   id: verse
   link: /#/verse/all
-- name: Upcoming
-  id: upcoming
-  link: /#/upcoming/all
