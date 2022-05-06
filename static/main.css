@@ -182,6 +182,11 @@ header {
 	text-align: left;
 }
 
+.hanging {
+	text-indent: -0.25em;
+	padding-left: 0.25em;
+}
+
 .filter-option {
 	cursor: pointer;
 }
