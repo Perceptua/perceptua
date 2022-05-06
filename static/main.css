@@ -183,9 +183,9 @@ header {
 }
 
 .hanging {
-	text-indent: -0.25em;
+	text-indent: -0.5em;
 	margin: 0 auto;
-	padding-left: 0.25em;
+	padding-left: 0.5em;
 }
 
 .filter-option {
