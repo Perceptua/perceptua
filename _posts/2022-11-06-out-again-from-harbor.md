@@ -17,7 +17,7 @@ layout: post
 <p class="hanging">these were as things beloved, </p>
 <p class="hanging">without any need of forgiveness;</p>
 <p class="hanging">but my life, the choices I did not have to make…</p>
-<br><br>
+<br>
 <p class="hanging">My name was read from the book.</p>
 <p class="hanging">It was not the crude thing </p>
 <p class="hanging">I knew & have known again,</p>
@@ -28,7 +28,7 @@ layout: post
 <p class="hanging">saw the low sun through yellowing leaves.</p>
 <p class="hanging">In its song were all the movements of my soul,</p>
 <p class="hanging">& I was called to what awaited.</p>
-<br><br>
+<br>
 <p class="hanging">Tearfully I pleaded not to go, & what I asked was given;</p>
 <p class="hanging">I did not sit then in the place He set for me.</p>
 <p class="hanging">So weigh once more upon me my tattered weaving;</p>
