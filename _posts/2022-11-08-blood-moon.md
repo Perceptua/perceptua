@@ -9,7 +9,7 @@ layout: post
 
 <p class="hanging">I’m looking for the blood moon in the suburbs.</p>
 <p class="hanging">I can’t see shit under these streetlights;</p>
-<p class="hanging">then my dog shits under a streetlight.</p>
+<p class="hanging">then my one-eyed dog shits under a streetlight.</p>
 <p class="hanging">We head for the receptacle of custom & waste,</p>
 <p class="hanging">but I spy the local news, their stadium of lights</p>
 <p class="hanging">on a war horse diesel generator, the laser sight</p>

@@ -184,7 +184,7 @@ header {
 
 .hanging {
 	text-indent: -1em;
-	margin: 0 auto;
+	margin: 0.25em auto;
 	padding-left: 1em;
 }
 
