@@ -28,4 +28,4 @@ layout: post
 <p class="hanging">As fortune I was a harlot & a wife,</p>
 <p class="hanging">as chance I’m a loveless fickle mistress;</p>
 <p class="hanging">there’s blood everywhere, but no heart left to break.</p>
-<p class="hanging">I saw the blood moon low & setting.</p>
+<p class="hanging">I saw the blood moon dull & setting.</p>
