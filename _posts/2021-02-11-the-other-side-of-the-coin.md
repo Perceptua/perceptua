@@ -1,7 +1,7 @@
 ---
 title: The Other Side of the Coin
 creator: Aphorikles
-categories: [Short-Stories]
+categories: [Short-Story]
 description: A short story by Aphorikles.
 keywords: short story, literature, symbolism, Borges, dreams
 layout: post

@@ -1,7 +1,7 @@
 ---
 title: An Early-Hours Dream this 5th of May
 creator: Aphorikles
-categories: [Short-Stories]
+categories: [Short-Story]
 description: A short story by Aphorikles
 keywords: short story, literature, dreams, myth, fiction
 layout: post
