@@ -1,18 +1,18 @@
 <div class="content-container" id="published-container">
   <input type="hidden" id="filter-on" name="filter-on" value="{{ filter }}">
-  <p class="info right hidden" id="clear-filter"><a href="#/{{ form }}/all">Clear Filters <i class="fas fa-times"></i></a></p>
+  <p class="info right hidden" id="clear-filter"><a href="/">Clear Filters <i class="fas fa-times"></i></a></p>
   <p class="info right" id="filter">Sort <i class="fas fa-caret-down"></i></p>
 
   <div class="screen-card hidden" id="filter-menu">
     <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="medium-menu">
-      <a class="nav-item medium" href="#/{{ form }}/{{ m | slugify }}/" ng-repeat="m in media">{{ m | capfirst }}</a>
+      <a class="nav-item medium" href="#/{{ m | slugify }}/" ng-repeat="m in media">{{ m | capfirst }}</a>
     </div>
 
     <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
     <div class="hidden option-menu" id="date-menu">
-      <a class="nav-item" href="#/{{ form }}/{{ filter }}">New <i class="fas fa-arrow-right"></i> Old</a>
-      <a class="nav-item" href="#/{{ form }}/{{ filter }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
+      <a class="nav-item" href="#/{{ filter }}">New <i class="fas fa-arrow-right"></i> Old</a>
+      <a class="nav-item" href="#/{{ filter }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
     </div>
 
     <p *ngIf="surprise">
@@ -34,10 +34,11 @@
 <script>
   $(document).ready(function() {
     var filter = $('#filter-on').val();
-    if (filter != 'all') {
+
+    if (filter) {
       $('#clear-filter').fadeIn('slow');
     }
-    
+
     $('#filter').click(function() {
       $('#filter-menu').fadeToggle('slow');
     });

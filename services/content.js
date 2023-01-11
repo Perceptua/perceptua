@@ -7,9 +7,9 @@ app.factory('content', ['$rootScope', '$q', function($rootScope, $q) {
     },
 
     // query firestore collection for requested content
-    getContent: function(form, filter, orderBy) {
+    getContent: function(filter, orderBy) {
       return $q((resolve, reject) => {
-        var docs = firebase.firestore().collection('content').where('form', '==', form);
+        var docs = firebase.firestore().collection('content');
 
         if (filter) {
           docs = docs.where(filter.field, '==', filter.value);
@@ -21,7 +21,8 @@ app.factory('content', ['$rootScope', '$q', function($rootScope, $q) {
         // construct object from firestore data
         docs.get().then((docs) => {
           var content = [];
-          var media = ['all'];
+          var media = [];
+
           docs.forEach((doc) => {
             var data = doc.data();
             content.push(data);

@@ -2,13 +2,9 @@
 layout: default
 ---
 
-<!-- <a class="info greyscale" id="back" style="float: left;" href="/#/published/all"><i class="fas fa-angle-left"></i> Back</a><br> -->
-
 <p class="info right" style="margin-right:1em;">{{ page.date | date: '%B %d, %Y' }}<p>
 
 <h2>{{ page.title }}</h2>
-
-<!-- <p>{{ page.creator }}</p> -->
 
 <p>
 {% for c in page.categories %}
@@ -30,7 +26,7 @@ layout: default
       {% endif %}
     {% endfor %}
   {% endcapture %}
-  
+
   <p style="margin:0;">{{ text }}</p>
   {{ related }}
 </div>

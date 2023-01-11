@@ -1,9 +1,0 @@
-<div class="content-container" id="upcoming-container">
-  <div class="content-grid">
-    <div class="content-card" *ngIf="content" ng-repeat="c in content">
-      <a href="#/{{ 'upcoming' }}/{{ c.medium | slugify }}/{{ c.title | slugify }}">
-        <content content="c"></content>
-      </a>
-    </div>
-  </div>
-</div>
