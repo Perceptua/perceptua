@@ -18,7 +18,7 @@ layout: post
 <p class="hanging">And other Mays & ides will see the rivers run uphill</p>
 <p class="hanging">from the scaffold of a satire, the feet of a bald Calvinist & silent.</p>
 <p class="hanging">And the run-together blood will carry you off, you broad-faced maiden,</p>
-<p class="hanging">& you will bear his children while his blood pours out libations on the earth.</p>
+<p class="hanging">& you will bear his children while his throat pours out libations on the earth.</p>
 <p class="hanging">And against the prophets we'll drink, remember never knowing</p>
 <p class="hanging">the playwright come to court, by lowland thieves of mercy set naked on stage & stage—</p>
 <p class="hanging">the ides, the ides, the ides of another month.</p>
