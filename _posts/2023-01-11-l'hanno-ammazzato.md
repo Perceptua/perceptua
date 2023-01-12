@@ -14,7 +14,7 @@ layout: post
 <p class="hanging">Its fingers curled, unclurled & slowed, & pointed like a gun on a bridge</p>
 <p class="hanging">at a day when they would shout l'hanno ammazzato to the queen from a palace window—</p>
 <p class="hanging">& she would watch the sorceress tear at her eyes, her lover's blood run back the years accusing.</p>
-<br><br>
+<br>
 <p class="hanging">And other Mays & ides will see the rivers run uphill</p>
 <p class="hanging">from the scaffold of a satire, the feet of a bald Calvinist & silent.</p>
 <p class="hanging">And the run-together blood will carry you off, you broad-faced maiden,</p>
