@@ -15,7 +15,7 @@ layout: post
 <p class="hanging">they'd dash their brains on walls eternal, crying</p>
 <p class="hanging">giddy thanks forever—forever shrinks & shrinks.</p>
 <br>
-<p class="hanging">Some child young & French has it almost in his hands,</p>
+<p class="hanging">A child young & French has it almost in his hands,</p>
 <p class="hanging">sees it dance on the ceiling of some nowhere at night</p>
 <p class="hanging">like the gift-bearing hands of the angels.</p>
 <p class="hanging">And the mathematicians quail at this thing</p>
