@@ -20,8 +20,12 @@ The time then came to cut an emblem-shaped hole in the greyboard, & so to wield 
 From this ambling mathematical reverie I was awakened by a burning smell. I was quick to find the source of that scorched aroma, right there where it was beneath my nose. Unaccustomed to the hot knife & ignorant of its technique, I had taken too low an angle against the greyboard. The board drank dumbly of the she-shaft's uterine warmth, till it told its usurpation by a blackened spot & cloud of acrid smoke. Alarmed, I lifted the hot knife, fortunately before the greyboard burned. By then the void for the flukes was nearly made, so I took the board in hand to inspect the damage. And there, on the opposite board—the one meant for the book's back cover, a pillow beneath the head of orphan Ishmael—there I felt the mark of a greater beast. This beast was not Leviathan himself (& thank God, for who can open his jaws, those doors of his face, with terrible teeth encircling?), but he must have been a phantom of that selfsame watery haunt, the dark-veiled Ocean. For that board which was to comfort the souls long-suffering of the great American novel was now swollen & soaked with water. Spongelike it sopped of that subtle retreating creature, who'd stowed away in some fold between the worlds, some cavern behind my leaky coffee machine.
 
 <iframe
+  width="560" height="315"
   src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fmoby_dick_binding.mp4?alt=media&token=3611d7d7-43a6-475b-b307-8b481f249260"
-  title="Binding Moby Dick">
+  title="Binding Moby Dick"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
 </iframe>
 
 Well, I hung those fated boards to cool & dry, & came back a later day to wrap them in burial clothes. The signs of burning & weeping had not much faded, but I was able to bind Moby Dick without further symbolical incident. The book now rests on my shelf, alongside Whitman in the pantheon. (Hawthorne is a away in another room; as in life, there is a distance between he & Melville.) Since the turning in of the cloth, the pasting of the endpapers white in their youth against the old whale's yellowed pages, there is left no outward sign of either stain. Only a chewed & oblate woodchip blazoned with the mark of the whale tells the elemental wounds that lie beneath. Yet I know that book—I know the fires & waters have been upon it.
