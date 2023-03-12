@@ -3,7 +3,7 @@ title: On the Carving of Fruit
 creator: Aphorikles
 categories: [Short-Story]
 description: A short story by Aphorikles
-keywords: short story, literature, bookbinding, Melville, Moby Dick
+keywords: short story, literature, fruit, carving
 layout: post
 ---
 
