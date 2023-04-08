@@ -1,11 +1,11 @@
 /* Color Scheme */
 
 :root {
-	--brand: #09594C;
-	--accent: #E8E400;
-	--light: #E84B0C;
-	--dark: #2D0A59;
-	--greyscale: #FAF9BB;
+	--brand: #315A87;
+	--accent: #5A85A7;
+	--light: #98AEC2;
+	--dark: #061B3A;
+	--greyscale: #D3DDE0;
 }
 
 .highlight { color: var(--accent) !important; }
@@ -39,10 +39,6 @@ html {
 	color: black;
 }
 
-/* Enables fixed background on mobile
-Based on Vincent's answer on Stack Overflow
-https://stackoverflow.com/questions/26372127/background-fixed-no-repeat-not-working-on-mobile
-*/
 body:before {
 	content: "";
 	display: block;
@@ -54,7 +50,7 @@ body:before {
 	z-index: -10;
 	opacity: 0.35;
 	background-color: white;
-	background: url(images/aph_noise.png) no-repeat center center;
+	background: url(images/aph_cloud.png) no-repeat center center;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -207,7 +203,7 @@ header {
 }
 
 .content-card, .screen-card {
-	background-color: rgba(232, 228, 0, 0.07);
+	background-color: rgba(90, 133, 167, 0.07);
 	border: 0.25em solid var(--brand);
 	border-radius: 0.5em;
 	color: black;
@@ -220,7 +216,7 @@ header {
 }
 
 .content-card:hover {
-	background-color: rgba(9, 89, 76, 0.21);
+	background-color: rgba(49, 90, 135, 0.21);
 }
 
 .screen-card, .text {
