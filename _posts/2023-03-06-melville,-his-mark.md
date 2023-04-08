@@ -1,8 +1,7 @@
 ---
 title: Melville, His Mark
-creator: Aphorikles
 categories: [Short-Story]
-description: A short story by Aphorikles
+description: Short fiction brought to you by Perceptua.
 keywords: short story, literature, bookbinding, Melville, Moby Dick
 layout: post
 ---

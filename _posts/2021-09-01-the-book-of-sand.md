@@ -1,6 +1,5 @@
 ---
 title: The Book of Sand
-creator: Jorge Luis Borges
 categories: [Essay]
 description: A discussion & analysis of the infinite horrors in Borges' Book of Sand
 keywords: borges, book of sand, literature, symbolism, fantasy, infinity

@@ -1,8 +1,7 @@
 ---
 title: On the Carving of Fruit
-creator: Aphorikles
 categories: [Short-Story]
-description: A short story by Aphorikles
+description: Short fiction brought to you by Perceptua.
 keywords: short story, literature, fruit, carving
 layout: post
 ---

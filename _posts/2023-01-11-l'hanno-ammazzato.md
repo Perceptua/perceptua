@@ -1,8 +1,7 @@
 ---
 title: L'Hanno Ammazzato
-creator: Aphorikles
 categories: [Verse]
-description: A poem by Aphorikles.
+description: Poetry brought to you by Perceptua.
 keywords: verse, poetry, blank verse
 layout: post
 ---

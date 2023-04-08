@@ -1,8 +1,7 @@
 ---
 title: An Episode from the History of Maths
-creator: Aphorikles
 categories: [Verse]
-description: A poem by Aphorikles.
+description: Poetry brought to you by Perceptua.
 keywords: verse, poetry, blank verse
 layout: post
 ---

@@ -1,8 +1,7 @@
 ---
 title: An Early-Hours Dream this 5th of May
-creator: Aphorikles
 categories: [Short-Story]
-description: A short story by Aphorikles
+description: Short fiction brought to you by Perceptua.
 keywords: short story, literature, dreams, myth, fiction
 layout: post
 ---
