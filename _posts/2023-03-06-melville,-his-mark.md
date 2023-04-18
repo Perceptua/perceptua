@@ -1,7 +1,7 @@
 ---
 title: Melville, His Mark
 categories: [Short-Story]
-description: Short fiction brought to you by Perceptua.
+description: Short fiction posted on a website.
 keywords: short story, literature, bookbinding, Melville, Moby Dick
 layout: post
 ---

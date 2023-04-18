@@ -1,7 +1,7 @@
 ---
 title: The Book of Sand
 categories: [Essay]
-description: A discussion & analysis of the infinite horrors in Borges' Book of Sand
+description: A discussion & analysis of the infinite horrors in Borges' Book of Sand, posted on a website.
 keywords: borges, book of sand, literature, symbolism, fantasy, infinity
 layout: post
 ---

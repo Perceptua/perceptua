@@ -1,7 +1,7 @@
 ---
 title: L'Hanno Ammazzato
 categories: [Verse]
-description: Poetry brought to you by Perceptua.
+description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
 layout: post
 ---

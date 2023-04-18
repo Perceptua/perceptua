@@ -1,7 +1,7 @@
 ---
 title: Gone, Fishing
 categories: [Short-Story]
-description: Short fiction brought to you by Perceptua.
+description: Short fiction posted on a website.
 keywords: short story, literature, double, Trout Fish, Twitter
 layout: post
 ---

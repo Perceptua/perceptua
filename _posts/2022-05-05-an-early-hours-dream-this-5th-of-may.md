@@ -1,7 +1,7 @@
 ---
 title: An Early-Hours Dream this 5th of May
 categories: [Short-Story]
-description: Short fiction brought to you by Perceptua.
+description: Short fiction posted on a website.
 keywords: short story, literature, dreams, myth, fiction
 layout: post
 ---
