@@ -33,7 +33,7 @@ html {
 	overflow-y: scroll;
 	background-color: rgba(211, 221, 224, 0.42);
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: large;
+	font-size: small;
 	word-wrap: break-word;
 	text-align: center;
 	color: black;
