@@ -32,7 +32,7 @@ layout: post
 <p class="hanging">time’s bankers have been light the promised gold.</p>
 <br>
 <p class="hanging">And what’s in the hour’s gold</p>
-<p class="hanging">but flowers’ bloom, by other brushes painted?</p>
+<p class="hanging">but flowers’ bloom by other brushes painted?</p>
 <p class="hanging">All princely glory’s nothing but the way</p>
 <p class="hanging">the light beds down in petal-folds of purple—</p>
 <p class="hanging">swaddling robes, spun in the colors of</p>
