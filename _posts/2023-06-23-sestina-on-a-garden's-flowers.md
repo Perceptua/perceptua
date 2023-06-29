@@ -10,20 +10,16 @@ layout: post
 <p class="hanging">highschool; I try to see them another way</p>
 <p class="hanging">but there they are—concession stands painted,</p>
 <p class="hanging">banners in the halls my feet remember.</p>
-<p class="hanging">I see these flowers, knights of a faded gold,</p>
+<p class="hanging">I see these flowers, knights of faded gold,</p>
 <p class="hanging">seated on their horses all of purple.</p>
-
 <br>
-
 <p class="hanging">But you see in that purple </p>
 <p class="hanging">something I don’t know the colors of—</p>
 <p class="hanging">the sky the night your father died, when the gold</p>
 <p class="hanging">sun rose & burned the silence in the way;</p>
 <p class="hanging">you hear the decades-muted voice, remember</p>
 <p class="hanging">the dirges, the happy-birthdays it painted.</p>
-
 <br>
-
 <p class="hanging">And all these things are painted;</p>
 <p class="hanging">no heaven blazes forth from that bright purple,</p>
 <p class="hanging">these stars in commons violet don’t remember</p>
@@ -54,4 +50,4 @@ layout: post
 <br>
 <p class="hanging">When these colors of late spring go the way</p>
 <p class="hanging">of all things painted, I will remember</p>
-<p class="hanging">them as knights of gold on horses purple.</p>
+<p class="hanging">they were knights of gold on horses purple.</p>
