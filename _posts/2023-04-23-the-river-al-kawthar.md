@@ -14,7 +14,7 @@ layout: post
 <p class="hanging">But all rivers are the river platonic, the river of the mind of God;</p>
 <p class="hanging">in Chios he sang of a god who was a river, of his wrath.</p>
 <p class="hanging">And what is the river that circles the world but a mirror?</p>
-<p class="hanging">Ocean may be the ocean or the ungraspable phantom of life,</p>
-<p class="hanging">all her intangible malignity but a white ubiquitous whale;</p>
-<p class="hanging">& I may be a morsel in her belly, carried unawares to Nineveh</p>
+<p class="hanging">Ocean may be ocean or the ungraspable phantom of life,</p>
+<p class="hanging">all her intangible malice but a white ubiquitous whale;</p>
+<p class="hanging">& I may be a morsel in her belly, carried unaware to Nineveh</p>
 <p class="hanging">to be reborn a symbol & a sign.</p>
