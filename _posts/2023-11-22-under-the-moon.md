@@ -16,8 +16,8 @@ layout: post
 <p class="hanging">run slow to seem asleep, trickle as to seem</p>
 <p class="hanging">a corse of dreams, let blood by the leeches of time.</p>
 <br>
-<p class="hanging">Stirring are the purpling tongues of poets,</p>
-<p class="hanging">memory plies her constellating art;</p>
-<p class="hanging">yet all things run together—the elixir is a healer not of us.</p>
+<p class="hanging">Stirring now the purpling tongues of poets;</p>
+<p class="hanging">memory plies her constellating art.</p>
+<p class="hanging">Yet all things run together—the elixir is a healer not of us.</p>
 <p class="hanging">It is drunk by the earth to the last, the very last;</p>
 <p class="hanging">the sun will come & find no mist to burn.</p>
