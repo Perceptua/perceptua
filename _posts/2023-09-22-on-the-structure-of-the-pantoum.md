@@ -20,8 +20,6 @@ mathematics, which the mathematician will find unenlightening, & the poet quite
 tedious. Yet the mathematician should recognize that the core of his work is
 poetry, & the poet should unstop his ears to the music of number. That greater
 mathematicians & poets than I may be encouraged to work on this form, I publish
-here my treatise
-<a 
-    target="_blank" 
-    href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03"
->on the structure of the pantoum</a>.
+here my treatise [on the structure of the pantoum][1]{:target="_blank"}.
+
+[1]: https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03
