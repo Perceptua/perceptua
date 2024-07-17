@@ -10,7 +10,7 @@ layout: post
     <h3 class="section-header centered" id="foreword">
         Foreword <i class="fas fa-caret-down"></i>
     </h3>
-    <div class="section-content" id="foreword-content">
+    <div class="section-content hidden" id="foreword-content">
         <p>
             "<i>Pantoum</i> is the western word for the Malayan <i>pantun</i>," I read in book on poetic forms in the summer of 2023. It first appeared in written form in the fifteenth century, when the oral traditions of the Malay were set down in ink. In the westernized pantoum, stanzas are of four lines repeated in the following pattern: the second & fourth lines of each stanza become the first & third of the next. In this way, each stanza after the first consists of two repeated & two new lines. Often, the third & first lines of the initial stanza are repeated as the second & fourth lines of the final one, so that every line is used twice & the last line of the poem is the same as the first.
         </p>
@@ -37,7 +37,7 @@ layout: post
     </h3>
     <div class="section-content hidden" id="summer-content">
         <p>
-            <b>Pantoum &numero; 11</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 11</b>
         </p>
         <br>
         <p class="hanging">
@@ -94,7 +94,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 2</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 2</b>
         </p>
         <br>
         <p class="hanging">
@@ -138,7 +138,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 7</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 7</b>
         </p>
         <br>
         <p class="hanging">
@@ -201,7 +201,7 @@ layout: post
     </h3>
     <div class="section-content hidden" id="fall-content">
         <p>
-            <b>Pantoum &numero; 4</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 4</b>
         </p>
         <br>
         <p class="hanging">
@@ -258,7 +258,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 12</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 12</b>
         </p>
         <br>
         <p class="hanging">
@@ -302,7 +302,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 9</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 9</b>
         </p>
         <br>
         <p class="hanging">
@@ -365,7 +365,7 @@ layout: post
     </h3>
     <div class="section-content hidden" id="winter-content">
         <p>
-            <b>Pantoum &numero; 3</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 3</b>
         </p>
         <br>
         <p class="hanging">
@@ -422,7 +422,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 10</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 10</b>
         </p>
         <br>
         <p class="hanging">
@@ -466,7 +466,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 5</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 5</b>
         </p>
         <br>
         <p class="hanging">
@@ -529,7 +529,7 @@ layout: post
     </h3>
     <div class="section-content hidden" id="spring-content">
         <p>
-            <b>Pantoum &numero; 8</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 8</b>
         </p>
         <br>
         <p class="hanging">
@@ -586,7 +586,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 1</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 1</b>
         </p>
         <br>
         <p class="hanging">
@@ -630,7 +630,7 @@ layout: post
         <br>
         <br>
         <p>
-            <b>Pantoum &numero; 6</b> <i class="fas fa-caret-down"></i>
+            <b>Pantoum &numero; 6</b>
         </p>
         <br>
         <p class="hanging">
@@ -688,9 +688,9 @@ layout: post
 </div>
 
 <div id="essay-container">
-    <p class="section-header centered" id="essay">
+    <h3 class="section-header centered" id="essay">
         <b>On the Structure of the Pantoum</b> <i class="fas fa-caret-down"></i>
-    </p>
+    </h3>
     <div class="section-content hidden" id="essay-content">
         <p>
             <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03" target="_blank">
