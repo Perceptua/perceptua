@@ -724,7 +724,7 @@ layout: post
     }
 
     $(document).ready(function() {
-        $('.section-header').find('*').click(function(ev) {
+        $('.section-header *').click(function(ev) {
             var sectionID = $(ev.target).attr('id');
             $('#' + sectionID + '-content').fadeToggle('slow');
             toggleCaret(sectionID);
