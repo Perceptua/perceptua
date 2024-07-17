@@ -8,11 +8,11 @@ layout: post
 
 <div class="section-container" id="foreword-container">
     <div class="section-header" id="foreword">
-        <h3 class="centered">
-            Foreword <i class="fas fa-caret-up"></i>
+        <h3>
+            Foreword <i class="fas fa-caret-down"></i>
         </h3>
     </div>
-    <div class="section-content" id="foreword-content">
+    <div class="section-content hidden" id="foreword-content">
         <p>
             "<i>Pantoum</i> is the western word for the Malayan <i>pantun</i>," I read in book on poetic forms in the summer of 2023. It first appeared in written form in the fifteenth century, when the oral traditions of the Malay were set down in ink. In the westernized pantoum, stanzas are of four lines repeated in the following pattern: the second & fourth lines of each stanza become the first & third of the next. In this way, each stanza after the first consists of two repeated & two new lines. Often, the third & first lines of the initial stanza are repeated as the second & fourth lines of the final one, so that every line is used twice & the last line of the poem is the same as the first.
         </p>
@@ -35,7 +35,7 @@ layout: post
 
 <div class="section-container" id="summer-container">
     <div class="section-header" id="summer">
-        <h3 class="centered">
+        <h3>
             Summer <i class="fas fa-caret-down"></i>
         </h3>
     </div>
@@ -201,7 +201,7 @@ layout: post
 
 <div class="section-container" id="fall-container">
     <div class="section-header" id="fall">
-        <h3 class="centered">
+        <h3>
             Fall <i class="fas fa-caret-down"></i>
         </h3>
     </div>
@@ -367,7 +367,7 @@ layout: post
 
 <div class="section-container" id="winter-container">
     <div class="section-header" id="winter">
-        <h3 class="centered">
+        <h3>
             Winter <i class="fas fa-caret-down"></i>
         </h3>
     </div>
@@ -533,7 +533,7 @@ layout: post
 
 <div class="section-container" id="spring-container">
     <div class="section-header" id="spring">
-        <h3 class="centered">
+        <h3>
             Spring <i class="fas fa-caret-down"></i>
         </h3>
     </div>
@@ -699,7 +699,7 @@ layout: post
 
 <div class="section-container" id="essay-container">
     <div class="section-header" id="essay">
-        <h3 class="centered">
+        <h3>
             On the Structure of the Pantoum <i class="fas fa-caret-down"></i>
         </h3>
     </div>
