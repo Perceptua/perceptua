@@ -705,7 +705,7 @@ layout: post
     </div>
     <div class="section-content hidden" id="essay-content">
         <p>
-            <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03" target="_blank">
+            <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=5455c3e0-d7cd-4b8d-ac62-5f327e822e7d" target="_blank">
                 Click here to read my essay on the structure of the pantoum.
             </a>
         </p>
