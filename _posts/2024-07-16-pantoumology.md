@@ -7,28 +7,35 @@ layout: post
 ---
 
 <div class="section-container" id="foreword-container">
-    <h3 class="centered" id="foreword">
+    <h3 class="section-header centered" id="foreword">
         Foreword <i class="fas fa-caret-down"></i>
     </h3>
-
-    "*Pantoum* is the western word for the Malayan *pantun*," I read in book on poetic forms in the summer of 2023. It first appeared in written form in the fifteenth century, when the oral traditions of the Malay were set down in ink. In the westernized pantoum, stanzas are of four lines repeated in the following pattern: the second & fourth lines of each stanza become the first & third of the next. In this way, each stanza after the first consists of two repeated & two new lines. Often, the third & first lines of the initial stanza are repeated as the second & fourth lines of the final one, so that every line is used twice & the last line of the poem is the same as the first.
-
-    When I read about the pantoum I began right away to experiment. I did not read (& I confess I still have not read) much of what had been done with form to date, but set to work writing pantoums of varying length & style. Four trials were enough to inspire a deeper interest; alongside the writing of pantoums, I began to analyze their structure—to contemplate their merits mathematically, so to speak. Though I continued to compose in the usual way, I discovered that the essential feature of the pantoum—repeating lines—could be used to generate innumerable poetic forms. I pressed on by both paths, composing & analyzing, until the contents of this post came into view.
-
-    Collected here are the twelve pantoums I have written up to this point, presented in a seasonal arrangement. This cycle of poems is followed by a treatise on the structure of the pantoum, written in a mottled dialect combining poetry & mathematics which the mathematician will find unenlightening & the poet will find quite tedious. Yet the mathematician should recognize that the core of his work is poetry, & the poet should unstop his ears to the music of number.
-    <br>
-    <p class="right>
-        Hamburg, New York
+    <div class="section-content" id="foreword-content">
+        <p>
+            "<i>Pantoum</i> is the western word for the Malayan <i>pantun</i>," I read in book on poetic forms in the summer of 2023. It first appeared in written form in the fifteenth century, when the oral traditions of the Malay were set down in ink. In the westernized pantoum, stanzas are of four lines repeated in the following pattern: the second & fourth lines of each stanza become the first & third of the next. In this way, each stanza after the first consists of two repeated & two new lines. Often, the third & first lines of the initial stanza are repeated as the second & fourth lines of the final one, so that every line is used twice & the last line of the poem is the same as the first.
+        </p>
         <br>
-        April 2024
-    </p>
+        <p>
+            When I read about the pantoum I began right away to experiment. I did not read (& I confess I still have not read) much of what had been done with form to date, but set to work writing pantoums of varying length & style. Four trials were enough to inspire a deeper interest; alongside the writing of pantoums, I began to analyze their structure—to contemplate their merits mathematically, so to speak. Though I continued to compose in the usual way, I discovered that the essential feature of the pantoum—repeating lines—could be used to generate innumerable poetic forms. I pressed on by both paths, composing & analyzing, until the contents of this post came into view.
+        </p>
+        <br>
+        <p>
+            Collected here are the twelve pantoums I have written up to this point, presented in a seasonal arrangement. This cycle of poems is followed by a treatise on the structure of the pantoum, written in a mottled dialect combining poetry & mathematics which the mathematician will find unenlightening & the poet will find quite tedious. Yet the mathematician should recognize that the core of his work is poetry, & the poet should unstop his ears to the music of number.
+        </p>
+        <br>
+        <p class="right">
+            Hamburg, New York
+            <br>
+            April 2024
+        </p>
+    </div>
 </div>
 
 <div class="section-container" id="summer-container">
-    <h3 class="centered" id="summer">
+    <h3 class="section-header centered" id="summer">
         Summer <i class="fas fa-caret-down"></i>
     </h3>
-    <div class="pantoum-container">
+    <div class="section-content hidden" id="summer-content">
         <p>
             <b>Pantoum &numero; 11</b> <i class="fas fa-caret-down"></i>
         </p>
@@ -189,10 +196,10 @@ layout: post
 </div>
 
 <div class="section-container" id="fall-container">
-    <h3 class="centered" id="fall">
+    <h3 class="section-header centered" id="fall">
         Fall <i class="fas fa-caret-down"></i>
     </h3>
-    <div class="pantoum-container">
+    <div class="section-content hidden" id="fall-content">
         <p>
             <b>Pantoum &numero; 4</b> <i class="fas fa-caret-down"></i>
         </p>
@@ -353,10 +360,10 @@ layout: post
 </div>
 
 <div class="section-container" id="winter-container">
-    <h3 class="centered" id="winter">
+    <h3 class="section-header centered" id="winter">
         Winter <i class="fas fa-caret-down"></i>
     </h3>
-    <div class="pantoum-container">
+    <div class="section-content hidden" id="winter-content">
         <p>
             <b>Pantoum &numero; 3</b> <i class="fas fa-caret-down"></i>
         </p>
@@ -517,10 +524,10 @@ layout: post
 </div>
 
 <div class="section-container" id="spring-container">
-    <h3 class="centered" id="spring">
+    <h3 class="section-header centered" id="spring">
         Spring <i class="fas fa-caret-down"></i>
     </h3>
-    <div class="pantoum-container">
+    <div class="section-content hidden" id="spring-content">
         <p>
             <b>Pantoum &numero; 8</b> <i class="fas fa-caret-down"></i>
         </p>
@@ -681,24 +688,34 @@ layout: post
 </div>
 
 <div id="essay-container">
-    <p class="centered" id="essay">
+    <p class="section-header centered" id="essay">
         <b>On the Structure of the Pantoum</b> <i class="fas fa-caret-down"></i>
     </p>
-    <p>
-        [Click here to read my essay on the structure of the pantoum.][1]{:target="_blank"}
-    </p>
+    <div class="section-content hidden" id="essay-content">
+        <p>
+            <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03" target="_blank">
+                Click here to read my essay on the structure of the pantoum.
+            </a>
+        </p>
+    </div>
 </div>
 
 <script>
     function toggleCaret(containerID) {
-    if ($('#' + containerID + ' > i').hasClass('fa-caret-down')) {
-        $('#' + containerID + ' > i').removeClass('fa-caret-down');
-        $('#' + containerID + ' > i').addClass('fa-caret-up');
-      } else if ($('#' + containerID + ' > i').hasClass('fa-caret-up')) {
-        $('#' + containerID + ' > i').removeClass('fa-caret-up');
-        $('#' + containerID + ' > i').addClass('fa-caret-down');
-      }
-  }
-</script>
+        if ($('#' + containerID + ' > i').hasClass('fa-caret-down')) {
+            $('#' + containerID + ' > i').removeClass('fa-caret-down');
+            $('#' + containerID + ' > i').addClass('fa-caret-up');
+        } else if ($('#' + containerID + ' > i').hasClass('fa-caret-up')) {
+            $('#' + containerID + ' > i').removeClass('fa-caret-up');
+            $('#' + containerID + ' > i').addClass('fa-caret-down');
+        }
+    }
 
-[1]: https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03
+    $(document).ready(function() {
+        $('.section-header').click(function(ev) {
+            var sectionID = $(ev.target).attr('id');
+            $('#' + sectionID + '-content').fadeToggle('slow');
+            toggleCaret(sectionID);
+        });
+    });
+</script>
