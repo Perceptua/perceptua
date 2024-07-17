@@ -51,12 +51,12 @@
 
 <script>
   function toggleCaret(containerID) {
-    if ($('#' + containerID).hasClass('fa-caret-down')) {
-        $('#' + containerID).removeClass('fa-caret-down');
-        $('#' + containerID).addClass('fa-caret-up');
-      } else if ($('#' + containerID).hasClass('fa-caret-up')) {
-        $('#' + containerID).removeClass('fa-caret-up');
-        $('#' + containerID).addClass('fa-caret_down');
+    if ($('#' + containerID + ' > i').hasClass('fa-caret-down')) {
+        $('#' + containerID + ' > i').removeClass('fa-caret-down');
+        $('#' + containerID + ' > i').addClass('fa-caret-up');
+      } else if ($('#' + containerID + ' > i').hasClass('fa-caret-up')) {
+        $('#' + containerID + ' > i').removeClass('fa-caret-up');
+        $('#' + containerID + ' > i').addClass('fa-caret_down');
       }
   }
 
