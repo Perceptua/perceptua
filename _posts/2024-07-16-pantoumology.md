@@ -714,12 +714,12 @@ layout: post
 
 <script>
     function toggleCaret(containerID) {
-        if ($('#' + containerID + ' > i').hasClass('fa-caret-down')) {
-            $('#' + containerID + ' > i').removeClass('fa-caret-down');
-            $('#' + containerID + ' > i').addClass('fa-caret-up');
+        if ($('#' + containerID + ' i').hasClass('fa-caret-down')) {
+            $('#' + containerID + ' i').removeClass('fa-caret-down');
+            $('#' + containerID + ' i').addClass('fa-caret-up');
         } else if ($('#' + containerID + ' > i').hasClass('fa-caret-up')) {
-            $('#' + containerID + ' > i').removeClass('fa-caret-up');
-            $('#' + containerID + ' > i').addClass('fa-caret-down');
+            $('#' + containerID + ' i').removeClass('fa-caret-up');
+            $('#' + containerID + ' i').addClass('fa-caret-down');
         }
     }
 
