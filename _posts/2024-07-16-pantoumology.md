@@ -7,10 +7,12 @@ layout: post
 ---
 
 <div class="section-container" id="foreword-container">
-    <h3 class="section-header centered" id="foreword">
-        Foreword <i class="fas fa-caret-down"></i>
-    </h3>
-    <div class="section-content hidden" id="foreword-content">
+    <div class="section-header" id="foreword">
+        <h3 class="centered">
+            Foreword <i class="fas fa-caret-up"></i>
+        </h3>
+    </div>
+    <div class="section-content" id="foreword-content">
         <p>
             "<i>Pantoum</i> is the western word for the Malayan <i>pantun</i>," I read in book on poetic forms in the summer of 2023. It first appeared in written form in the fifteenth century, when the oral traditions of the Malay were set down in ink. In the westernized pantoum, stanzas are of four lines repeated in the following pattern: the second & fourth lines of each stanza become the first & third of the next. In this way, each stanza after the first consists of two repeated & two new lines. Often, the third & first lines of the initial stanza are repeated as the second & fourth lines of the final one, so that every line is used twice & the last line of the poem is the same as the first.
         </p>
@@ -32,9 +34,11 @@ layout: post
 </div>
 
 <div class="section-container" id="summer-container">
-    <h3 class="section-header centered" id="summer">
-        Summer <i class="fas fa-caret-down"></i>
-    </h3>
+    <div class="section-header" id="summer">
+        <h3 class="centered">
+            Summer <i class="fas fa-caret-down"></i>
+        </h3>
+    </div>
     <div class="section-content hidden" id="summer-content">
         <p>
             <b>Pantoum &numero; 11</b>
@@ -196,9 +200,11 @@ layout: post
 </div>
 
 <div class="section-container" id="fall-container">
-    <h3 class="section-header centered" id="fall">
-        Fall <i class="fas fa-caret-down"></i>
-    </h3>
+    <div class="section-header" id="fall">
+        <h3 class="centered">
+            Fall <i class="fas fa-caret-down"></i>
+        </h3>
+    </div>
     <div class="section-content hidden" id="fall-content">
         <p>
             <b>Pantoum &numero; 4</b>
@@ -360,9 +366,11 @@ layout: post
 </div>
 
 <div class="section-container" id="winter-container">
-    <h3 class="section-header centered" id="winter">
-        Winter <i class="fas fa-caret-down"></i>
-    </h3>
+    <div class="section-header" id="winter">
+        <h3 class="centered">
+            Winter <i class="fas fa-caret-down"></i>
+        </h3>
+    </div>
     <div class="section-content hidden" id="winter-content">
         <p>
             <b>Pantoum &numero; 3</b>
@@ -524,9 +532,11 @@ layout: post
 </div>
 
 <div class="section-container" id="spring-container">
-    <h3 class="section-header centered" id="spring">
-        Spring <i class="fas fa-caret-down"></i>
-    </h3>
+    <div class="section-header" id="spring">
+        <h3 class="centered">
+            Spring <i class="fas fa-caret-down"></i>
+        </h3>
+    </div>
     <div class="section-content hidden" id="spring-content">
         <p>
             <b>Pantoum &numero; 8</b>
@@ -687,10 +697,12 @@ layout: post
     </div>
 </div>
 
-<div id="essay-container">
-    <h3 class="section-header centered" id="essay">
-        <b>On the Structure of the Pantoum</b> <i class="fas fa-caret-down"></i>
-    </h3>
+<div class="section-container" id="essay-container">
+    <div class="section-header" id="essay">
+        <h3 class="centered">
+            On the Structure of the Pantoum <i class="fas fa-caret-down"></i>
+        </h3>
+    </div>
     <div class="section-content hidden" id="essay-content">
         <p>
             <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=cec9924f-b767-48f5-a6a2-4908db74de03" target="_blank">
@@ -712,7 +724,7 @@ layout: post
     }
 
     $(document).ready(function() {
-        $('.section-header').click(function(ev) {
+        $('.section-header').find('*').click(function(ev) {
             var sectionID = $(ev.target).attr('id');
             $('#' + sectionID + '-content').fadeToggle('slow');
             toggleCaret(sectionID);
