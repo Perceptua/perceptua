@@ -725,7 +725,7 @@ layout: post
 
     $(document).ready(function() {
         $('.section-header *').click(function(ev) {
-            var sectionID = $(ev.target).attr('id');
+            var sectionID = $(ev.target).parents('.section-header').attr('id');
             $('#' + sectionID + '-content').fadeToggle('slow');
             toggleCaret(sectionID);
         });
