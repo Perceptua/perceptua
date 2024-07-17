@@ -1,18 +1,36 @@
 <div class="content-container" id="published-container">
   <input type="hidden" id="filter-on" name="filter-on" value="{{ filter }}">
-  <p class="info right hidden" id="clear-filter"><a href="/">Clear Filters <i class="fas fa-times"></i></a></p>
-  <p class="info right" id="filter">Sort <i class="fas fa-caret-down"></i></p>
+  
+  <p class="info right hidden" id="clear-filter">
+    <a href="/">Clear Filters <i class="fas fa-times"></i></a>
+  </p>
+
+  <p class="info right" id="filter">
+    Sort <i class="fas fa-caret-down" id="filter-icon"></i>
+  </p>
 
   <div class="screen-card hidden" id="filter-menu">
-    <p class="filter-option" id="medium">Medium <i class="fas fa-caret-down"></i></p>
+    <p class="filter-option" id="medium">
+      Medium <i class="fas fa-caret-down"></i>
+    </p>
+
     <div class="hidden option-menu" id="medium-menu">
-      <a class="nav-item medium" href="#/{{ m | slugify }}/" ng-repeat="m in media">{{ m | capfirst }}</a>
+      <a class="nav-item medium" href="#/{{ m | slugify }}/" ng-repeat="m in media">
+        {{ m | capfirst }}
+      </a>
     </div>
 
-    <p class="filter-option" id="date">Date <i class="fas fa-caret-down"></i></p>
+    <p class="filter-option" id="date">
+      Date <i class="fas fa-caret-down"></i>
+    </p>
+
     <div class="hidden option-menu" id="date-menu">
-      <a class="nav-item" href="#/{{ filter }}">New <i class="fas fa-arrow-right"></i> Old</a>
-      <a class="nav-item" href="#/{{ filter }}/{{ 'older' }}">Old <i class="fas fa-arrow-right"></i> New</a>
+      <a class="nav-item" href="#/{{ filter }}">
+        New <i class="fas fa-arrow-right"></i> Old
+      </a>
+      <a class="nav-item" href="#/{{ filter }}/{{ 'older' }}">
+        Old <i class="fas fa-arrow-right"></i> New
+      </a>
     </div>
 
     <p *ngIf="surprise">
@@ -32,6 +50,16 @@
 </div>
 
 <script>
+  function toggleCaret(containerID) {
+    if ($('#' + containerID).hasClass('fa-caret-down')) {
+        $('#' + containerID).removeClass('fa-caret-down');
+        $('#' + containerID).addClass('fa-caret-up');
+      } else if ($('#' + containerID).hasClass('fa-caret-up')) {
+        $('#' + containerID).removeClass('fa-caret-up');
+        $('#' + containerID).addClass('fa-caret_down');
+      }
+  }
+
   $(document).ready(function() {
     var filter = $('#filter-on').val();
 
@@ -41,11 +69,13 @@
 
     $('#filter').click(function() {
       $('#filter-menu').fadeToggle('slow');
+      toggleCaret('filter');
     });
 
     $('.filter-option').click(function(ev) {
       var option = $(ev.target).attr('id');
       $('#' + option + '-menu').fadeToggle('slow');
-    });
+      toggleCaret(option);
+    });    
   });
 </script>
