@@ -8,7 +8,7 @@ layout: post
 
 <div class="section-container" id="foreword-container">
     <p>
-        Below are the contents of <i>Pantoumology</i>, a book of twelve pantoums, along with a foreword & an essay on the poetic form. This text is also available in print as a handsewn softcover book which I can mail to your address. To request a copy, message me on Twitter or send an email to <a href="mailto:perceptua.blue@gmail.com", target="_blank">perceptua.blue@gmail.com</a>.
+        Below are the contents of <i>Pantoumology</i>, a book of twelve pantoums, along with a foreword & an essay on the poetic form. This text is also available in print as a handsewn softcover book which I can mail to your address. To request a copy, message me on Twitter or send an email to <a href="mailto:perceptua.blue@gmail.com" target="_blank">perceptua.blue@gmail.com</a>.
     </p>
     <br>
     <div class="section-header" id="foreword">
