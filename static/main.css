@@ -196,12 +196,16 @@ header {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 400px;
+    height: 200px;
     width: 50%;
 }
 
 .dihedral-img {
 	float: right;
+}
+
+.dihedral-img img {
+	max-height: 200px;
 }
 
 .filter-option {

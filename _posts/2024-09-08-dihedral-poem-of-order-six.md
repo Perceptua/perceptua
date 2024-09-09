@@ -7,7 +7,7 @@ layout: post
 ---
 
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             Cartographers of valleyed time, you
         </p>
@@ -17,13 +17,13 @@ layout: post
         <p class="hanging">
             men have spoken in sky-fed rivers.
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_R_0.png" alt="R_0">
-    </span>
+    </div>
 </div>
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             Quotations break on the narrow necks
         </p>
@@ -33,13 +33,13 @@ layout: post
         <p class="hanging">
             the maps of old cartographers. Then
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_R_120.png" alt="R_120">
-    </span>
+    </div>
 </div>
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             rivers slip their fetters in the night.
         </p>
@@ -49,13 +49,13 @@ layout: post
         <p class="hanging">
             senses floating in old quotations.
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_R_240.png" alt="R_240">
-    </span>
+    </div>
 </div>
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             Cartographers! To what end are you
         </p>
@@ -65,13 +65,13 @@ layout: post
         <p class="hanging">
             will not twice tongue the same quotation.
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_S_1.png" alt="S_1">
-    </span>
+    </div>
 </div>
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             Rivers spew old words from their mouths. They
         </p>
@@ -81,13 +81,13 @@ layout: post
         <p class="hanging">
             but heaven needs no cartographers.
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_S_2.png" alt="S_2">
-    </span>
+    </div>
 </div>
 <div class="dihedral-container">
-    <span class="dihedral-item">
+    <div class="dihedral-item">
         <p class="hanging">
             Quotations crowd the skies, threatening
         </p>
@@ -97,8 +97,8 @@ layout: post
         <p class="hanging">
             dredge their images from the rivers?
         </p>
-    </span>
-    <span class="dihedral-item dihedral-img">
+    </div>
+    <div class="dihedral-item dihedral-img">
         <img src="/static/images/D_3_S_3.png" alt="S_3">
-    </span>
+    </div>
 </div>
