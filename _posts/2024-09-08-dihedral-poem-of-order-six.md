@@ -19,7 +19,7 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="R_0">
+        <img src="/static/images/D_3_R_0.png" alt="R_0">
     </span>
 </div>
 <div class="dihedral-container">
@@ -35,7 +35,7 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="R_120">
+        <img src="/static/images/D_3_R_120.png" alt="R_120">
     </span>
 </div>
 <div class="dihedral-container">
@@ -51,7 +51,7 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="R_240">
+        <img src="/static/images/D_3_R_240.png" alt="R_240">
     </span>
 </div>
 <div class="dihedral-container">
@@ -67,7 +67,7 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="S_1">
+        <img src="/static/images/D_3_S_1.png" alt="S_1">
     </span>
 </div>
 <div class="dihedral-container">
@@ -83,7 +83,7 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="S_2">
+        <img src="/static/images/D_3_S_2.png" alt="S_2">
     </span>
 </div>
 <div class="dihedral-container">
@@ -99,6 +99,6 @@ layout: post
         </p>
     </span>
     <span class="dihedral-item dihedral-img">
-        <img src="static/images/aph_noise.png" alt="S_3">
+        <img src="/static/images/D_3_S_3.png" alt="S_3">
     </span>
 </div>
