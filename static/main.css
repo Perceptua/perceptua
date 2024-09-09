@@ -180,8 +180,28 @@ header {
 
 .hanging {
 	text-indent: -1em;
-	margin: 0.25em auto;
+	margin: 0.25em 0em;
 	padding-left: 1em;
+}
+
+.dihedral-container {
+	display: block;
+	overflow: hidden;
+}
+
+.dihedral-item {
+	display: inline-flex;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 50%;
+}
+
+.dihedral-img {
+	float: right;
 }
 
 .filter-option {
