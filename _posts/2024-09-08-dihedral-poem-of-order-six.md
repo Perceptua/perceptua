@@ -102,3 +102,51 @@ layout: post
         <img src="/static/images/D_3_S_3.png" alt="S_3">
     </div>
 </div>
+<div class="section-container" id="formal-note-container">
+    <div class="section-header" id="formal-note">
+        <h3>
+            Note on the Form
+        </h3>
+    </div>
+    <div class="section-content" id="formal-note-content">
+        <p>
+            The scheme of the preceding poem is based on D<sub>3</sub>, the
+            dihedral group of order 6. D<sub>3</sub> can be thought of as the
+            group of symmetries of an equilateral triangle, as shown above.
+            These symmetries are used in the poem's construction to determine
+            the positions of certain "vertex" words within each stanza. The
+            rules for this "dihedral poem" are as follows
+        </p>
+        <ol type="i">
+            <li>
+                Stanzas are of 3 lines, each line having 9 syllables.
+            </li>
+            <li>
+                From the first stanza, 3 vertex words are selected:
+                <ol type="1">
+                    <li>
+                        The word which begins with syllable 1 of line 1.
+                    </li>
+                    <li>
+                        The word which contains syllable 5 of line 2.
+                    </li>
+                    <li>
+                        The word which ends with syllable 9 of line 3.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                These vertex words are considered to be equidistant "points"
+                within the stanza, & are mapped onto the vertices of an
+                equilateral triangle.
+            </li>
+            <li>
+                The initial arrangement of vertices is taken to be the element
+                R<sub>0</sub> of D<sub>3</sub>. In all stanzas following the
+                first, the positions of the vertex words are interchanged
+                according to the remaining rotations & reflections of
+                D<sub>3</sub>.
+            </li>
+        </ol>
+    </div>
+</div>
