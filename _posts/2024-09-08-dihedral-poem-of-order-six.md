@@ -112,10 +112,10 @@ layout: post
         <p>
             The scheme of the preceding poem is based on D<sub>3</sub>, the
             dihedral group of order 6. D<sub>3</sub> can be thought of as the
-            group of symmetries of an equilateral triangle, as shown above.
-            These symmetries are used in the poem's construction to determine
-            the positions of certain "vertex" words within each stanza. The
-            rules for this "dihedral poem" are as follows
+            group of symmetries of an equilateral triangle. These symmetries are
+            used in the poem's construction to determine the positions of
+            certain "vertex" words within each stanza. The rules for this
+            dihedral poem are as follows:
         </p>
         <ol type="i">
             <li>
