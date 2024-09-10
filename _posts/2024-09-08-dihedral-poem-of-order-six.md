@@ -28,10 +28,10 @@ layout: post
             Quotations break on the narrow necks
         </p>
         <p class="hanging">
-            adorned with rivers, unmake the world,
+            adorned with rivers, unmake the world
         </p>
         <p class="hanging">
-            the maps of old cartographers. Then
+            & the maps of old cartographers.
         </p>
     </div>
     <div class="dihedral-item dihedral-img">
@@ -41,7 +41,7 @@ layout: post
 <div class="dihedral-container">
     <div class="dihedral-item">
         <p class="hanging">
-            rivers slip their fetters in the night.
+            Rivers slip their fetters in the night.
         </p>
         <p class="hanging">
             You young cartographers find virgin
