@@ -28,7 +28,7 @@ layout: post
             Quotations break on the narrow necks
         </p>
         <p class="hanging">
-            adorned with rivers, unmake the world
+            adorned with rivers, unmake the worlds
         </p>
         <p class="hanging">
             & the maps of old cartographers.
@@ -148,5 +148,21 @@ layout: post
                 D<sub>3</sub>.
             </li>
         </ol>
+        <p>
+            Another way to think of D<sub>3</sub> is as a permutation group of
+            the 3 vertex words. Over the 6 stanzas of the poem, the vertex words
+            appear in each possible ordering exactly once. In this way, our
+            dihedral form is quite similar to the sestina. In fact, had the 3
+            vertex words been placed at the ends of their respective lines, this
+            form would amount to a condensed version of the sestina, sans envoi.
+            In a few ways, I think the latter is more successful as a poetic
+            form. Most importantly, removing the repeated words from the
+            line-initial position allows for greater flexibility in the
+            construction of stanzas. One could always choose articles or other
+            auxiliary words as vertices in this new form, but one does not need
+            a new form at all if he merely wishes to repeat "the", "be", "of" in
+            his poems. If future variations on the dihedral poem are written,
+            some adjustments are perhaps in order.
+        </p>
     </div>
 </div>
