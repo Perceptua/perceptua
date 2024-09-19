@@ -1,6 +1,6 @@
 ---
 title: An Early-Hours Dream this 5th of May
-categories: [Short-Story]
+categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, dreams, myth, fiction
 layout: post

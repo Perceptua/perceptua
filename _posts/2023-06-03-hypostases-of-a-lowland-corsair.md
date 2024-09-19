@@ -1,6 +1,6 @@
 ---
 title: Hypostases of a Lowland Corsair
-categories: [Short-Story]
+categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, corsair, Borges
 layout: post

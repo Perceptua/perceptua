@@ -1,6 +1,6 @@
 ---
 title: On the Carving of Fruit
-categories: [Short-Story]
+categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, fruit, carving
 layout: post

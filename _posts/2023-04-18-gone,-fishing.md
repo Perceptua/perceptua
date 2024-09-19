@@ -1,6 +1,6 @@
 ---
 title: Gone, Fishing
-categories: [Short-Story]
+categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, double, Trout Fish, Twitter
 layout: post
