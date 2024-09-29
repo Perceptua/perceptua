@@ -10,4 +10,4 @@ In an old cabin on Canadarago lake, there is a freestanding field stone chimney.
 
 The question is how did it get there? The mason, you will say. Probable enough, but I have inquired with the living, & what remains of the dead in the guest book—none, it seems, had set their eyes in those stone sockets before last night. Strange, for all the eyes I directed to the place were unanimous. It is a skull which went unnoticed eighty years.
 
-Allowing it was not a trowel that mortared this death's head into the hearth, many strange tales present themselves to an idle & viscious writer. There is every chance to steal from Poe, or to confabulate some Hestian cult. But I am fortunate; I have been led astray from these temptations. In the light of the early morning, it does not look so much like a skull.
+Allowing it was not a trowel that mortared this death's head into the hearth, many tales present themselves to an idle & viscious writer. There is every chance to steal from Poe, or to confabulate some Hestian cult. But I am fortunate; I have been turned aside from these temptations. In the light of the early morning, it does not look so much like a skull.
