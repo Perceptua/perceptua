@@ -50,4 +50,4 @@ layout: post
 <br>
 <p class="hanging">October, thin the darkness of your shadow;</p>
 <p class="hanging">Press flat the green with winter-nearing thoughts;</p>
-<p class="hanging">Let sunlight fill the mansions of our home.</p>
+<p class="hanging">Let sunlight scour the mansions of our home.</p>
