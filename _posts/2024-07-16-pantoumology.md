@@ -319,7 +319,7 @@ layout: post
             O ye whose names cling round me
         </p>
         <p class="hanging">
-            like a cloak worn by a stranger,
+            like my great grandfather's jacket,
         </p>
         <p class="hanging">
             clothe me now in recollections,
@@ -329,7 +329,7 @@ layout: post
         </p>
         <br>
         <p class="hanging">
-            Like a cloak worn by a stranger,
+            Like my great grandfather's jacket,
         </p>
         <p class="hanging">
             tell his coming by your colors;
