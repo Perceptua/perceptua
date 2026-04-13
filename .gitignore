@@ -1,0 +1,45 @@
+# Environment and secret files
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Credentials and keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.csr
+credentials.json
+service-account*.json
+*-credentials.json
+*-key.json
+
+# Firebase
+firebase-debug.log
+.firebase/
+firebaseConfig.local.js
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node (in case build tools are added)
+node_modules/
+npm-debug.log

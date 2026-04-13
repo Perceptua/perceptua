@@ -27,8 +27,9 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="static/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- TODO: Add subresource integrity (SRI) hash for Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          crossorigin="anonymous">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -40,22 +41,15 @@
     <meta name="theme-color" content="#000000">
 
     <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-storage.js"></script>
-    <script>
-      var config = {
-        apiKey: "AIzaSyBRljRdh4qzZtsr-Fs_0p18HtbryFKNtSU",
-        projectId: "perceptua-b6ea3",
-        databaseURL: "https://perceptua-b6ea3.firebaseio.com",
-        storageBucket: "gs://perceptua-b6ea3.appspot.com/",
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="static/firebase-config.js"></script>
 
     <!-- jQuery & Angular -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- TODO: Add subresource integrity (SRI) hash for jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            crossorigin="anonymous"></script>
     <script src="libraries/angular.min.js"></script>
     <script src="libraries/angular-route.min.js"></script>
 
