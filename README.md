@@ -59,7 +59,7 @@ be re-encoded before it lands here rather than committed straight off a camera.
 ```
 _posts/       the writing
 _layouts/     page shells
-_includes/    head, header, footer
+_includes/    head and header
 static/       css, media, and the site's only javascript
 favicon/      icons and manifests
 browse.liquid generates the listing pages

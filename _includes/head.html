@@ -1,18 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% assign page_title = title | default: "Perceptua" %}
-{% assign page_description = description | default: "An Art of Histories" %}
-
 <title>{% if title %}Perceptua - {{ title }}{% else %}Perceptua{% endif %}</title>
-<meta name="description" content="{{ page_description }}">
+<meta name="description" content="{{ description | default: 'An Art of Histories' }}">
 <meta name="keywords" content="perceptua{% if keywords %}, {{ keywords }}{% endif %}">
-
-<!-- Twitter -->
-<meta name="twitter:title" content="{{ page_title }}">
-<meta name="twitter:description" content="{{ page_description }}">
-<meta name="twitter:image" content="https://perceptua.blue/static/images/perceptua-low-poly-black-wide.svg">
-<meta name="twitter:card" content="summary_large_image">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/static/main.css">
