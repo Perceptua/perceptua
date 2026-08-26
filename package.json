@@ -2,7 +2,7 @@
   "name": "perceptua",
   "version": "1.0.0",
   "description": "An Art Of Histories, A History Of Arts",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
   "type": "module",
   "scripts": {
