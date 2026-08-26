@@ -3,7 +3,6 @@ title: The Head in the Hearth
 categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, fiction, Poe, Hestia, skull
-layout: post
 ---
 
 In an old cabin on Canadarago lake, there is a freestanding field stone chimney. In the chimney there is a stone that looks like a skull. It is canted forward slightly; if ones imagines it with eyes looking down, then it stares into the open fire; if straight ahead, then it stares at the floor of the great room where the children used to sleep.

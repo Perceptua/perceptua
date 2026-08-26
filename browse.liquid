@@ -1,0 +1,65 @@
+---
+layout: default
+pagination:
+  data: collections.browse
+  size: 1
+  alias: view
+permalink: "{{ view.path }}"
+---
+
+<div class="content-container" id="published-container">
+  {% if view.medium %}
+    <p class="info right" id="clear-filter">
+      <a href="/">Clear Filters <i class="fas fa-times"></i></a>
+    </p>
+  {% endif %}
+
+  <p class="info right" id="filter">
+    Sort <i class="fas fa-caret-down" id="filter-icon"></i>
+  </p>
+
+  <div class="screen-card hidden" id="filter-menu">
+    <p class="filter-option" id="medium">
+      Medium <i class="fas fa-caret-down"></i>
+    </p>
+
+    <div class="hidden option-menu" id="medium-menu">
+      {% for m in view.media %}
+        <a class="nav-item medium" href="/{{ m }}/">{{ m }}</a>
+      {% endfor %}
+    </div>
+
+    <p class="filter-option" id="date">
+      Date <i class="fas fa-caret-down"></i>
+    </p>
+
+    <div class="hidden option-menu" id="date-menu">
+      <a class="nav-item" href="{{ view.base }}">
+        New <i class="fas fa-arrow-right"></i> Old
+      </a>
+      <a class="nav-item" href="{{ view.base }}older/">
+        Old <i class="fas fa-arrow-right"></i> New
+      </a>
+    </div>
+
+    {% if view.surprise %}
+      <p>
+        <a id="surprise" href="{{ view.surprise.url }}">Surprise Me</a>
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="content-grid">
+    {% for post in view.posts %}
+      <div class="content-card">
+        <a href="{{ post.url }}">
+          <p class="added right">{{ post.date | cardDate }}</p>
+          <h3 class="title">{{ post.data.title }}</h3>
+          <p class="medium info">{{ post.data.categories[0] }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script src="/static/menu.js" defer></script>

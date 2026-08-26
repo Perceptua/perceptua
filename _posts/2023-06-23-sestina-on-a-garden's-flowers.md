@@ -3,7 +3,6 @@ title: Sestina on a Garden's Flowers
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, sestina
-layout: post
 ---
 
 <p class="hanging">Flowers in the colors of</p>

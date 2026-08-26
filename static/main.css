@@ -72,10 +72,11 @@ audio {
 	opacity: 0.9;
 }
 
-img, iframe {
+img, iframe, video {
 	display: block;
 	margin: 0.5em auto;
 	max-width: 90%;
+	height: auto;
 	border-radius: 0.5em;
 	opacity: 0.9;
 }

@@ -3,7 +3,6 @@ title: Gone, Fishing
 categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, double, Trout Fish, Twitter
-layout: post
 ---
 
 Those dark Piscean hours before work, lit by the stove's blue flame, the blue light of my phone scrolling Twitter. I hadn't seen anything from Trout Fish in some days. I searched his @ but nothing came up. Musk, I thought. Fired some engineer. I went through my notifications for a thread I knew he was on, clicked on the gasflame colored letters *replying to @troutfishfarms*. A blank page, no followers or tweets. Just that openmouthed yellowgreen fish in its circular tank. I'm shocked too, I said to the fish. A ban crossed my mind, was crossed out just as quickly. He's gone, I thought, with nothing but good reason. Others had noticed sooner; from their lamentations I gathered he was taking a little break. He'd be back after a while. Then again maybe not.

@@ -3,7 +3,6 @@ title: October Sestina
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, sestina, October
-layout: post
 ---
 
 <p class="hanging">I thought of going back home</p>

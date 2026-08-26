@@ -3,7 +3,6 @@ title: Blood Moon
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
-layout: post
 ---
 
 <p class="hanging">I’m looking for the blood moon in the suburbs.</p>

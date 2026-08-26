@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
-    {% include head.html %}
-    <title>Perceptua - {{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="keywords" content="perceptua, {{ page.keywords }}">
+    {% include "head.html" %}
   </head>
   <body>
-    {% include header.html %}
+    {% include "header.html" %}
+
     <div>{{ content }}</div>
-    {% include footer.html %}
+
+    {% include "footer.html" %}
   </body>
 </html>

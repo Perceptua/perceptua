@@ -3,7 +3,6 @@ title: An Episode from the History of Maths
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
-layout: post
 ---
 
 <p class="hanging">A Norwegian came close, but he died of the lung</p>

@@ -3,7 +3,6 @@ title: Under the Moon
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse, Yeats
-layout: post
 ---
 
 <p><i>Under the Moon Reading Yeats' "Under the Moon"</i></p>

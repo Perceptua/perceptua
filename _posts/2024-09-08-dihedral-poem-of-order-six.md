@@ -3,7 +3,6 @@ title: Dihedral Poem of Order Six
 categories: [Verse]
 description: An experiment with verse forms posted on a website.
 keywords: verse, poetry, dihedral, group
-layout: post
 ---
 
 <div class="dihedral-container">
