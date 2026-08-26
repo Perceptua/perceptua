@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<p class="info right" style="margin-right:1em;">{{ page.date | date: '%B %d, %Y' }}<p>
+<p class="info right" style="margin-right:1em;">{{ page.date | postDate }}</p>
 
-<h2>{{ page.title }}</h2>
+<h2>{{ title }}</h2>
 
 <p>
-{% for c in page.categories %}
+{% for c in categories %}
   <span class="category-tag">{{ c | replace: '-', ' ' }}</span>
 {% endfor %}
 </p>
@@ -16,17 +16,12 @@ layout: default
   {{ content }}
 </div>
 
-<div class="left related-posts">
-  {% assign text = "" %}
-  {% capture related %}
-    {% for post in site.posts %}
-      {% if post.categories == page.categories and post.url != page.url %}
-        <a href="{{ post.url }}">{{ post.title }}</a><br>
-        {% assign text = "Related Posts:" %}
-      {% endif %}
+{% assign related = collections.post | related: page.url, categories[0] %}
+{% if related.size > 0 %}
+  <div class="left related-posts">
+    <p style="margin:0;">Related Posts:</p>
+    {% for post in related %}
+      <a href="{{ post.url }}">{{ post.data.title }}</a><br>
     {% endfor %}
-  {% endcapture %}
-
-  <p style="margin:0;">{{ text }}</p>
-  {{ related }}
-</div>
+  </div>
+{% endif %}

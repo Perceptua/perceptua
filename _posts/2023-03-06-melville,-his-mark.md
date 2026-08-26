@@ -3,10 +3,9 @@ title: Melville, His Mark
 categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, bookbinding, Melville, Moby Dick
-layout: post
 ---
 
-![Moby Dick Bound](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fmoby_dick_bound.jpeg?alt=media&token=49e9def5-b278-4f59-a253-4e4087f5583e)
+![Moby Dick Bound](/static/media/moby_dick_bound.jpeg)
 
 Some months or maybe years ago I found a paperbacked Moby Dick in the corner of an old bookstore on Main Street. It was in rough condition then—the cover torn & taped around the edges, the first page corners curled & water-stained. Yet I felt I should buy him at once. I'd never seen Moby Dick in there before, have never seen him since. I finally read my tattered copy over the course of this February past. (And here I would gush over its greatness, its power; but it is foolish for an American to say anything of Melville, who says much more of him.) In reading, my hands & prying eyes beat like a gale on plank & mast of that old ship, so that she struggled into port well-swamped with time & use. For a book, to be much read is to be destroyed, I began to think.
 
@@ -18,15 +17,14 @@ The time then came to cut an emblem-shaped hole in the greyboard, & so to wield 
 
 From this ambling mathematical reverie I was awakened by a burning smell. I was quick to find the source of that scorched aroma, right there where it was beneath my nose. Unaccustomed to the hot knife & ignorant of its technique, I had taken too low an angle against the greyboard. The board drank dumbly of the she-shaft's uterine warmth, till it told its usurpation by a blackened spot & cloud of acrid smoke. Alarmed, I lifted the hot knife, fortunately before the greyboard burned. By then the void for the flukes was nearly stretched, so I took the board in hand to inspect the damage. And there, on the opposite board—the one meant for the book's back cover, a pillow beneath the head of orphan Ishmael—there I felt the mark of a greater beast. This beast was not Leviathan himself (& thank God, for who can open his jaws, those doors of his face, with terrible teeth encircling?), but he must have been a phantom of that selfsame watery haunt, the dark-veiled Ocean. For that board, which was to comfort the souls long-suffering of the great American novel, was now swollen & soaked with water. Spongelike it sopped of that subtle retreating creature, who'd stowed away in some fold between the worlds, some cavern behind my leaky coffee machine.
 
-<iframe
+<video
   width="560" height="315"
-  src="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fmoby_dick_binding.mp4?alt=media&token=3611d7d7-43a6-475b-b307-8b481f249260"
+  src="/static/media/moby_dick_binding.mp4"
   title="Binding Moby Dick"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+  controls
+  playsinline>
+</video>
 
 Well, I hung those fated boards to cool & dry, & came back a later day to wrap them in burial clothes. The signs of burning & weeping had not much faded, but I was able to bind Moby Dick without further symbolical incident. The book now rests on my shelf, alongside Whitman in the pantheon. (Hawthorne is a away in another room; as in life, there is a distance between he & Melville.) Since the turning in of the cloth, the pasting of the endpapers white in their youth against the old whale's yellowed pages, there is left no outward sign of either stain. Only a chewed & oblate woodchip blazoned with the mark of the whale tells the elemental wounds that lie beneath. Yet I know that book—I know the fires & waters have been upon it.
 
-![Moby Dick Shelved](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fmoby_dick_shelved.jpeg?alt=media&token=668a818f-42f3-43c4-931a-d0b0b2844e7e)
+![Moby Dick Shelved](/static/media/moby_dick_shelved.jpeg)

@@ -1,18 +1,15 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Twitter -->
-<meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image" content="https://perceptua.blue/static/images/perceptua-low-poly-black-wide.svg">
-<meta name="twitter:card" content="summary_large_image">
+<title>{% if title %}Perceptua - {{ title }}{% else %}Perceptua{% endif %}</title>
+<meta name="description" content="{{ description | default: 'An Art of Histories' }}">
+<meta name="keywords" content="perceptua{% if keywords %}, {{ keywords }}{% endif %}">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/static/main.css">
 <!-- TODO: Add subresource integrity (SRI) hash for Font Awesome 5.15.4 -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-  crossorigin="anonymous">
+      crossorigin="anonymous">
 
 <!-- Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -22,9 +19,3 @@
 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#676087">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#000000">
-
-<!-- jQuery -->
-<!-- TODO: Add subresource integrity (SRI) hash for jQuery 3.7.1 -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-  crossorigin="anonymous">
-</script>

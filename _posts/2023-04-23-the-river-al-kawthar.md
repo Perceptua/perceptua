@@ -3,7 +3,6 @@ title: The River Al-Kawthar
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
-layout: post
 ---
 
 <p class="hanging">I am a child for whom the pages are not less than the book,</p>

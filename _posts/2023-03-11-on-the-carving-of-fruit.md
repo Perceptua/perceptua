@@ -3,7 +3,6 @@ title: On the Carving of Fruit
 categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, fruit, carving
-layout: post
 ---
 
 A while ago I was reading one of those books for boys, a tale of wizards & knights. Midway upon his journey our hero sat with a friend on a cart of fruit—mangoes, as I recall—& with their knives they carved the fruit to eat it. By the author's treatment of this scene I was filled with hope, imagining the ease & romance of a life fed entirely on mangoes.
@@ -24,25 +23,25 @@ That text—with its introduction & bibliography, its manuscript illuminations, 
 
 Begin with your grapefruit & your knife. Take also a plate with a raised lip & a little cup, to be placed in the center of the plate with the raised lip. These will serve to collect the juices of the grapefruit.
 
-![the knife, plate with the raised lip, & the little cup](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_1.jpeg?alt=media&token=de352418-d71c-43d1-aefd-d984fe2bd03f)
+![the knife, plate with the raised lip, & the little cup](/static/media/carving_fruit_1.jpeg)
 
 ### 2.
 
 Place the grapefruit on the plate with the raised lip (the little cup being set aside) & quarter it vertically with the knife.
 
-![the knife & the grapefruit quartered vertically on the plate with the raised lip](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_2.jpeg?alt=media&token=f17fb551-dd46-47ad-9ff1-4035854b423a)
+![the knife & the grapefruit quartered vertically on the plate with the raised lip](/static/media/carving_fruit_2.jpeg)
 
 ### 3.
 
 Stack the quartered grapefruit to one side of the plate with the raised lip, & place the little cup on the other.
 
-![the knife & the grapefruit & the little cup together on the plate with the raised lip](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_3.jpeg?alt=media&token=22662a71-43d4-4657-9ae4-4c64ae5fc1f8)
+![the knife & the grapefruit & the little cup together on the plate with the raised lip](/static/media/carving_fruit_3.jpeg)
 
 ### 4.
 
 Holding one quarter of the grapefruit horizontally above the little cup, cut any albedo that clings to the central ridge.
 
-![holding one quarter of the grapefruit horizontally above the little cup](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_4.jpeg?alt=media&token=7f01b17c-b640-45b3-8190-f16b61471ec2)
+![holding one quarter of the grapefruit horizontally above the little cup](/static/media/carving_fruit_4.jpeg)
 
 ### 5.
 
@@ -60,10 +59,10 @@ Consume the disgorged endocarp.
 
 If any fruit remains attached to the flavedo, hold the excavated husk over the little cup & fold it in half vertically. Squeeze the flavedo & allow the juices to run into the little cup.
 
-![folding the flavedo in half vertically over the little cup](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_5.jpeg?alt=media&token=c3d7c5cc-ca76-43a5-85df-7120a041e372)
+![folding the flavedo in half vertically over the little cup](/static/media/carving_fruit_5.jpeg)
 
 ### 9.
 
 Excarpate & juice the three remaining quarters of the grapefruit. You have now eaten more endocarp than ever before in your life, & have yet a fine cordial of the little cup.
 
-![the knife, the excarpated grapefruit, & the cordial of the little cup on the plate with the raised lip](https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2Fcarving_fruit_6.jpeg?alt=media&token=075b88c0-59dc-40f9-b102-152277b51d8e)
+![the knife, the excarpated grapefruit, & the cordial of the little cup on the plate with the raised lip](/static/media/carving_fruit_6.jpeg)

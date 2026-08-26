@@ -3,7 +3,6 @@ title: L'Hanno Ammazzato
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
-layout: post
 ---
 
 <p class="hanging">The Catholic knife of Ravaillac struck heart at ides of May;</p>

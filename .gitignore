@@ -18,16 +18,9 @@ service-account*.json
 *-credentials.json
 *-key.json
 
-# Firebase
-firebase-debug.log
-.firebase/
-firebaseConfig.local.js
-
-# Jekyll
+# Eleventy
 _site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+.cache/
 
 # OS files
 .DS_Store
@@ -40,6 +33,6 @@ Thumbs.db
 *.swo
 *~
 
-# Node (in case build tools are added)
+# Node
 node_modules/
 npm-debug.log

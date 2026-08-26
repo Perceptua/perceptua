@@ -3,7 +3,6 @@ title: Prospectus
 categories: [Verse]
 description: A few lines of verse on a website.
 keywords: verse, poetry, blank verse
-layout: post
 ---
 <p class="hanging">I’ve moved to a new town of late—</p>
 <p class="hanging">a suburb place, hemmed by septentrion highways</p>

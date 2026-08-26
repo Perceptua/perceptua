@@ -3,7 +3,6 @@ title: Hypostases of a Lowland Corsair
 categories: [Fiction]
 description: Short fiction posted on a website.
 keywords: short story, literature, corsair, Borges
-layout: post
 ---
 
 I held open the door of the cafe, waiting while a few of its patrons filed out. Thanks, said the one with the laptop, the to-go cup, & the empty laptop bag. Sure thing. Walking down the hallway, I glanced at my watch. After ten, minute hand still right of the six. I spotted my friend at a table & went over. Simon, I said warmly as I approached. A look of surprise crossed his face, succeeded by one of disdain; I was taken aback by his evident wish to strangle me. We said ten thirty, didn’t we? We said ten, he replied. No, I would never have agreed to ten. He rose from the table, muttering that I would have dishonored ten just as well as ten thirty. Cortado? he asked. Sure, I said, sitting down while he walked to the counter. Two empty cups stared back from across the table.

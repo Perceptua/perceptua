@@ -3,7 +3,6 @@ title: Pantoumology
 categories: [Verse]
 description: Twelve pantoums, with a foreword & an essay on the form.
 keywords: verse, poetry, pantoum
-layout: post
 ---
 
 <div class="section-container" id="foreword-container">
@@ -709,7 +708,7 @@ layout: post
     </div>
     <div class="section-content hidden" id="essay-content">
         <p>
-            <a href="https://firebasestorage.googleapis.com/v0/b/perceptua-b6ea3.appspot.com/o/public%2FOn_the_Structure_of_the_Pantoum.pdf?alt=media&token=5455c3e0-d7cd-4b8d-ac62-5f327e822e7d" target="_blank">
+            <a href="/static/media/on_the_structure_of_the_pantoum.pdf" target="_blank">
                 Click here to read my essay on the structure of the pantoum.
             </a>
         </p>
