@@ -169,7 +169,7 @@ Decapitations have been happily infrequent in the annals of our village (one has
 <div class="speech">
 <p class="speaker">Paris</p>
 <p class="hanging">Very well, sir—stand down, de la Vigne.</p>
-<p class="hanging">The beadle sleeps a while; you’ll have proof.</p>
+<p class="hanging">The beetle sleeps a while; you’ll have proof.</p>
 <p class="hanging">Your tree will have its trial & its sentence,</p>
 <p class="hanging">& you’ll stand by to watch its execution.</p>
 </div>
@@ -360,8 +360,8 @@ Decapitations have been happily infrequent in the annals of our village (one has
 
 <div class="speech">
 <p class="speaker">Olden</p>
-<p class="hanging">If all the nails that drive these calumnies</p>
-<p class="hanging">into the bark & flesh of our old elm</p>
+<p class="hanging">If all the nails that pin these calumnies</p>
+<p class="hanging">upon the bark & flesh of our old elm</p>
 <p class="hanging">bring not a touch of crimson to your cheeks,</p>
 <p class="hanging">God banish us this second Eden’s bower!</p>
 <p class="hanging">That tree stood tall before the day when Holland’s</p>
@@ -369,7 +369,7 @@ Decapitations have been happily infrequent in the annals of our village (one has
 <p class="hanging">profit by the maple’s vernal nectar.</p>
 <p class="hanging">In all its seasons, blow what winds may blow,</p>
 <p class="hanging">it never bent before the tempest fury,</p>
-<p class="hanging">never dropped the handle of an ax;</p>
+<p class="hanging">never dropped the handle of an axe—</p>
 <p class="hanging">yet now we’re to believe it whet the blade</p>
 <p class="hanging">that cleaved the crown & life of our poor stranger?</p>
 <p class="hanging">Are we resigned that Fate roused John Doe sleeping,</p>
@@ -402,6 +402,7 @@ Decapitations have been happily infrequent in the annals of our village (one has
 <p class="hanging">& laid out on the field to rest in honor;</p>
 <p class="hanging">but let that limb inter some nameless place,</p>
 <p class="hanging">that bathed in John Doe’s blood & now its own.</p>
+<p class="stage-direction">Mayor kneels beside the limb.</p>
 <p class="hanging">It wears the outward semblance of the rest,</p>
 <p class="hanging">but to our elm it is no honest heir;</p>
 <p class="hanging">peel back its bark & see—O, see deceit!</p>
@@ -410,6 +411,7 @@ Decapitations have been happily infrequent in the annals of our village (one has
 <p class="hanging">that dug their winding channels ’neath his raiment</p>
 <p class="hanging">& scurry in their labyrinths even now?</p>
 <p class="hanging">The sinews of this limb bear not a line!</p>
+<p class="stage-direction">Mayor rises.</p>
 <p class="hanging">Fell monster, by what lure’s perfumed twitch</p>
 <p class="hanging">were your feet drawn to tread our watered path?—</p>
 <p class="hanging">A fear does shake me that those twin-like Johns</p>
