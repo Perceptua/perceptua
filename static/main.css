@@ -185,6 +185,89 @@ header {
 	padding-left: 1em;
 }
 
+.epigraph {
+	width: fit-content;
+	max-width: 90%;
+	margin: 1em auto 2em auto;
+	text-align: left;
+}
+
+.epigraph p {
+	margin: 0.1em 0;
+}
+
+.epigraph .attribution {
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+.starbreak {
+	margin: 2em auto;
+	text-align: center;
+	line-height: 1;
+}
+
+.starbreak p {
+	margin: 0;
+}
+
+.play {
+	margin-top: 3em;
+	text-align: left;
+}
+
+.scene-title {
+	margin: 2.5em 0 0.75em 0;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.15em;
+}
+
+.personae {
+	list-style: none;
+	max-width: 30em;
+	margin: 1em auto;
+	padding: 0;
+}
+
+.personae li {
+	display: flex;
+	align-items: baseline;
+	margin: 0.25em 0;
+}
+
+.personae .leader {
+	flex: 1;
+	min-width: 1em;
+	margin: 0 0.5em;
+	border-bottom: 1px dotted black;
+}
+
+.speech {
+	margin: 0.75em 0;
+}
+
+.speaker {
+	margin: 0;
+	font-variant: small-caps;
+	letter-spacing: 0.05em;
+}
+
+.speech .hanging {
+	margin-left: 1.5em;
+}
+
+.stage-direction {
+	margin: 0.75em 0 0.75em 3em;
+	font-style: italic;
+}
+
+.stage-direction.opening {
+	margin: 0 0 1.5em 0;
+	text-align: center;
+}
+
 .dihedral-container {
 	display: block;
 	overflow: hidden;
