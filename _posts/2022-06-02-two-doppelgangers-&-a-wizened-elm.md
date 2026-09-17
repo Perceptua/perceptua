@@ -1,6 +1,6 @@
 ---
 title: Two Doppelgängers & a Wizened Elm
-categories: [Fiction]
+categories: [Verse]
 description: A one-act play posted on a website.
 keywords: play, drama, verse drama, literature, elm, doppelgänger, Oldenbarnevelt
 ---
