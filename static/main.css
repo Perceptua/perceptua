@@ -11,27 +11,40 @@
 	--bg: #ECF1F2; /* rgba(211, 221, 224, 0.42) over white, made opaque so in-app browsers can't show through */
 	--text: black;
 	--link: var(--brand);
+	--title: var(--brand);
 	--rule: black;
 	--card-border: var(--brand);
 	--input-border: var(--dark);
+	--cloud-opacity: 0.35;
 	color-scheme: light;
 }
 
+/* Dark mode applies when the visitor picked it (data-theme, set by the theme
+   toggle), or when their system is dark and they haven't picked light.
+   Keep the two blocks below in sync. */
+:root[data-theme="dark"] {
+	--bg: #0A1724;
+	--text: var(--greyscale);
+	--link: var(--light);
+	--title: var(--accent);
+	--rule: var(--accent);
+	--card-border: var(--accent);
+	--input-border: var(--accent);
+	--cloud-opacity: 0.18; /* the cloud reads as a pale glow; keep it faint */
+	color-scheme: dark;
+}
+
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not([data-theme="light"]) {
 		--bg: #0A1724;
 		--text: var(--greyscale);
 		--link: var(--light);
+		--title: var(--accent);
 		--rule: var(--accent);
 		--card-border: var(--accent);
 		--input-border: var(--accent);
+		--cloud-opacity: 0.18; /* the cloud reads as a pale glow; keep it faint */
 		color-scheme: dark;
-	}
-
-	/* The mask on body:before hides the cloud's square edge, so the original
-	   image reads as a soft pale glow; keep it faint against the dark page. */
-	body:before {
-		opacity: 0.18;
 	}
 }
 
@@ -79,7 +92,7 @@ body:before {
 	aspect-ratio: 1;
 	transform: translate(-50%, -50%);
 	z-index: -10;
-	opacity: 0.35;
+	opacity: var(--cloud-opacity);
 	background: url(images/aph_cloud.png) no-repeat center / contain;
 	-webkit-mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
 	mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
@@ -138,10 +151,59 @@ button:hover {
 
 /* Header */
 
+/* Title centered, icons right-aligned; the empty first column balances them. */
 header {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	padding-bottom: 0.5em;
 	border-bottom: 1px solid var(--rule);
 	width: 95%;
 	margin: 0.25em auto;
+}
+
+header > a {
+	grid-column: 2;
+}
+
+.header-icons {
+	grid-column: 3;
+	justify-self: end;
+}
+
+/* Icon controls stay quiet: light brand color, no button chrome. */
+.icon-button, .icon-button:hover {
+	background: none;
+	border: 0;
+	padding: 0.25em 0.5em;
+	margin: 0;
+	transform: none;
+}
+
+.icon-button {
+	color: var(--light);
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.icon-button:hover, .icon-button:focus-visible, .icon-button[aria-expanded="true"] {
+	color: var(--accent);
+}
+
+/* Show the icon for the theme the toggle switches to. Selectors need more
+   specificity than Font Awesome's .fas { display: inline-block }, which loads later. */
+.icon-button .icon-sun { display: none; }
+:root[data-theme="dark"] .icon-sun { display: inline-block; }
+:root[data-theme="dark"] .icon-moon { display: none; }
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) .icon-sun { display: inline-block; }
+	:root:not([data-theme="light"]) .icon-moon { display: none; }
+}
+
+/* Controls that need JS stay hidden until the head script marks the page. */
+html:not(.js) .js-only {
+	display: none;
 }
 
 #logo {
@@ -151,7 +213,8 @@ header {
 }
 
 #site-title {
-	margin: 0 0 0.5em 0;
+	margin: 0;
+	color: var(--title);
 }
 
 #logo, #site-title {
@@ -320,10 +383,6 @@ header {
 	max-height: 200px;
 }
 
-.filter-option {
-	cursor: pointer;
-}
-
 .content-grid {
 	width: 100%;
 	display: grid;
@@ -380,6 +439,146 @@ header {
 
 .related-posts {
 	margin-left: 1em;
+}
+
+
+
+/* Browse Controls */
+
+.browse-controls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 0.5em 1.5em;
+	width: 95%;
+	margin: 0.75em auto;
+}
+
+.browse-controls a {
+	color: var(--text);
+	opacity: 0.55;
+}
+
+.browse-controls a:hover, .browse-controls a.active {
+	color: var(--link);
+	opacity: 1;
+}
+
+.browse-controls .order {
+	margin-right: 1em;
+}
+
+.browse-controls .order a + a {
+	margin-left: 0.75em;
+}
+
+/* Medium picker: a <details> dropdown, so it works without JS. */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown summary {
+	list-style: none;
+	color: var(--link);
+	cursor: pointer;
+}
+
+.dropdown summary::-webkit-details-marker {
+	display: none;
+}
+
+.dropdown summary i {
+	transition: transform 0.2s;
+}
+
+.dropdown[open] summary i {
+	transform: rotate(180deg);
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	min-width: 100%;
+	margin-top: 0.25em;
+	padding: 0.25em 0;
+	background-color: var(--bg);
+	border: 1px solid var(--light);
+	border-radius: 0.25em;
+	text-align: left;
+}
+
+.dropdown-menu a {
+	display: block;
+	padding: 0.25em 0.75em;
+	white-space: nowrap;
+}
+
+.browse-controls i {
+	color: var(--light);
+	margin-left: 0.25em;
+}
+
+
+
+/* Search */
+
+.search {
+	width: 90%;
+	max-width: 32em;
+	margin: 0.75em auto 1.5em auto;
+}
+
+.search input {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0.25em 0;
+	border: 0;
+	border-bottom: 1px solid var(--light);
+	border-radius: 0;
+	background: none;
+	color: var(--text);
+	font: inherit;
+	outline: none;
+}
+
+.search input:focus {
+	border-bottom-color: var(--accent);
+}
+
+.search-results {
+	list-style: none;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+
+.search-results li {
+	margin: 0.75em 0;
+}
+
+.search-results .medium {
+	color: var(--text);
+	opacity: 0.55;
+}
+
+.search-results .snippet {
+	margin: 0.1em 0 0 0;
+	font-size: 0.9em;
+	opacity: 0.8;
+}
+
+.search-results mark {
+	background: none;
+	color: var(--link);
+}
+
+.search-empty {
+	opacity: 0.55;
+	text-align: center;
 }
 
 
