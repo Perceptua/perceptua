@@ -31,7 +31,8 @@
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
-	background-color: rgba(211, 221, 224, 0.42);
+	background-color: #ECF1F2; /* rgba(211, 221, 224, 0.42) over white, made opaque so in-app browsers can't show through */
+	color-scheme: light;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: small;
 	word-wrap: break-word;
