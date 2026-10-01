@@ -6,6 +6,33 @@
 	--light: #98AEC2;
 	--dark: #061B3A;
 	--greyscale: #D3DDE0;
+
+	/* Theme roles; light values, overridden for dark mode below */
+	--bg: #ECF1F2; /* rgba(211, 221, 224, 0.42) over white, made opaque so in-app browsers can't show through */
+	--text: black;
+	--link: var(--brand);
+	--rule: black;
+	--card-border: var(--brand);
+	--input-border: var(--dark);
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #0A1724;
+		--text: var(--greyscale);
+		--link: var(--light);
+		--rule: var(--accent);
+		--card-border: var(--accent);
+		--input-border: var(--accent);
+		color-scheme: dark;
+	}
+
+	/* The mask on body:before hides the cloud's square edge, so the original
+	   image reads as a soft pale glow; keep it faint against the dark page. */
+	body:before {
+		opacity: 0.18;
+	}
 }
 
 .highlight { color: var(--accent) !important; }
@@ -31,35 +58,35 @@
 html {
 	overflow-x: hidden;
 	overflow-y: scroll;
-	background-color: #ECF1F2; /* rgba(211, 221, 224, 0.42) over white, made opaque so in-app browsers can't show through */
-	color-scheme: light;
+	background-color: var(--bg);
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: small;
 	word-wrap: break-word;
 	text-align: center;
-	color: black;
+	color: var(--text);
 }
 
+/* The cloud image is an opaque square with a pale backdrop, so size the
+   element to the image and fade its edges with a radial mask; the square can't
+   show against any page color. The cloud itself sits within ~60% of the radius. */
 body:before {
 	content: "";
 	display: block;
 	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
+	left: 50%;
+	top: 50%;
+	width: 75%;
+	aspect-ratio: 1;
+	transform: translate(-50%, -50%);
 	z-index: -10;
 	opacity: 0.35;
-	background-color: rgba(211, 221, 224, 0.42);
-	background: url(images/aph_cloud.png) no-repeat center center;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: 75%;
+	background: url(images/aph_cloud.png) no-repeat center / contain;
+	-webkit-mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
+	mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
 }
 
 a {
-	color: var(--brand);
+	color: var(--link);
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -86,7 +113,7 @@ input {
 	padding: 0.25em;
 	margin: 0.25em;
 	text-align: center;
-	border: 0.25em solid var(--dark);
+	border: 0.25em solid var(--input-border);
 	border-radius: 0.5em;
 }
 
@@ -112,7 +139,7 @@ button:hover {
 /* Header */
 
 header {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--rule);
 	width: 95%;
 	margin: 0.25em auto;
 }
@@ -242,7 +269,7 @@ header {
 	flex: 1;
 	min-width: 1em;
 	margin: 0 0.5em;
-	border-bottom: 1px dotted black;
+	border-bottom: 1px dotted var(--rule);
 }
 
 .speech {
@@ -313,9 +340,9 @@ header {
 
 .content-card, .screen-card {
 	background-color: rgba(90, 133, 167, 0.07);
-	border: 0.25em solid var(--brand);
+	border: 0.25em solid var(--card-border);
 	border-radius: 0.5em;
-	color: black;
+	color: var(--text);
 	padding: 0.5em;
 }
 
@@ -373,7 +400,7 @@ header {
 
 @media screen and (min-width: 768px) {
 	body:before {
-		background-size: 66%;
+		width: 66%;
 	}
 	.screen-card, .text {
 		width: 75%;
@@ -382,7 +409,7 @@ header {
 
 @media screen and (min-width: 992px) {
 	body:before {
-		background-size: 50%;
+		width: 50%;
 	}
 	.screen-card, .text {
 		width: 66%;
@@ -394,7 +421,7 @@ header {
 
 @media screen and (min-width: 1200px) {
 	body:before {
-		background-size: 33%;
+		width: 33%;
 	}
 	.screen-card, .text {
 		width: 50%;
