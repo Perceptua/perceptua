@@ -389,12 +389,9 @@ html:not(.js) .js-only {
 	opacity: 1;
 }
 
-.browse-controls .order {
-	margin-right: 1em;
-}
-
-.browse-controls .order a + a {
-	margin-left: 0.75em;
+.browse-controls .sort {
+	color: var(--link);
+	opacity: 1;
 }
 
 /* Medium picker: a <details> dropdown, so it works without JS. */
