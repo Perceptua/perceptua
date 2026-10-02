@@ -63,7 +63,14 @@ html {
 /* The cloud image is an opaque square with a pale backdrop, so size the
    element to the image and fade its edges with a radial mask; the square can't
    show against any page color. The fade starts past most of the cloud and is
-   complete at the square's edges. */
+   complete at the square's edges. On load the fade opens from the center
+   outward; --reveal is the fade's outer edge. */
+@property --reveal {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: 100%;
+}
+
 body:before {
 	content: "";
 	display: block;
@@ -76,8 +83,19 @@ body:before {
 	z-index: -10;
 	opacity: var(--cloud-opacity);
 	background: url(images/aph_cloud.png) no-repeat center / contain;
-	-webkit-mask-image: radial-gradient(closest-side, black 65%, transparent 100%);
-	mask-image: radial-gradient(closest-side, black 65%, transparent 100%);
+	--reveal: 100%; /* declared so the mask still works where @property isn't supported */
+	-webkit-mask-image: radial-gradient(closest-side, black calc(var(--reveal) * 0.65), transparent var(--reveal));
+	mask-image: radial-gradient(closest-side, black calc(var(--reveal) * 0.65), transparent var(--reveal));
+}
+
+@keyframes cloud-reveal {
+	from { --reveal: 0%; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	body:before {
+		animation: cloud-reveal 0.5s ease-out both;
+	}
 }
 
 a {
