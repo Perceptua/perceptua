@@ -2,4 +2,20 @@
   <a href="/">
     <h1 id="site-title">Perceptua</h1>
   </a>
+
+  <div class="header-icons js-only">
+    <button type="button" class="icon-button" id="search-toggle"
+            aria-label="Search" aria-expanded="false" aria-controls="search">
+      <i class="fas fa-search"></i>
+    </button>
+    <button type="button" class="icon-button" id="theme-toggle" aria-label="Switch light or dark theme">
+      <i class="fas fa-moon icon-moon"></i>
+      <i class="fas fa-sun icon-sun"></i>
+    </button>
+  </div>
 </header>
+
+<div class="search hidden js-only" id="search" role="search">
+  <input type="search" id="search-input" placeholder="Search" aria-label="Search posts" autocomplete="off">
+  <ul class="search-results" id="search-results"></ul>
+</div>

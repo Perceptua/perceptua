@@ -1,5 +1,15 @@
 <meta charset="utf-8">
 <meta name="color-scheme" content="light dark">
+
+<!-- Runs before first paint: marks JS as available and applies a saved theme,
+     so visitors who picked one don't see the other flash first. -->
+<script>
+  document.documentElement.classList.add("js");
+  try {
+    const theme = localStorage.getItem("theme");
+    if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+  } catch {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{% if title %}Perceptua - {{ title }}{% else %}Perceptua{% endif %}</title>
@@ -13,10 +23,17 @@
       crossorigin="anonymous">
 
 <!-- Icons -->
+<!-- sizes on the .ico keeps Chrome from preferring it over the SVG; browsers
+     without SVG favicons (Safari) fall back to the .ico. -->
+<link rel="icon" href="/favicon/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#676087">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="theme-color" content="#000000">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#315A87">
+<meta name="msapplication-TileColor" content="#ECF1F2">
+<!-- Browser chrome matches the page background; site.js overrides these when
+     the visitor has picked a theme. -->
+<meta name="theme-color" content="#ECF1F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1724" media="(prefers-color-scheme: dark)">
+
+<script src="/static/site.js" defer></script>

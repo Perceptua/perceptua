@@ -42,6 +42,7 @@ export default function (eleventyConfig) {
         return {
           medium,
           media,
+          order,
           base: medium ? `/${medium}/` : "/",
           path: `${medium ? medium + "/" : ""}${order === "asc" ? "older/" : ""}index.html`,
           posts: sorted,
