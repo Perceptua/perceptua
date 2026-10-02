@@ -14,7 +14,7 @@
 	--title: var(--brand);
 	--rule: black;
 	--card-border: var(--brand);
-	--cloud-opacity: 0.35;
+	--cloud-opacity: 0.45;
 	color-scheme: light;
 }
 
@@ -28,7 +28,7 @@
 	--title: var(--accent);
 	--rule: var(--accent);
 	--card-border: var(--accent);
-	--cloud-opacity: 0.18; /* the cloud reads as a pale glow; keep it faint */
+	--cloud-opacity: 0.24; /* the cloud reads as a pale glow; keep it faint */
 	color-scheme: dark;
 }
 
@@ -40,7 +40,7 @@
 		--title: var(--accent);
 		--rule: var(--accent);
 		--card-border: var(--accent);
-		--cloud-opacity: 0.18; /* the cloud reads as a pale glow; keep it faint */
+		--cloud-opacity: 0.24; /* the cloud reads as a pale glow; keep it faint */
 		color-scheme: dark;
 	}
 }
@@ -62,7 +62,8 @@ html {
 
 /* The cloud image is an opaque square with a pale backdrop, so size the
    element to the image and fade its edges with a radial mask; the square can't
-   show against any page color. The cloud itself sits within ~60% of the radius. */
+   show against any page color. The fade starts past most of the cloud and is
+   complete at the square's edges. */
 body:before {
 	content: "";
 	display: block;
@@ -75,8 +76,8 @@ body:before {
 	z-index: -10;
 	opacity: var(--cloud-opacity);
 	background: url(images/aph_cloud.png) no-repeat center / contain;
-	-webkit-mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
-	mask-image: radial-gradient(closest-side, black 55%, transparent 90%);
+	-webkit-mask-image: radial-gradient(closest-side, black 65%, transparent 100%);
+	mask-image: radial-gradient(closest-side, black 65%, transparent 100%);
 }
 
 a {
@@ -98,7 +99,7 @@ img, video {
 
 /* Header */
 
-/* Title centered, icons right-aligned; the empty first column balances them. */
+/* Logo left, title centered, icons right; the 1fr columns keep the title centered. */
 header {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
@@ -111,6 +112,24 @@ header {
 
 header > a {
 	grid-column: 2;
+}
+
+/* The two crosses from the favicon, drawn with a 1px pen line at any size. */
+.header-logo {
+	grid-column: 1;
+	justify-self: start;
+	display: block;
+	line-height: 0;
+}
+
+.header-logo svg {
+	height: 2.5em;
+	width: auto;
+	stroke: var(--light);
+}
+
+.header-logo:hover svg {
+	stroke: var(--accent);
 }
 
 .header-icons {
