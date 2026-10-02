@@ -21,15 +21,12 @@ permalink: "{{ view.path }}"
       </div>
     </details>
 
-    <span>
-      <span class="order">
-        <a href="{{ view.base }}"{% unless view.order == "asc" %} class="active" aria-current="page"{% endunless %}>Newest</a>
-        <a href="{{ view.base }}older/"{% if view.order == "asc" %} class="active" aria-current="page"{% endif %}>Oldest</a>
-      </span>
-      {% if view.surprise %}
-        <a id="surprise" href="{{ view.surprise.url }}">Surprise</a>
-      {% endif %}
-    </span>
+    {% comment %} Sort by date: the chevron shows the current order and the link flips it. {% endcomment %}
+    {% if view.order == "asc" %}
+      <a class="sort" href="{{ view.base }}" title="Oldest first">Sort<i class="fas fa-angle-up"></i></a>
+    {% else %}
+      <a class="sort" href="{{ view.base }}older/" title="Newest first">Sort<i class="fas fa-angle-down"></i></a>
+    {% endif %}
   </nav>
 
   <div class="content-grid">

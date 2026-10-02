@@ -46,7 +46,6 @@ export default function (eleventyConfig) {
           base: medium ? `/${medium}/` : "/",
           path: `${medium ? medium + "/" : ""}${order === "asc" ? "older/" : ""}index.html`,
           posts: sorted,
-          surprise: sorted[Math.floor(Math.random() * sorted.length)],
         };
       });
     });
