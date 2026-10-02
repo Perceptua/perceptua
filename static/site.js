@@ -4,12 +4,24 @@
 // visitor picks one, the page follows their system setting (see main.css).
 const root = document.documentElement;
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+const THEME_COLORS = { light: "#ECF1F2", dark: "#0A1724" };
+
+// The theme-color metas follow the system scheme; point both at a picked theme.
+const syncThemeColor = () => {
+  const theme = root.dataset.theme;
+  if (!theme) return;
+  for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+    meta.content = THEME_COLORS[theme];
+  }
+};
+syncThemeColor();
 
 document.getElementById("theme-toggle")?.addEventListener("click", () => {
   const current = root.dataset.theme ?? (systemDark.matches ? "dark" : "light");
   const next = current === "dark" ? "light" : "dark";
 
   root.dataset.theme = next;
+  syncThemeColor();
   try {
     localStorage.setItem("theme", next);
   } catch {}
